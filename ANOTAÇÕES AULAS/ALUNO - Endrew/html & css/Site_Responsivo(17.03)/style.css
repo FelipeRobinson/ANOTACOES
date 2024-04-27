@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 200px) {
+    body {
+      background-color: dodgerblue;
+    }
+  
+    #menu ul {
+      padding: 0px;
+      margin: 0px;
+      background-color: #EDEDED;
+      list-style: none;
+    }
+  
+    #menu ul li { display: inline; }
+  
+    #menu ul li a {
+      padding: 2px 10px;
+      display: inline-block;
+      background-color: #EDEDED;
+      color: #333;
+      text-decoration: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      border-bottom: 3px solid #EDEDED;
+    }
+  
+    #menu ul li a:hover {
+      background-color: #D6D6D6;
+      border-bottom: 3px solid #EA0000;
+    }
+  
+  }

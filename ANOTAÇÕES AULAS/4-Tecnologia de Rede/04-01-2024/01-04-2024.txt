@@ -1,0 +1,130 @@
+REVISÃO P/PROVA
+----------------------------------------------------------------------------------
+Rede de computador:
+  - São sistemas que conectam dispositivos para compartilhar recursos e trocar 
+    informações.
+    Elas podem ser físicas ou sem fio e são essenciais p/comunicação e colaboração 
+    em ambientes modernos.
+
+Dispositivos de Rede:
+  - Roteador:
+	- É usado p/encaminhar tráfego entre redes.
+  - AP:
+	- Oferece conectividade sem fio, mas tem menos recursos que um roteador com 
+          fio.
+
+Mídia de Rede:
+  - É o meio que há uma transmissão de uma rede, nesse caso fisico;
+	- Cabeamento de cobre
+	- Cabeamento de Fibra Ótica
+	- Conexão sem fio
+
+Largura de Banda e Latência:
+  - Conceito que indica a medida da capacidade de transmissão de daos numa rede.
+  - Medida em bits
+  - Numa rodovia, o carro é o pacote de dados. Numa rodovia que tem 7 pistas, e uma 
+    de 2, a mais rápida é a de 7
+  - Latência é o X tempo que o pacote chega ao seu destino
+
+Transmissão de Dados:
+  - É a forma que os carros vão andar na rodovia (seja o sentido que os carros andam)
+	- Simplex: um único sentido (mainframe -> Monitor)
+	- Half-Duplex: duas vias com sentidos únicos e diferentes
+	- Full-Duplex uma via que vei e vem
+
+  - LAN (Local area network);
+	- Uma rede que abrange uma pequena área
+	- Até 50m de distância entre um host e um servidor
+	- Se define ao tamanho  que a rede vai, ao tipo de tecnologia de transmissão 
+          e a topologia utilizada.
+  - MAN (Metropolitam area network).
+	- Uma rede que abrange uma região grande.
+	- Os equipamentos e links de comunicação pertencem a um provedor de serviços 
+          de rede.
+	  - Serviços de rede pode ser uma empresa
+	- Backbone (switch, servidores): é a infraestrutura central de uma rede de 
+          computadores, responsável por interconectar diferentes partes da rede e 
+          garantir a comunicação eficiente entre elas.
+  - WAN (Wide area network);
+	- são redes que abrangem uma grande área geográfica, conectando dispositivos 
+          em diferentes locais, como cidades ou até mesmo países.
+
+Componentes de Rede:
+	  - Periféricos:
+		- Impressoras
+		- Teclados
+		- Mouse
+	  - Mídia:
+		- Cabos
+	  - Tipos de equipamento:
+		- Switch
+		- Roteador
+ 	 - Interface de rede:
+		- Placa física conectada na placa mãe.
+		- Backadress
+ 	 - Roteador:
+		- Serve para ligar reses diferentes.
+  - Administrador:
+	- A rede, precisa de manutenção e gerenciamento diário, baseado nos 3 pilares 
+	  da segurança.
+  - Software:
+	- SO em um computador não funciona sem um software.
+
+Padrão de Rede:
+  - IEEE
+     - Padrão 802 redes
+
+Topologia de Rede:
+  - Barramento:
+	- Em casa, usamos barramento, vários periféricos ligados a um host.
+	- Redes muito pequenas usam barramento, por conta do baixo custo.
+	- Uso do capo coaxial.
+  - Anel:
+	- Maior comunicação dos utensilios da rede.
+	- Difícil entrar numa rede anel (mais seguro)
+	- Rede de alta performance
+	- Dificil de concentar sem desligar.
+	- Se um pedaço da rede fica foram do ar, ela não fica fora.
+	- Se um host quebra, a rede não quebra
+	- Se o anel quebra, a rede quebra
+  - Estrela:
+	- Rede mais rápida
+	- Cabeamento de par trançado, fibra ótica e sem fio
+	- Gerenciamento centralizado
+	- Fácil de rastrear problemas
+	- Se o switch pifa e ñ tem plano B, fudeu
+	- Overhead: excesso de arquivos
+  - Malha:
+	- Os hosts e LAN se ligam TODES entre si...
+     *A INTERNET PODE SER CONSIDERADA UMA REDE DE MALHA*
+	- Vários caminhos levam a Roma (Roma=host)
+	- Rede com apla cobertura
+	- Agil
+	- Equipamentos caro pá krl
+  - Wireless/Híbrida:
+	- Há duas ou mais topologias diferentes nessa rede
+	- Detecção de falha rápida
+	- É escalvel (há maneiras fáceis de melhorar e aumentar o nº de recursos da
+	  rede)
+
+PROTOCOLO:
+  - É o organizador da baguncia
+  - Se não tiver o protocolo, as coisas não vão e nem veem
+  - São conjuntos de regras e convenções que estabelecem a comunicação entre 
+    dispositivos em uma rede de computadores ou em sistemas de comunicação.
+  - Modelos OSI:
+	- 7 camadas
+	- Trata-se de um modelo didático para transmitir informações
+  - Modelo TCP/IP:
+	- 4 camadas
+	- Resumo e uso das 4 principais camadas do OSI
+	- São elas: Aplicação, Transporte, Rede/Internet e Física (acesso a rede)
+  - HTTP & HTTPS & SSL
+	- Cada protocolo tem sua porta de utilização
+       - Protocolo para transferir dados
+       - Protocolo para extensão do HTTP com segurança
+       - Criptografia
+
+
+PRÓXIMO EPISÓDIO:
+  - Endereçamento IP

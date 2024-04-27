@@ -1,0 +1,248 @@
+C:\Windows\System32>python"Y:\TEC PROG - André\02-24\1.programa.py"
+A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta.
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\1.programa.py"
+PROGRAMA PARA CUMPRIMENTAR O USUARIO
+
+Digite seu nome: Felipe
+Um ótimo sábado para você, Felipe!!!
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\1.programa.py"
+PROGRAMA PARA CUMPRIMENTAR O USUARIO
+
+felipe
+Um ótimo sábado para você, felipe!!!
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\1.programa.py"
+PROGRAMA PARA CUMPRIMENTAR O USUARIO
+
+Digite seu nome= Felipo
+Um ótimo sábado para você, Felipo!!!
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py=
+python: can't open file 'Y:\\TEC PROG - André\\02-24\\2.programa.py=': [Errno 2] No such file or directory
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py"
+PROGRAMA PARA SOMAR 2 NÚMERO
+
+Digite um número: 15
+Digite outro número: 16
+Traceback (most recent call last):
+  File "Y:\TEC PROG - André\02-24\2.programa.py", line 8, in <module>
+    print(primiero, "somado com", segundo, "da", resultado)
+          ^^^^^^^^
+NameError: name 'primiero' is not defined. Did you mean: 'primeiro'?
+
+C:\Windows\System32>
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py"
+PROGRAMA PARA SOMAR 2 NÚMERO
+
+Digite um número: 15
+Digite outro número: 16
+15 somado com 16 da 1516
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py"
+PROGRAMA PARA SOMAR 2 NÚMERO
+
+Digite um número: 15
+Digite outro número: 16
+15 somado com 16 da 31
+
+C:\Windows\System32>python"Y:\TEC PROG - André\02-24\2.programa.py"
+A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta.
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py"
+PROGRAMA PARA SOMAR 2 NÚMERO
+
+Digite um número: felipe
+Traceback (most recent call last):
+  File "Y:\TEC PROG - André\02-24\2.programa.py", line 5, in <module>
+    primeiro=int(input("Digite um número: "))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'felipe'
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py"
+PROGRAMA PARA SOMAR 2 NÚMERO
+
+Digite um número: 13
+Digite outro número: 15.28756773645
+13.0 somado com 15.28756773645 da 28.28756773645
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py"
+PROGRAMA PARA SOMAR 2 NÚMERO
+
+Digite um número: 15
+Digite outro número: 15
+Digite mais um número: 10
+15.0 mais 15.0 mais 10.0 da 40.0
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\2.programa.py"
+PROGRAMA PARA SOMAR 2 NÚMERO
+
+Digite um número: 15
+Digite outro número: 10
+Digite mais um número: 5
+15 mais 10 mais 5 da 30
+
+C:\Windows\System32>python"Y:\TEC PROG - André\02-24\3.programa(triângulo).py"
+A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta.
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\3.programa(triângulo).py"
+Calculadora para Seu Triângulo
+
+Tudo bem? sim
+Vamos calcular o perímetro do seu triângulo? vamos
+Lembrando que você só pode colocar números inteiros e em centímetros
+Digite o primeiro valor: 5
+Digite outro valor: 10
+Digite o ultimu valor: 6
+O perímetro do seu triângulo é 21
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\3.programa(triângulo).py"
+  File "Y:\TEC PROG - André\02-24\3.programa(triângulo).py", line 5
+    print("Lembrando que você só pode colocar números inteiros e em centímetros"\n)
+                                                                                     ^
+SyntaxError: unexpected character after line continuation character
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\3.programa(triângulo).py"
+  File "Y:\TEC PROG - André\02-24\3.programa(triângulo).py", line 13
+    terceiro=int(input("Digite o ultimu valor: "\n))
+                                                 ^
+SyntaxError: unexpected character after line continuation character
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\3.programa(triângulo).py"
+Calculadora para Seu Triângulo
+
+Tudo bem? Sim
+Vamos calcular o perímetro do seu triângulo? Vamos
+Lembrando que você só pode colocar números inteiros e em centímetros
+
+Digite o primeiro valor: 5
+Digite outro valor: 6
+Digite o ultimu valor:
+1
+O perímetro do seu triângulo é 12
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\3.programa(triângulo).py"
+  File "Y:\TEC PROG - André\02-24\3.programa(triângulo).py", line 13
+    terceiro=int(input("Digite o ultimu valor: ")\n)
+                                                  ^
+SyntaxError: unexpected character after line continuation character
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\3.programa(triângulo).py"
+Calculadora para Seu Triângulo
+
+Tudo bem? Sim
+Vamos calcular o perímetro do seu triângulo? Vamos
+Lembrando que você só pode colocar números inteiros e em centímetros
+
+Digite o primeiro valor: 5
+Digite outro valor: 6
+Digite o ultimu valor: 7
+
+
+O perímetro do seu triângulo é 18
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+Com dificuldade no seu exercício de Fisica? sim
+E não encontra resolução na internet? também
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+Digite seu valor em Graus Celsius: 15.0
+Traceback (most recent call last):
+  File "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py", line 10, in <module>
+    resultado=valor*1.8+32
+              ~~~~~^~~~
+TypeError: can't multiply sequence by non-int of type 'float'
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+Com dificuldade no seu exercício de Fisica? sim
+E não encontra resolução na internet? também
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+
+Digite seu valor em Graus Celsius: 32.0
+Em Fahrenhit, o valor é 89.6
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+Com dificuldade no seu exercício de Fisica? so
+E não encontra resolução na internet?
+h
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+
+Digite seu valor em Graus Celsius: 22.0
+
+Em Fahrenhit, o valor é 71.6
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+Com dificuldade no seu exercício de Fisica? Sim
+E não encontra resolução na internet?
+aefij
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+
+Digite seu valor em Graus Celsius: 21354
+
+Em Fahrenhit, o valor é 38469.200000000004
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+Com dificuldade no seu exercício de Fisica? Sim
+E não encontra resolução na internet?
+akjwnf
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+
+Digite seu valor em Graus Celsius: 15
+
+Em Fahrenhit, o valor é 59.0
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+Com dificuldade no seu exercício de Fisica? Sim
+E não encontra resolução na internet? Sim
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+
+Digite seu valor em Graus Celsius: 25
+
+Em Fahrenhit, o valor é 77.0
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+
+Com dificuldade no seu exercício de Fisica? Sim
+E não encontra resolução na internet? SIm
+
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+
+Digite seu valor em Graus Celsius: 45.0
+
+Em Fahrenhit, o valor é 113.0
+
+C:\Windows\System32>python "Y:\TEC PROG - André\02-24\4.calculadoradesgraçada(celsius).py"
+De Celsius para Fahrenheint
+
+Com dificuldade no seu exercício de Fisica? sim
+E não encontra resolução na internet? sim
+
+Estou aqui para te ajudar
+
+Lembre sempre, que a calculadora irá calcular número com virgulas
+
+Digite seu valor em Graus Celsius: 34.0
+
+Em Fahrenhit, o valor é 93.2

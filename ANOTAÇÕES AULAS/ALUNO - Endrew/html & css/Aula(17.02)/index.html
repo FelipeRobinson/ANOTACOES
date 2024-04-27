@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+
+        <title>HTML | Text</title>
+    </head>
+
+    <body>
+        
+        <div class="title">
+            Formatação de texto
+        </div>
+
+        <div class="text">
+            <h1>Cotuca</h1>
+            <h2>Colégio Técnico da Unicamp</h2>
+            <h3>Campinas, 17 de Fevereiro de 2023</h3>
+            <h4>Curso Técnico de Campinas</h4>
+            <h5>Curso Noturno de DS Internet I</h5>
+        </div>
+
+        <div id="line"></div>
+        <br>
+
+        <div class="img">
+            <h1>Colocando imagem e link na página</h1>
+            <a href="https://www.cacaushow.com.br/" target="_blank">
+                <img src="./fig/chocolates.jpg" alt="Imagem de chocolates">
+            </a>
+        </div>
+        <br><br>
+
+        <div class="list">
+            <h1>Aprendendo a fazer listas</h1>
+            
+            <ol type="1">
+
+                <li>Programação Visual</li>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>.NET Core</li>
+                </ul>
+                <br><br>
+
+                <li>Programação WEB</li>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>NODE.JS</li>
+                    <li>LUA</li>
+                </ul>
+                <br><br>
+
+                <li>Programação Mobile</li>
+                <ul>
+                    <li>Android</li>
+                    <li>Swift</li>
+                </ul>
+                <br><br>
+
+                <li>Programação Arduino</li>
+            
+            </ol>
+        </div>
+        <br><br>
+
+        <div class="list2">
+            <h1>lista não ordenada</h1>
+            
+            <ul type="cirle">
+
+                <li>São Paulo</li>
+                <ul type="square">
+                    <li>Campinas</li>
+                    <li>Guarulhos</li>
+                    <li>Vinhedo</li>
+                </ul>
+                <br>
+
+                <li>Minas Gerais</li>
+                <ul type="square">
+                    <li>Belo Horizonte</li>
+                    <li>Uberlândia</li>
+                </ul>
+                <br>
+
+                <li>Santa Catarina</li>
+                <ul type="square">
+                    <li>Joinville</li>
+                    <li>Blumenau</li>
+                    <li>Floripa</li>
+                </ul>
+                <br>
+            
+            </ul>
+        </div>
+        <br><br>
+
+        <div class="tab">
+            <h1>Aprendendo a fazer tabela</h1>
+
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>titulo 1</th>
+                    <th>titulo 2</th>
+                    <th>titulo 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Body1 linha1</td>
+                    <td>Body2 linha1</td>
+                    <td>Body3 linha1</td>
+                </tr>
+                <tr>
+                    <td>Body1 linha2</td>
+                    <td>Body2 linha2</td>
+                    <td>Body3 linha2</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <td>Foot 1</td>
+                    <td>Foot 2</td>
+                    <td>Foot 3</td>
+                </tfoot>
+             </table>
+        </div>
+        <br><br>
+
+        <div class="list2">
+            <h1>Aprendendo a fazer formulário</h1>
+            
+            <form name="frm" method="post" action="xxx">
+                <table>
+                    <tr>
+                        <td>RA</td>
+                        <td><input type="text" name="RA"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Nome</td>
+                        <td><input type="text" name="Nome"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Cidade</td>
+                        <td>
+                            <input type="radio" name="rd_Cidade" value="Campinas">Campinas
+                            <input type="radio" name="rd_Cidade" value="Valinhos">Valinhos
+                            <input type="radio" name="rd_Cidade" value="Vinhedo">Vinhedo
+                            <input type="radio" name="rd_Cidade" value="Sumaré">Sumaré  
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Esporte preferido</td>
+                        <td>
+                            <input type="checkbox" name="cb_esporte" value="Futebol">Futebol
+                            <input type="checkbox" name="cb_esporte" value="Vôlei">Vôlei
+                            <input type="checkbox" name="cb_esporte" value="Basquete">Basquete
+                            <input type="checkbox" name="cb_esporte" value="Natação">Natação
+                            <input type="checkbox" name="cb_esporte" value="Tênis">Tênis
+                            <input type="checkbox" name="cb_esporte" value="Futebol Americano">Futebol Americano
+                            <input type="checkbox" name="cb_esporte" value="Corrida">Corrida
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+
+
+        <br><br><br><br><br><br><br><br>
+    </body>
+
+</html>

@@ -1,0 +1,20 @@
+CONTINUAÇÃO
+
+- CLASSIFICAR TRIÂNGULOS:
+   - while:
+	1 - iniciar/produzir um loop(para que o usuário queira usar o programa
+	    mais de uma vez)
+
+-----------------------------------------
+
+-INTERVALO/FAZER O EXERCÍCIO 58 (Lista 3)
+
+-----------------------------------------
+
+- DESENHAR RETÂNGULOS:
+   - Passo a passo para desenhar retângulos em PYTHON...
+	- qtd = quantidade
+	   - +Lins = valor de linhas na sequência
+	   - +Cols = valor atual (é uma váriavel nomeavel)
+	     /* for i in range(numero)
+    		   print(numero*[numero]) */

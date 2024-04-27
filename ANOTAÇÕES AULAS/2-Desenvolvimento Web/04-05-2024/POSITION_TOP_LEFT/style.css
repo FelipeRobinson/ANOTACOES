@@ -1,0 +1,13 @@
+body {
+    padding-left: 100px;
+}
+
+#figura1 {
+    position: absolute;
+    /*top: 200px;
+    left: 200px;*/
+    margin: 50 100;
+    width: 100%;
+    height: 400px;
+    background-image: url("C.png");
+}

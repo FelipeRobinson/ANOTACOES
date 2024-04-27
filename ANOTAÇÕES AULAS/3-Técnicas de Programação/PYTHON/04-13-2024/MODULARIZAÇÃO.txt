@@ -1,0 +1,58 @@
+MODULARIZAÇÃO:
+  - É fazer partição/separação de atividades em python, deixando de estar misturado tudo
+    no mesmo progrma.
+  - O desempenho do programa, é mediano, não é um tempo exageradamente grande, mas é um tempo
+==============================================================================================
+  - O modulo deve se conectar com o programa
+  - Como fazer:
+def obtencaoDeUmNumeroNatural (pergunta,limite_inferior):
+# definindo o modulo (limite_inferior) 
+   while True:
+	try:
+    	    numero=int(input(perunta))
+   	    if (numero<limite_inferior):
+       		print("Deve-se digitar um número natural acima de 1!")
+    	    else:
+	        break
+	except ValueError:
+    		print("Deve-se digitar um número natural acima de 1!")
+
+	return qtdLins
+
+print("PROGRAMA PARA DESENHAR QUADRADOS VAZADOS\n")
+    # chama o modulo
+    qtdLins=qtdCols=obtencaoDeUmNumeroNatural("Deseja um quadrado de quantas linhas? ",2)
+    # o modulo foi chamado de dois pq não faz sentido ter um quadrado com 0 ou 1 linha...
+
+        col=1
+        while col<=qtdCols:
+            print("O",end="")
+            col=col+1
+        print()
+        
+        lin=2
+        while lin<=qtdLins-1:
+            print("O",end="")
+            col=2
+            while col<=qtdCols-1:
+                print(" ",end="")
+                col=col+1
+            print("O")
+            lin=lin+1
+            
+        col=1
+        while col<=qtdCols:
+            print("O",end="")
+            col=col+1
+        print()
+except ValueError:
+    print("A quantidade de linhas deve ser um inteiro acima de 1!")
+
+============================================================================================
+  - Parte da sintex do 
+C = Creat (cadastrar, armazenar dados)
+R = Read (recuperar dados guardados)
+U = Update (atualizar dados guardados)
+D = Delete (remover dados guardados)
+
+

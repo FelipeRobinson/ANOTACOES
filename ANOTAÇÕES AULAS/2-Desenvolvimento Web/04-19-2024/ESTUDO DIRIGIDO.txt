@@ -1,0 +1,15 @@
+ESTUDO DIRIGIDO:
+
+  • JAVASCRIPT não é JAVA
+  • JAVASCRIPT é uma linguagem ORIENTADA A EVENTOS
+  • JAVASCRIPT é muito parecido com PYTHON
+  • FUNCIONALIDADE:
+	• Interações com formulários
+	• Interações com linguagens dinâmica
+	• Conformidade com padrões web
+  • MODULARIZAÇÃO:
+	• Linkagem coom outras linguagens
+  • SINTAZE:
+	• Objetos internos
+	• Objetos de ambiente
+	• Objetos personalizados

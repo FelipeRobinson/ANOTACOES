@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JAVA</title>
+    <script>
+        function contaAteDezWithWhile() {
+            contador1=2;
+            contador2=1;
+            mensagem=""; 
+            while (contador1<=10) {
+                mensagem=+ "(" + contador1 + ")"
+                while (contador2 %5 !=0) {
+                    mensagem+="  " + contador2;
+                    contador2++;
+                }
+                mensagem+="  " + contador2 + ")" + "<br>";
+                contador2++;
+                contador1=+2;
+                document.write(mensagem)
+            }
+            }
+    </script>
+</head>
+<body>
+    <!-- FAÇA UMA FUNÇÃO EM JS QUE EXIBA A SEGUINTE SEQUÊNCIA DE NÚMEROS:
+        (2, 1 2 3 4 5)
+        (4, 6 7 8 9 10)
+        (6, 11 12 13 14 15) 
+        (8, 16 17 18 19 20)
+        (10, 21 22 23 24 25)
+    -->
+    <script>
+        contaAteDezWithWhile()
+    </script>
+    <script>
+    </script>
+</body>
+</html>

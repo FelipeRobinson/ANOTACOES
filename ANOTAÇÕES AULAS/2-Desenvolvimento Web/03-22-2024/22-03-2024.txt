@@ -1,0 +1,46 @@
+Tag: tudo que fica entre o sinal de meno e maior
+	- Ex: <link>
+	-Obs: 90% das tags, são par, abre e fecha (<table></table>)
+
+Atributos (atb): adjetivos as tags
+	- Ex: <link href="style.css">
+
+
+
+
+------------------------------------------------------------------------
+   - (src, NÃO FUNCIONA)href: linkagem para o arquívo (seja Java, CSS, etc)
+   - atb: 
+	- <div id="#"> tada vez que eu usar essa tag, eu vou usar um 
+	  identificador, EU USO QUANDO EU QUERO UTILIZAR UMA ÚNICA
+	  VEZ NA PÁGINA. No id eu consigo usar uma hierarquia 
+	  (table li li a {})
+	  Para chamar no CSS, usamos o #
+
+	- a tag <nav> serve para por MENUS (nav = navegação)
+
+	- (CSS) margin (na order horária: top, rigth, bottom e left)
+	  sem a menção de qual é, é necessário colocar a top e a left
+
+	- "width" é a largura da tag usada
+	- "height" é a largura da tag usada
+
+	- (CSS) border (primeiro a expessura, depois da largura
+	- (CSS) padding é o espaçamento que o bglh onde tu tá colocando
+	  a tag vai ficar da margem
+	- (CSS) como adicionar uma foto como fundo: 
+	  "background: url(fundo.jtp) no-repeat;" (backgroud sem o color)
+	- (CSS) qual a diferça entre usar o "BACKGOUND-COLOR/BACKGOURND"
+	  o sem o color adiciona a cor a tudo no site, o com o color, adiciona
+	  ao fundo  
+
+	- (HTML) uma <section> é como se fosse uma sessão, onde eu posso
+	  colocar uma img
+	- (HTML) <article> é...
+	- (HTML) <iframe> é um quadro aonde eu poço carregar um HTML
+	  dentro dele
+
+   - atb: class, é quando eu vou usar mais de uma vez
+(SE EU USAR MAIS DE UMA VEZ O id NÃO VAI ACONTECER NADA, PORÉM NÃO CONSIGO
+USAR HIERÁRQUIA)
+(SE ALGO DÁ ERRADO, PODE SER CULPA DA ESCRITA, DO "CHAMAMENTO", OU 

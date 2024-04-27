@@ -1,0 +1,7 @@
+EQUIPE : CARLOS THIAGO GOUVEIA
+	 FELIPE DA COSTA ROBINSON
+	 GABRIEL ZINI CARMINITTI
+
+TEMA: O projeto gira em torno da criação ideologica de um HOTEL, em que oferecemos diversos
+      serviços como SEGURANÇA, MORADIA, CURSOS e ALIMENTAÇÃO (necessidades báscia de um ho-
+      tel), onde a aplicação web visa divulgar e facilitar o acesso a nossos serviços.

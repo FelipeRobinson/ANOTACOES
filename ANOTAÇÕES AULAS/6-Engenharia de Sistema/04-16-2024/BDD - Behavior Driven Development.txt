@@ -1,0 +1,35 @@
+Behavior Driven Development (BDD):
+  - Tentar entender oque está acontecendo com o sistema, com base no modo que o usuário usa o 
+    sistema.
+  - Ele vem pra nos trazer QUALIDADE com FINALIDADE.
+  - Uma técnica de desenvolvimento ágil, para relacionar regras e negócio, com requisitos (oque
+    tem que acontecer), e no critério de Assent. Associado a Teste de software, porém não serve
+    apenas para isso.
+  - Não busca problema, busca uma melhora.
+  - Com o BDD, não existe o 'Me dá mais tempo que eu dou mais qualidade', pois o desenvolvimento
+    funiconam com todos e todos entendem a necessidade dos DEVS.
+  - Beneficios:
+	- Visando o comportamento, as coisas se encaixam, pois a comunicação entre as equipes
+	  será fluidas (as equipes envolvidas no projeto).
+	- Aumento da validação do produto, pois tem todos os cenários definidos, pelo BDD.
+	- Aumento da constância de desenvolvimento do projeto.
+  - Workshop de Descoberta:
+	- Brain Storm:
+		- Todos colocam suas visões sobre o produto.
+		- Os requisitos aparecem durante esse workshop.
+		- Analisar os cenários.
+  - Especificações Executáveis
+  - Scenario (cenário):
+	- GIVEN (descrever o contexto): colocar todas as coisa que precisam acontecer antes de
+				        alguma ação.
+
+  - Cara ideal para executar esse metodo ágil
+	- ANALISTA DE DADOS
+	- DEV SENIOR
+
+  - TDD: Write a failing test; Make the test pass; Refactor;
+ 
+
+  - <SE O CLIENTE NÃO ENTENDER O SEU BDD, VOCÊ NÃO ESTÁ FAZENDO ELE DA FORMA CORRETA>
+  - <OU TODOS USAM, OU NADA FEITO(se o povo de testig estiver usando ok)>
+  - <VERIFICAR A QUALIDADE É TUDO>

@@ -1,0 +1,27 @@
+[1] Criar
+[2] Conexão
+[3] Explorar
+
+-------------
+
+1. Explorar o aplicativo [3] {Fácil}
+	(a facilidade de encontrar o artísta desejado e quais músicas
+	lhe-interessam, um meio de interface básica e prática)
+2. Conectar o Musicfy com o Facebook [2] {Fácil}
+	(alguma ligação direta entre o app de música com o Facebook, para
+	que os apps possam trabalhar o compartilhamento de informações de
+	maneira mais rápida e eficiente)
+3. Receber recomendações de amigos [2] {Médio}
+	(a conexão entre o face e o music, devem executar esse trabalho,
+	analisando as músicas e os artístas em que as pessoas tem em
+	comum)
+2. Criar playslists baseadas no seus artístas favorítos [2] {Médio}
+	(O próprio app, baseado no seu histório de músicas, deverá conecta 
+	os dados a uma playslist)
+4. Explorar as playslists [3] {Fácil}
+	(usar a interface para poder acessar, editar e criar novas
+	playlists, ou modificar as já criadas)
+5. Criar playslists compartilhadas [2] {Médio}
+	(o app deverá usar um servidor, ou rede, para conectar contas
+	para que eles consigam criar uma playlist com músicas e facilidades
+	de edição que todos consigam alterar a qualquer hora)

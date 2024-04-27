@@ -1,0 +1,31 @@
+DIAGRAMAÇÂO:
+
+Entidades:
+	- objeto do mundo real que existe e é disitinguível dos outros
+	  objetos
+  - Retângulos
+
+Relacionamentos:
+	- associação entre duas ou mais entidades
+  - Losângo
+  - Tipos:
+	- Simples:
+	  - Representado por um relacionamento (duas entidades, um 
+	    relacionamento)
+	- Autorelacionamento
+
+Atributos:
+  - Simples
+  - Composto
+  - Multi-Valorável
+
+---------------------------------------------------------------------
+
+USANDO EXCEL:
+  - Não posso ter a duplicidade (norma de duplicidade), se na coluna, diver
+    mais de um igual, apaga;
+  - Não crie nome de tabelas com acênto, 'de maneira correta';
+  - Não contamos o ID para o usuário;
+
+  - Entidades viram tabela, de qualquer jeito; 
+  - Relacionamentos temos que pensar.

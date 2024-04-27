@@ -1,0 +1,51 @@
+- PROTOCOLOS (SOFTWARE_)
+   - São as regras, os formatos e a ordem das mensagens enviadas e recebidas pelos hosts de
+     de rede;
+   - São as ações a serem tomadas an transmissão e recepção de mensagens;
+
+
+
+- PROTOCOLOS DE REDE:
+  - HTTP - Hyper text transfer protocol
+  - HTTPS - Hyper text transfer protocol secure
+  - FTP - File transfer Protocol 
+  - TFTP - Trivial file transfer protocol
+  - DHCP - Dynamic hos configuration protocol
+  - DNS - Domain name system
+
+
+
+- MODELO OSI:
+  - criado em 1983;
+  - Modelo didático que tentar dar uma refêrencia para cada ação executada na comunicação
+    entre os sistemas de computadores e redes;
+  - Referência (do 1 ao 7 é o empacotamento, do 7 ao 1 é o desempacotamento):
+	1. Física
+	  - Estabelece uma comunicação entre os hosts
+	2. Ligação de dados
+	  - detecta os erros que podem ocorrer na camada física
+	3. Rede (IP, ICMP, NAT)
+	  - endereça os hosts e os caminhos percorridos pelas pacotes de dados
+	4. Transporte (TCP, UDP)
+	  - detecta erro durante o caminho dos pacotes de dados
+	5. Sessão (SIP,NETBIOS)
+	  - comunicação entre processos de host diferentes
+	6. Apresentação (TLS)
+	  - converte os dados em formato adequado
+	7. Aplicação (HTTPS, FTP)
+	  - aplica funcionalmente os sites, app, etc.
+
+(do 7 ao 1 é o empacotamento, do 1 ao 7 é o desempacotamento)
+
+
+
+- MODELO TCP/IP
+  - Trabalha com as quatro camadas princiais do OSI;
+  - São elas:
+	1. Link/Acesso a rede
+	2. Internet/Rede
+	3. Transporte
+	4. Aplicação
+  - Esse modelo consiste em camadas que executam as funções necessárias para preparar
+    dados para transmissão por uma rede.
+  - 

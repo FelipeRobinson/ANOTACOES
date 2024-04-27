@@ -1,0 +1,72 @@
+NOME: Felipe Da Costa Robinson      RA: 24464    DATA: 23/04/2024
+
+Diagrama de casos de Uso:
+  - WHATSAPP:
+-------------------------------------------------------------------------------------------
+  - DADO; QUANDO e ENTÃO (Tópicos para executar dissertativamente um caso de uso)
+	- DADO: Onde e oque você deve fazer para conseguir executar a ação
+	- QUANDO: Qual a ação que você irá executar (+ importante) *PERGUNTA*
+	- ENTÃO: Oque acontece após você executar a ação *RESPOSTA*
+----------------------------------------------------------------------------------------------
+DADO (Estou com o app aberto;
+      Estou na lista de conversas)
+QUANDO (Acesso uma conversa de contato)
+ENTÃO (Devo ver a tela da conversa; 
+       devo ver o nome do contato da conversa; 
+       devo ver a foto do contato; 
+       devo ver o status do contato; 
+       devo ver o icone de camera; 
+       devo ver o icone de telefone; 
+       devo ver o icone de menu; 
+       devo ver as conversas com o contato; 
+       devo ver um campo para a digitação de nova mensagem; 
+       devo ver o icone de microfone)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa; 
+      Não tenho o app com permissão de acesso à câmera)
+QUANDO (Dou a permissão)
+ENTÃO (devo ver a solicitação de acesso à câmera)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa;
+      Tenho acesso a câmera)
+QUANDO (Clico no icone de câmera)
+ENTÃO (devo ter a camera do aparelho aberta; 
+       devo ter uma chamada de vídeo iniciada)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa; 
+      Não tenho o app com permissão de acesso ao microfone)
+QUANDO (Dou a permissão)
+ENTÃO (devo ver a solicitação de acesso ao microfone)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa;
+      Estou na lista de conversar)
+QUANDO (Clico no icone de telefone)
+ENTÃO (Devo ter o microfone do aparelho ligado;
+       Devo ter uma chamada de áudio iniciada)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa)
+QUANDO (Clico no menu)
+ENTÃO (Devo ver VER CONTATO;
+       Devo ver MIDIAS, LINKS e DOCS;
+       Devo ver PESQUISA;
+       Devo ver SILENCIAR NOTIFICAÇÕES;
+       Devo ver MENSAGENS TEMPORÁRIAS;
+       Devo ver PAPEL DE PAREDE;
+       Devo ver MAIS...)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa)
+QUANDO (Clico no campo de mensagem)
+ENTÃO (Devo ter acesso a enviar a mensagem no lugar do microfone;
+       Devo ter acesso ao teclado)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa;
+      Estou com a mensagem digitada)
+QUANDO (Clico para enviar a mensagem)
+ENTÃO (Devo ver a mensagem na conversa)
+----------------------------------------------------------------------------------------------
+DADO (Estou na tela de conversa)
+QUANDO (Clico no icone de microfone)
+ENTÃO (Devo iniciar uma gravação de áudio;
+       Devo ter acesso a gravar áudio sem ficar segurando;
+       Devo ter acesso a apagar o áudio gravado;
+       Devo ter acesso a enviar o áudio gravando)

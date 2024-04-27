@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    margin-top: 220px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+legend {
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(136, 255, 255);
+}
+
+fieldset{
+    margin-top: 20px;
+    width: 200px;
+    background-color: rgb(146, 207, 248);
+}
+
+p {
+    margin: 25px;
+}
+
+.btn {
+    width: 70px;
+    height: 25px;
+    background-color: #000;
+    font-size: 15px;
+    color: #fff;
+}

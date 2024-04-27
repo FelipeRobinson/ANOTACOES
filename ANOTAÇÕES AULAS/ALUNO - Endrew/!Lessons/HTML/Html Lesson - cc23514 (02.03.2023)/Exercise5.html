@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Exercício 5 | Google Class</title>
+
+    </head>
+
+    <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" style="margin-left: 370px; margin-top: 125px; line-height: 25px; background-color: rgb(173, 216, 230);">
+
+        
+            <form name="formulary" method="post" action="mailto:endrew.s2302@gmail.com?subject=Formulário" target="_blank" style="width: 900px;">
+                <b>
+                <label>
+                    <span>Nome </span><input type="text" name="Nome" size="40" maxlength="50" required="">
+                </label>
+
+                <label style="margin-left: 22px;">
+                    <span>Email </span><input type="text" name="Email" size="30" maxlength="30" required="">
+                </label>
+
+                <br>
+
+                <label>
+                    <span>Celular com DDD </span><input type="text" name="celphone" size="15" maxlength="15" placeholder="19 99999-9999" required="">
+                </label>
+
+                <label style="margin-left: 115px;">
+                    <span>Hora desejada </span><input type="time" name="hour" required="">
+                </label>
+
+                <br>
+
+                <label>
+                    <span>Seu site </span><input type="text" name="site" size="25" maxlength="40">
+                </label>
+
+                <label style="margin-left: 115px;">
+                    <span>Senha  </span><input type="password" name="password" size="13" maxlength="20" required="">
+                </label>
+
+                <br>
+
+                <label>
+                    <span>Data Nasc </span><input type="date" name="nascimento" size="40" maxlength="50" required="">
+                </label>
+
+                <label style="margin-left: 193px;">
+                    <span>Cor favorita </span><input type="color" name="corfav" value="#000">
+                </label>
+
+                <br>
+
+                <label>
+                    <span>Qtde Filhos </span><input type="number" name="filhos" min="0" max="10" required="">
+                </label>
+
+                <label style="margin-left: 234px;">
+                    <span>Peso </span>0 kg<input type="range" name="peso" min="0" max="200" id="id1" required="">200 kg <br><span id="f" style="font-weight: bold; color: #000; margin-left: 500px;"></span> kg
+                </label>
+
+                <br>
+
+                <label>
+                    <span>Sexo </span><br><br><input type="radio" name="rd_sexo" value="Masculino" required="">Masculino
+                    <br>
+                    <input type="radio" name="rd_sexo" value="Feminino" required="">Feminino
+                </label>
+
+                <br>
+
+                <label>
+                    <span>Estado </span><select name="estado">
+                        <option selected>SP</option>
+                        <option>MG</option>
+                        <option>SC</option>
+                        <option>RJ</option>
+                        <option>AL</option>
+                        <option>MT</option>
+                        <option>PR</option>
+                        </select>
+                </label>
+                
+                <br>
+
+                <label>
+                    <span>Mensagem </span><br><textarea cols="60" rows="5"></textarea>
+                </label>
+                
+                <br>
+                </b>
+            
+                <input type="reset"  name="btn_Limpar" value="Reset">
+                <input type="submit" name="btn_Enviar" value="Enviar">
+            
+            </form>
+        
+
+    </body>
+
+    <script>
+        var slideCol = document.getElementById("id1");
+        var y = document.getElementById("f");
+        y.innerHTML = slideCol.value;
+
+        slideCol.oninput = function() {
+            y.innerHTML = this.value;
+        }
+
+        slideSq.oninput = function() {
+            y.innerHTML = this.value;
+        }
+
+        slidePic.oninput = function() {
+            y.innerHTML = this.value;
+        }
+    </script>
+
+</html>

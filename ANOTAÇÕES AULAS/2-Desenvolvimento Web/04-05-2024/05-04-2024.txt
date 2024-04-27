@@ -1,0 +1,18 @@
+REVISÃO PT-2
+
+  - Diferença:
+	- Id:
+	  - Chamado apartir de uma DIV, usado quando a referência não se repete outra vez.
+	  - Melhor com imagens
+	- Class:
+	  - Chamado dentro de uma TAG e é usado quando irá se repetir.
+	  - Não funciona muito bem com hierarquias.
+
+  - Position, top and left:
+	- 
+	- 
+	- 
+
+  - Chamamento:
+	- HREF: é uma página hamando html, é um HIPER LINK REF;
+	- SRC: é uma página chamando html, um arquivo lincando uma imagem no browser.

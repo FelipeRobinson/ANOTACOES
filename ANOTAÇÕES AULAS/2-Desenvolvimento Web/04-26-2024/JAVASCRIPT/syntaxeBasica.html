@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando em JS</title>
+    <script>
+        // ** CRIANDO FUNÇÕES **
+        function convesandoComUsuario() {            
+            // vamos aprender a exibir uma mensagem de ALERTA
+            alert("Boa noite! Sejam Bem Vindos ao JS");
+            // aprendendo a exibir uma mensagem de CONFIRMAÇÃO
+            resposta = confirm("Certeza que deseja aprender JS?");
+            document.write("Resposta do usuário = " + resposta);
+        }
+
+        function recebeNome() {
+            // exibir uma mensagem de coleta de dados
+            nome = prompt("Qual o seu nome?");
+            return nome;
+        }
+
+        function contaAteDezWithWhile() {
+        // COMANDOS DE REPETIÇÃO
+        contador = 1;
+        mensagem = "";  
+        while (contador<=10) {
+            mensagem+="  " + contador;
+            contador++
+        }
+        alert(mensagem);
+        }
+
+        function contaAteDezWithFor () {
+            // FOR
+            mensagem = "";
+            for (contador=1; contador<=10; contador++) {
+                mensagem += "  " + contador;
+            }
+            alert(mensagem);
+        }
+
+        function sorteiaNumero() {
+            valor = Math.floor(Math.random() * 100 + 1)
+            return valor
+        }
+    </script>
+</head>
+<body>
+    <script>
+        // chamada da function (função) conversandoComUsuario()
+        convesandoComUsuario();
+        document.write("<br>" + recebeNome() + ", vamos aprender JS!")
+        idade = prompt("Qual a sua idade?");
+        if (idade>=19) {
+            alert("BEM VINDOS AO SITE PORNO GAY!");
+        }
+        else {
+            alert("Sorry Brow! Tu ainda é pivete");
+        }
+
+        // FREIRA TRILINGUE (FALA PORTUGUÊS, INGLÊS E A SUA LINGUA ZINI)
+        // && = AND
+        // || = OR
+        numero = prompt("Digite um numero qualquer: ")
+        if (numero>0 && numero<=100) {
+            alert("OK. Valor válido!");
+        }
+        else {
+            alert("Valor inválido")
+        }
+
+        // COMANDOS DE REPETIÇÃO
+        contaAteDezWithWhile();
+        contaAteDezWithFor();
+        
+        alert(sorteiaNumero())
+        
+    </script>
+</body>
+</html>

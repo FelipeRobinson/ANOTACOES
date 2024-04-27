@@ -1,0 +1,20 @@
+1º AULA:
+  - book: 
+	- Redes de computadores teoria e prática
+  - Matéria: Fala sobre redes físicas, cabos e etc.
+-------------------------------------------------------------------------
+  - Tecnologia de Informação:
+	- Criação do computador:
+		- Para facilitar e acelerar a resolução de contas, etc.
+	- Evolução da Tecnologia.
+		- Uso e praticidade de redes e da tecnologia
+-------------------------------------------------------------------------
+  - Assembler:
+	- Conhecido como KOBOOL
+	- Linguagem de baixo nível
+	- Um linguagem de programação
+  - IBM:
+	- 1º criadora de software (microcircuitos)
+	- Construtora de ship
+	- FORTRAN e KOBOOL
+  - LINGUAGEM VISUAL:

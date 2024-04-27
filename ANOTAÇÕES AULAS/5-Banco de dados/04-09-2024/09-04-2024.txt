@@ -1,0 +1,12 @@
+COTINUAÇÃO DO SQL SERVER:
+
+  - Criando tabela e numerando uma variável:
+	{create table dbo.departamento(
+		codigo int  identity not null,
+		nome varchar(30) not null,
+		
+		constraint pk_departamento primary key (codigo) 
+	)}
+
+  - APP pike Visual Code para DBO
+	- AZURA DATA STUDIO

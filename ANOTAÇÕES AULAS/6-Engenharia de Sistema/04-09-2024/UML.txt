@@ -1,0 +1,30 @@
+UML
+Diagrama de Caso de Uso
+(Métodos ágeis de Desenvolvimento de Sistemas):
+
+--------------------------------------------------------------------
+
+  - Fazer caso de uso!
+  - Organizar a execução de um projeto.
+  - VOCÊ QUER QUE EU DESENHE? SIM... (diagramação)
+  - Técnicas
+	- Descrição escrita, para especificar as funcionalidade,
+	  alguém para descorrer oque aqui representa para o sistema.
+	- Diagrama de caso de Uso:
+		- Serve para entender uma funcionalidade dentro de um
+		  projeto.
+		- Definir o backlog da table.
+		- UML (linguagm de definição de modelos), ela exige uma
+		  série de diagramas que nos ajuda a entender.
+	- BDD (comportamentos usando uma linguagem específica)
+  - USER CASE:
+	- Ele documento oque o diagrama faz, um DESING basicamente.
+	- Decidir e descrever os requisitos funcionais do sistema.
+	- Fornesce descrição clara e conscitente a funcionalidade do 
+	  sistema, pelo fato de ser um desenho.
+	- SEMPRE NA VISÃO DO USUÁRIO
+	- COMPONENTES:
+		- Cenário: passo a passo da interação com o sistema
+		- Ator: quem solicita e oferece informações
+		- Casos de uso: tarefa solicitada pelo ator
+		- Comunicação: forma de conexão entre o ator e o usuário

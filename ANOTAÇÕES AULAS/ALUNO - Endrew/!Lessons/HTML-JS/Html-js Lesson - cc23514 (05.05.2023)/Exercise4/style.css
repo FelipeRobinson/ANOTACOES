@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+fieldset {
+    margin-top: 250px;
+    background-color: rgb(177, 224, 255);
+    width: 500px;
+}
+
+.seura {
+    margin-right: 16px;
+}
+
+.suaid {
+    margin-left: 3px;
+}
+
+p {
+    margin: 20px;
+}
+
+legend {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bttn {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+    background-color: #ccc;
+    font-size: 15px;
+    color: #000;
+    border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+LISTAS:
+   Listas são variáveis capazes de armazenar diversos valores ao 
+    mesmo tempo
+   Listas podem ser vazias (sem nenhum elemento)
+   Os valores armazenados em uma lista são chamados de elementos
+   Listas homogêneas são listas, cujos elementos, têm todos o 
+    mesmo tipo
+   Listas heterogêneas são listas cujos elementos podem ter tipos variados
+   Listas podem ter elementos que também são listas
+   Os elementos de uma lista são numerados da esquerda para a 
+    direita a partir de 0 (zero)
+   Os elementos de uma lista são numerados da direita para a 
+    esquerda a partir de -1 (menos um)
+   Listas podem ser modificadas, ou seja, podemos incluir, 
+    atualizar e remover elementos de uma lista
+
+FATIAMENTO/SLICING
+
+
+
+Codação:
+  - Append
+  - remove
+  - del
+  - insert
+  - copy

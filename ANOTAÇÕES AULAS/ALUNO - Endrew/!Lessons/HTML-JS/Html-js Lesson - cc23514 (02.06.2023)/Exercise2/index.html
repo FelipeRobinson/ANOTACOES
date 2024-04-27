@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+        <title>Exercise 2</title>
+
+    </head>
+
+    <body>
+
+        <form action="">
+    
+            <label for="inicial">Capital inicial investido</label>
+            <input type="text" name="inicial" id="inicial" pattern="[0-9]+" title="Só pode conter números!" required><br><br>
+
+            <label for="taxa">Taxa de juros (%)</label>
+            <input type="text" name="taxa" id="taxa" pattern="[0-9]+" title="Só pode conter números!" required><br><br>
+
+
+            <label for="time">Tempo de investimento (meses)</label>
+            <input type="text" name="time" id="time" pattern="[0-9]+" title="Só pode conter números!" required><br><br>
+
+            <input type="submit" value="Calcular resultado" onclick="calc()">
+
+        </form>
+        
+    </body>
+
+</html>

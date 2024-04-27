@@ -1,0 +1,9 @@
+CONTINUAÇÃO:
+   - Tipos de relacionamento:
+	- Relacionamento Simples:
+	  ENTIDADE(0,N)  --  Relacionamento  --  (0,N)DISCIPLINA
+	            ||  
+	       cardinalidade
+
+	- Relacionamento entre três entidades:
+	  

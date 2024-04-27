@@ -1,0 +1,138 @@
+Z:\>py
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(True<False)
+False
+>>> print(True>False)
+True
+>>> print("kkkkkkkkk")
+kkkkkkkkk
+>>> if
+  File "<stdin>", line 1
+    if
+      ^
+SyntaxError: invalid syntax
+>>> print(True and False)
+False
+>>> print(Falsa and Trie)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Falsa' is not defined. Did you mean: 'False'?
+>>> print(Falsa and True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Falsa' is not defined. Did you mean: 'False'?
+>>> print(Falsa and True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Falsa' is not defined. Did you mean: 'False'?
+>>> print(False and True)
+False
+>>> print(True and True)
+True
+>>> ^Z
+
+
+Z:\>py
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> nota_mais_que_5=True
+>>> freq_mais_que_75=True
+>>> print(nota_mais_que_5 and freq_mais_que_75)
+True
+>>> nota_mais_que_5=True
+>>> freq_mais_que_75=False
+>>> print(nota_mais_que_5 and freq_mais_que_75)
+False
+>>> nota_mais_que_5=False
+>>> freq_mais_que_75=False
+>>> print(nota_mais_que_5 and freq_mais_que_75)
+False
+>>> gato_preto_tem_sete_vidas=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> gato_preto_tem_sete_vidas=True
+>>> gato_ciano_tem_sete_vidas
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'gato_ciano_tem_sete_vidas' is not defined. Did you mean: 'gato_preto_tem_sete_vidas'?
+>>>
+>>>
+>>> print(True or True)
+True
+>>> print(True or False)
+True
+>>> print(False or False)
+False
+>>> nota_mais_que_5=True
+>>> freq_mais_que_75=True
+>>> )
+  File "<stdin>", line 1
+    )
+    ^
+SyntaxError: unmatched ')'
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> nota_menos_que_5=True
+>>> freq_menos_que_75=True
+>>> print(notas_menos_que_5 or freq_menos_que_75)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'notas_menos_que_5' is not defined. Did you mean: 'nota_menos_que_5'?
+>>> print(nota_menos_que_5 or freq_menos_que_75)
+True
+>>> nota_menos_que_5=True
+>>> freq_mais_que_75=False
+>>> print(nota_menos_que_5 or freq_menos_que_75)
+True
+>>> nota_menos_que_5=False
+>>> freq_mais_que_75=True
+>>> print(nota_menos_que_5 or freq_menos_que_75)
+True
+>>> nota_menos_que_5=False
+>>> freq_mais_que_75=False
+>>> print(nota_menos_que_5 or freq_menos_que_75)
+True
+>>> nota_menos_que_5=True
+>>> freq_menos_que_75=False
+>>> freq_menos_que_75=False
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> nota_menos_que_5=False
+>>> freq_menos_que_75=False
+>>> print(nota_menos_que_5 or freq_menos_que_75)
+False
+>>>
+>>>
+>>>
+>>>
+>>> nota=7
+>>> freq=80
+>>> print(nota>=5 and freq>=75)
+True
+>>>
+>>> x="nintendo"
+>>> print(x)
+nintendo
+>>>
+>>>
+>>> nota=7
+>>> freq=80
+>>> print(nota<5 or freq<75)
+False
+>>>
+>>>
+>>>
+>>> print("felipe gosta da alexia" .upper())
+FELIPE GOSTA DA ALEXIA
+>>> print("FELIPE GOSTA DA ALEXIA" .lower())
+felipe gosta da alexia

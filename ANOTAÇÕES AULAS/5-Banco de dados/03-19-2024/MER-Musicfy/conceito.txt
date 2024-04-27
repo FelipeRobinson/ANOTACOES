@@ -1,0 +1,43 @@
+Peoples:
+ - Abi
+ - Bart
+ - Cloe
+   Relação:
+    - Podcast que BART gosta
+
+Relação:
+ - Baseadas em artístas favorítos
+ - App } Face
+ - 
+-------------------------------------------
+Cliente:
+ - Bart
+   - Muscify
+	conectar
+   - Facebook
+ - Abi
+ - Cloe
+
+Produto:
+ - App, Muscify
+
+Pedido:
+ - Playlists;
+ - Podcasts;
+ - músicas baseadas em artístas favorítos;
+
+--------------------------------------------
+Entidades:
+ - Usuário (Cloe, Bart e Abi)
+ - Facebook
+
+Relacionamentos:
+ - explorar
+ - conectar
+ - encontro
+
+
+
+
+
+

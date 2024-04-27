@@ -1,0 +1,44 @@
+1º aula:
+   - Apresentação do professor e do curso;
+   - Disciplina importântissima, pois reprova.
+
+
+   - Prompt de Comando:
+	- As coisas bonitas, chamam front-end
+	- As coisas feias, ficam no back-end
+	   - essa matéria foca no back-end
+
+------------------------------------------------
+COMEÇANDO
+   - 1º passo (ativar o python):
+	- C:\ProgamFiles\Pyhton312\Python
+	- C:\arquivos de programas\python312\python
+	   - no CMD (computador)
+	   - no navegador (python.org/shell)
+
+   - Em python (Converçando com python):
+	- >>>: (é o sinal para escrever em python)
+	- Z:\> (prompt no cmd)
+
+
+   - TAG:
+	- print (escreve na tela)
+	- sep"   " (espaçamento no escrito)
+	- Ex: [print(''abcde'',123,''Paulo'')]
+
+		 essas aspas servem
+		     escrita
+	      [print('abcde123Paulo')]
+	      [(contra barra)n] = serve para pular linha (pode ser cumulativo)
+								em html = <br>
+
+	      [(contra barra*2)n] = printa o contra barra n
+	      [contra barra] = é entendido como uma introdução no comando
+
+	      [print(2**3)] = ** elevado]
+	      [print(X**0,5)] = raiz quadrada (por causa da potência de 0,5)
+
+	      [print(13/5)] = 2.6
+	      [print(13//5)] = 2
+
+	      [print(13%5)] = 3 (mostra o quanto sobrou após a equação)

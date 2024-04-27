@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family:'Times New Roman', Times, serif;
+    background-color: rgba(24, 104, 173, 0.3);
+}
+
+main {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/* MENU */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+	background-color: #666;
+	color: #fff;
+	padding: 20px;
+    width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+nav a {
+	color: #000;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+    background-color: #ccc;
+	transition: background-color 0.2s ease-in-out;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #fff;
+	background-color: #44426a;
+}/* FIM DO MENU */
+
+#line{
+    margin-top: 155px;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+#skills h2 {
+    margin-top: 0px;
+    padding-top: 90px;
+    text-align: center;
+}
+
+#photo {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#img {
+    width: 25%;
+    height: 220px;
+    background-image: url("https://i.ibb.co/0Z8FjRM/me.jpg");
+    background-repeat: no-repeat;
+    margin-left: 75px;
+    background-size: 100%;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+
+#list h2 {
+    margin-top: 20px;
+    margin-left: 220px;
+    padding: 0;
+}
+
+#list ul{
+    margin-left: 200px;
+}
+
+#list li {
+    padding: 10px;
+}
+
+#l1 {
+    margin: 0;
+}
+
+#l2{
+    margin-left: 75px;
+}
+
+#l3 {
+    margin-left: 15px;
+}
+
+#l4 {
+    margin-left: 100px;
+}
+
+#l5 {
+    margin-left: 30px;
+}
+
+#courses {
+    margin-top: -15px;
+}
+
+#curses h2 {
+    text-align: center;
+}
+
+#curses {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th,
+table td {
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+table td {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+table #resume{
+    text-align: justify;
+}
+
+aside {
+	padding: 10px;
+}
+
+#hobbies{
+    margin-top: 20px;
+    padding-top: 90px;
+    margin-bottom: 50px;
+}
+
+#hobbies p {
+    font-size: 18px;
+}
+
+#conthobbies {
+    background-color: #bebebe;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#contprojects {
+    padding: 20px;
+    background-color: #bebebe;
+    border-radius: 10px;
+}
+
+.cont h2 {
+    text-align: center;
+}
+
+.cont p {
+    text-align: justify;
+}
+
+#projects{
+    margin-top: 20px;
+    padding-top: 90px;
+    margin-bottom: 120px;
+}
+
+#projects p {
+    font-size: 18px;
+}
+
+footer {
+	background-color: #212121;
+	padding: 10px;
+	text-align: center;
+    color: #fff;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #272367;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d1a4d;
+}/* FIM DA SCROLL BAR */

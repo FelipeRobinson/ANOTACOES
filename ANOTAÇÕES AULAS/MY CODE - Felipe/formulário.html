@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+            <table align="rigth" border="1" whidth="70%">
+                <tr>
+                    <td>Nome</td>
+                    <td>
+                        <input type="text" name="txt_Nome" size="40" maxlength="40">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>eMail</td>
+                    <td>
+                        <input type="text" name="txt_eMail" size="40" maxlength="40">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Idade</td>
+                    <td>
+                        <input type="number" name="txt_Idade" size="40" maxlength="3">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Cidade</td> <!-- radio é um circulo de pergunta, com apenas uma resposta -->
+                    <td>
+                        <input type="radio" name="rd_Cidade" value="CP">Campinas
+                        <input type="radio" name="rd_Cidade" value="SU">Sumaré
+                        <input type="radio" name="rd_Cidade" value="BG">Barão Geraldo
+                        <input type="radio" name="rd_Cidade" value="PA">Paulinia
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Esporte</td> <!-- checkbox é um quadrado de pergunta, com várias respostas resposta -->
+                    <td>
+                        <input type="checkbox" name="rd_cx_Esporte" value="FUT">Futebol
+                        <input type="checkbox" name="rd_cx_Esporte" value="BAS">Basquete
+                        <input type="checkbox" name="rd_cx_Esporte" value="VGM">Vídeo Game
+                        <input type="checkbox" name="rd_cx_Esporte" value="NAT">Natação
+                        <input type="checkbox" name="rd_cx_Esporte" value="TRU">Truco
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Curso</td>
+                    <td>
+                        <select name="sel_Curso">
+                            <option>Técnico em Informática</option>
+                            <option>Técnico em Infermagem</option>
+                            <option>Técnico em Plasticos</option>
+                            <option>Técnico em Mectrônica</option>
+                            <option>Técnico em Desenvolvimento de Sistema</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Coments</td>
+                    <td>
+                        <textarea cols="50" rows="1"></textarea>
+                    </td>
+                </tr>
+
+                
+            </table>
+            <br>
+            <center>
+                <input type="button" name="btn_Gravar" value="Salvar">
+                <input type="submit" name="btn_Copiar" value="Copiar">
+                <input type="reset" name="btn_Limpar" value="Limpar Campos">
+            </center>
+
+
+    </body>
+</html>

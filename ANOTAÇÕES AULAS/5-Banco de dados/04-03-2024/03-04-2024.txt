@@ -1,0 +1,85 @@
+USO DO SQL:
+
+Sistema de Gerenciamento de Banco de Dados (SGBD):
+  - Serve para gerenciar os dados usados e de que
+    maneira vamos administrar e usar as informações
+    do usuário;
+  - Login:
+	- Server type: Database Engine
+	  (tipo de servidor que vamos acessar)
+	- Server name: regulus.cotuca.unicamp.br
+	  (servidor do cotuca)
+	- Authentication: SQL Server Authentication
+	  (para saber qual servidor seguir)
+		- User name: BD24464
+		- Password: CCfelipe28@@
+  - Teoria:
+	- A linguagem SQL representa um conjunto de 
+	  comandos responsáveis pela definição das
+	  estruturas das tabelas e comandos 
+	  resposáveis (editar) pela atualização dos
+	  dados em um SGBD.
+	- Comandos DDL
+	   - Conjunto de comandos resposáveis pela 
+	     consulta e atualização de dados
+	   - Não decore, ENTENDA.
+	   - Pessoas que sabem inglês, se darão melhor
+	     pois são comandos literáis.
+	   - Creat Table:
+	   	- Criar a estrutura de uma tablea definido
+	     	as colunas (campos) e as chaves primárias
+	     	e estrangeiras existentes
+	   	- estrutura: CREATE TABLE <nome-tabela>
+			     <nome -coluna> <tipo-do-dados> [NOT NULL]
+	   		     PRIMARY KEY (nome-coluna-chave)
+			     FOREING KEY (nome-coluna-chave-estrangeira)
+					REFERENCE (nome-tabela-pai)
+	  - Alter Table:
+	   	- Serve para alterar a estrutura de tabela, não as informações,
+		acrescentando, tirando, editando.
+		- estrutura: ALTER TABLE <nome-tabela>
+			     DROP <nome-coluna>
+			     ADD <nome-coluna> <tipo-do-dados> [NOT NULL]
+	   		     RENAME <nome-coluna> <novo-nome-coluna>
+			     RENAME TABLE <novo-nome-tabela>
+			     MODIFY <nome-coluna> <tipo-do-dado> [NULL]
+						[NOT NULL]
+						[NOT NULL WITH DEFAULT]
+			     ADD PRIMARY KEY <nome-coluna>
+			     DROP PRIMARY KEY <nome-coluna>
+			     ADD FOREING KEY (nome-coluna-chave-estrangeira)
+					REFERENCE (nome-tabela-pai)
+					ON DELETE [RESTRICT]
+						  [CASCADE]
+						  [SET NULL]
+			     DROP FOREING KEY (nome-coluna-chave-estrangeira)
+					REFERENCE (nome-tabela-pai)
+			     DROP TABLE mata a estrutura e os dados existentes na
+					tabela
+	  - Creat Index:
+		- Criar uma estrutura de índice de acesso para uma determinada coluna
+		em uma tabela. Um índice de acesso permite um acesso mais rápido aos 
+		dados em uma operação de seleção. Eles podem ser criados a partir de
+		um ou mais campos de uma tabela.
+	- Drop Index:
+		- Matar sem mais nem menos.
+
+Table:
+  - Uso de tabelas, só nos importa a tabela.
+  - Quando quiser conversar com o banco de dados,
+    aperte CTRL + N (para criar uma QUERY)
+  - Tomar cuidado para não abrir em MASTER, e sim
+    no seu RA********
+
+Tipo de Dados:
+  - Tamanho de armazenamento: Bits/Bytes
+	- Bits : Um bit é a menor unidade de dados em um sistema de computação. 
+	Ele pode ser 0 ou 1, representando um estado binário. A abreviação "b" 
+	é usada para bits. Por exemplo, 8 bits são escritos como 8b.
+	- Bytes: Um byte é uma unidade de informação que geralmente é composta 
+	por 8 bits. É comum usar a abreviação "B" para bytes. Por exemplo, 1 
+	byte é escrito como 1B, e 8 bits são equivalentes a 1 byte. 
+
+  - Como usar de maneira efetiva, os textos, os números, essas coisas simbólicas.
+  - Cada tipo trás quantidades, e modelos/type diferentes como 'text', 'numb',
+    'submit', etc

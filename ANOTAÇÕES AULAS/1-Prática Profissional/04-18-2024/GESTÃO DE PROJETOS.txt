@@ -1,0 +1,68 @@
+CRIAÇÃO DE UM BACKLOG P/O SITE DO CINEMA:
+
+
+#EX: PREPARAR UMA LAZANHA (COM BACKLOG)
+  - Pesquisar receitra da lasanha bolonhesa
+  - Olhar na dispensa verificando o que já tem em casa
+  - Montar uma lista de compras
+  - Vai ao supermercado comprar o que falta
+  - Preparar o molho vermelho
+  - Preparar o molho branco
+  - Preparar a massa da lasanha
+  - Separar os frios
+  - Montar a lasanha
+  - Assar a lasanha
+  - Preparar a mesa de jantar
+  - Receber convidados
+  - Servir a lasanha
+	# criamos a sequencia de ações para criar uma lasanha
+  Próximo passo
+	# fazer os ÉPICOS (separa em tipos de execução que aquela ação)
+
+------------------------------------------------------------------------------
+MONTAR O 'MER' DA APLICAÇÃO WEB							 ENVOLVEU BANCO
+										 É 'BACK'
+
+CRIAÇÃO DAS TABELAS NO BANCO DE DADOS						 ENVOLVEU DESING
+ 										 E PARTE VISUAL
+										 'FRONT'
+POPULAR OS DADOS NAS TABELAS FIXAS
+
+ELABORAR O DESING DA APLICAÇÃO WEB
+
+PESQUISAR ESTRUTURAS DE 'CSS' PARA O DESING
+
+DESENVOLVIMENTO DO FRONT (HTML + CSS + javascript)
+
+CADASTRO DE ACESSO (LOGIN/SENHA) (FRONT)
+CADASTRO DE ACESSO (LOGIN/SENHA) (BACK)
+
+CADASTRO DE CLIENTE (FRONT)
+CADASTRO DE CLIENTE (BACK)
+
+CADASTRO DE FILMES (FRONT)
+CADASTRO DE FILMES (BACK)
+
+CADASTRO DE HORÁRIOS'FILMES (FRONT)
+CADASTRO DE HORÁRIO'FILME (BACK)
+
+INGRESSO (FRONT)
+INGRESSO (BACK)
+
+INTEGRAÇÃO COM 'PIX'
+INTEGRAÇÃO COM 'CARTÃO DE CREDITO'
+INTEGRAÇÃO COM 'BOLETO'
+
+RESERVA DE LUGAR NA PLATEIA
+
+COMPRAR INGRESSO
+
+CONSULTAR GRADE FILMES
+
+CONSULTAR PROMOÇÕES
+
+APLICAR O DESCONTO DA PROMOÇÃO DO INGRESSO
+
+ENVIO DE MENSAGEM OU E-MAIL CONFIRMANDO A COMPRA DO INGRESSO
+
+EXIBIR A LOCALIZAÇÃO

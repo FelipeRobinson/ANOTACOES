@@ -1,0 +1,21 @@
+CONVERSANDO COM PYTHON (OPERADORES RELACIONAIS):
+  - True/False} print(3>5)      >>>print(3<5)
+	l	False              True
+  se colocar uma 
+  sentença, ele
+  vai se tornar 
+  True or False
+
+  - print(3<=3)
+	menor ou
+	  igual
+
+  - Igual>>> 3==5   >>>3==3
+	 >>> False  True
+
+  - Diferente  >>>(3!=5)
+	!=
+
+  - >>>PRINT(''André''<''Ana'')
+    False (pois andré não vem antes de ana)
+

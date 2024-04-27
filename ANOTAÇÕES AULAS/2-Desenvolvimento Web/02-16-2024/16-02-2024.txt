@@ -1,0 +1,35 @@
+1º aula (parte exclusiva p/WEB):
+   - Iremos trabalhar (site auxiliar: https://w3schools.com):
+	- HTML5.0   -   1º
+	- CSS 3.0   -   2º
+	- Javascript -  3º
+
+   - books (partes de design):
+	- Flexbox in CSS
+	- HTML5
+	- Pensar em tipos (UX)
+
+   - Cursos:
+	- Professor Guanabara
+	   - HTML5
+	   - CSS3
+	- Udemy (site de estudo)
+	- Alura (site de estudo)
+
+   - Avaliação Individual:
+	- Provas
+	- Projetos
+	- Lista de exercícios
+
+--------------------------------------------------
+   - VISUAL STUDIO CODE
+	- Extensão
+	   - Drácula: coloração
+
+
+
+
+	*mapear rede:
+		\\venus\u24464
+
+	  - Aula para apresentar as tags básicas

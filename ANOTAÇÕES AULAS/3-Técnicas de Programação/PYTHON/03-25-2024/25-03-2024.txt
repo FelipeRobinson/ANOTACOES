@@ -1,0 +1,40 @@
+PERGUNTAS:
+  - Como e onde eu uso "While True:"
+    (é necessário fechar, quando eu uso a tag?)
+  - Como e onde eu uso "if, else e elif"
+  - Como fechar um loop
+  - Como encontrar minha melhor lógica de
+    programação (é só programando?)
+
+
+--------------------------------------------------
+
+- LÓGICA:
+   - Detectar quais são os números primos;
+   - Detectar o intervalo dos números dentro da
+     ordem que o usuário
+
+--------------------------------------------------
+1º tentativa (Chat GPT):
+
+print("PROGRAMA DOS NÚMEROS PRIMOS")
+while True:
+    def eh_primo(numero):
+        if numero <= 1:
+            return False
+        for divisor in range(2, int(numero**0.5) + 1):
+            if numero % divisor == 0:
+                return False
+        return True
+    
+    limite_inferior = int(input("Digite o limite inferior do intervalo: "))
+    limite_superior = int(input("Digite o limite superior do intervalo: "))
+    
+    print(f"Números primos no intervalo de {limite_inferior} a {limite_superior}:")
+    for numero in range(limite_inferior, limite_superior + 1):
+        if eh_primo(numero):
+            print(numero)
+
+--------------------------------------------------
+2º tentativa (Chat GPT):
+

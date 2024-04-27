@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: aliceblue;
+}
+
+form {
+    margin-left: 600px;
+    margin-top: 250px;
+}

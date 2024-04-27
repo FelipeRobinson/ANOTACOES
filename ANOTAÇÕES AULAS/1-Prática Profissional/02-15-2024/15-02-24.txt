@@ -1,0 +1,15 @@
+1º aula:
+   - Explicação/apresentação da professora e da matéria.
+	- Matéria integrada com as outras, basicamente sobre trabalhos e projetos.
+	    - Em equipes
+	    - Entregas quinzenais
+		- Parciais
+   - 2 projetos no semestre
+   - Calculo da média
+	- Feito com variável
+
+-------------------------------------------------------------------------------------
+    - Marcador de TI:
+	- Framework                 - IA                             - Ficar sempre de olho nas
+	- Kobol                     - Dev Front (agora full)           soft's skills que um 
+	- Metodologia (+-1990)          (+-2023)                       programador deve ter...

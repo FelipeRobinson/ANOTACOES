@@ -1,0 +1,54 @@
+body {
+    background-color: aquamarine;
+    font: 88% verdana;
+    color: blueviolet;
+}
+
+ul#menu, ul#menu ul {
+    padding: 0px;
+    margin: 0px;
+    width: 149px;
+    border-bottom: 1px solid #CCC;
+    background: #FFF;
+    font-size: 100%;
+}
+
+ul#menu li a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    border: 1px solid #CCC;
+    border-bottom: 0px;
+}
+
+ul#menu li {
+    position: relative;
+    list-style-type: none;
+}
+
+ul#menu ul {
+    position: absolute;
+    display: none;
+    left: 149px;
+    top: 0;
+}
+
+ul#menu li:hover ul ul,
+ul#menu li:hover ul ul ul {
+    display: none;
+}
+
+ul#menu li:hover ul,
+ul#menu li li:hover ul,
+ul#menu li li li:hover ul {
+    display: block;
+}
+
+ul#menu li .submenu:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+ul#menu li a {
+    padding: 2px 5px;
+}

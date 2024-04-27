@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+}
+
+header {
+    z-index: 1000;
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    border-radius: 10px;
+    color: #000;
+}
+
+nav ul li:hover > ul,
+nav ul li.submenu-active > ul {
+    display: flex;
+    margin-left: -50px;
+}
+
+nav ul ul {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    border-radius: 10px;
+    padding-top: 1px;
+}
+
+nav ul ul li {
+    width: 120px;
+    padding-right: 5px;
+    border-radius: 10px;
+
+}
+
+nav ul ul li a {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #e20;
+    transition: background-color 0.3s;
+}
+nav ul ul li a:hover {
+    background: rgb(197, 30, 0);
+    border-radius: 10px;
+}
+
+nav ul li:hover > a {
+    background: #e20;
+    border-radius: 10px;
+}
+
+.center {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.center h1 {
+  color: #fff;
+  font-size: 30px;
+  padding: 15px 0px 30px 0px;
+}
+
+.movie-item {
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+}
+
+.movie-item img {
+  width: 300px;
+  height: 450px;
+  transition: all 0.5s ease-out;
+}
+
+.movie-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.movie-item:hover .overlay {
+  opacity: 1;
+}
+
+.movie-item .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.movie-item .overlay-content h2 {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-size: 18px;
+  width: 200px;
+}
+
+.movie-item .overlay-content p {
+  margin-bottom: 0;
+}
+
+.movie-item .overlay-content a {
+  display: block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item .overlay-content a:hover {
+  background-color: #fff;
+  color: #e50914;
+}
+
+footer {
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-left: 15px;
+}

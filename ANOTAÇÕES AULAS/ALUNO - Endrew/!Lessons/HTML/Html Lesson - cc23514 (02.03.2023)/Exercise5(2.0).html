@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title>Cadastro</title>
+        
+    </head>
+    <body style="background: rgb(173, 216, 230)">
+        
+        <h1 align="center">Cadastro</h1>
+        <br><br><br>
+
+        <form>
+
+            <table align="center" method="post" action="xxx" target="blank_">
+
+                <tr>
+                    <td><label>Nome</label></td>
+                    <td><input type="text" name="nome" id="nome"></td>
+                    <td><label>Email</label></td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Celular com DDD</label></td>
+                    <td><input type="text" value="19 999999999" id="celular"></td>
+                    <td><label>Hora desejada</label></td>
+                    <td><input type="time" id="hora"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Seu Site:</label></td>
+                    <td><input type="url" id="site"></td>
+                    <td><label>Data Nasc</label></td>
+                    <td><input type="date" value="2023-03-03" id="datanasc"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Cor Favorita</label></td>
+                    <td><input type="color" id="cor"></td>
+                    <td><label>Qtde Filhos</label></td>
+                    <td><input type="number" size="3" id="filhos"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Peso</label></td>
+                    <td><input type="range" min="20" max="150" step="1" id="peso"></td>
+                    <td><label>Gênero</label></td>
+                    <td><input type="radio" name="genero" value="Masculino" id="masculino">Masculino
+                        <br>
+                        <input type="radio" name="genero" value="Feminino" id="feminino">Feminino
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Estado</label></td>
+                    <td><select name="estado" id="estado">
+                        <option value="1">SP</option>
+                        <option value="2">MG</option>
+                        <option value="3">SC</option>
+                        <option value="4">RJ</option>
+                        <option value="5">PR</option>
+                        </select>
+                    </td>
+                    <td>Mensagem</td>
+                    <td><textarea name="text" id="text" cols="30" rows="4"></textarea></td>
+                </tr>
+
+                
+
+            </table>
+            
+            <center>
+
+            <input type="reset"  name="btn_Limpar" value="Reset">
+            <input type="submit" name="btn_Enviar" value="Enviar">
+            
+            </center>
+        
+        </form>
+
+    </body>
+</html>

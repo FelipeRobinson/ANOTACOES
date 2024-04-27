@@ -1,0 +1,56 @@
+INTEGRANTES: 
+  . Carlos Thiago Gouveia
+  . Felipe Robinson
+  . Gabriel Zini
+  . Miguel Richena
+
+-------------------------------
+
+ATIVIDADE BACKLOG:
+  - GOOGLE CLASSROOM
+
+[1]ABAS
+[2]MENU
+[3]TURMAS
+
+INICIO [1]{médio}
+    . cards das turmas, acesso a inscrições em outras turmas, acesso a aba de menus, 
+      acesso a logar em uma conta;
+    . Nomes das matérias, foto do adm da sala;
+    . Menções a trabalhos e atividades.
+
+NAV BAR[2]{médio}
+    . Acesso ao início e turmas, abas, datas de entrega de atividade, suas inscrições, pendentes,
+      configurações e turmas arquivadas.
+
+ATIVIDADE [3]{médio}
+    . Acesso a trabalhos e pendencias;
+    . Lista de materiais publicados pelo administrador;
+    . Botão de escolha de materiais e trabalhos.
+
+MURAL [3]{difícil}
+    . Acesso ao mural;
+    . Postagem e menções a atividades;
+    . Comentários para turma e feed de entregas e anotações de aulas;
+    . Botão de acesso a atividades pendentes.
+
+PENDENTES[2]{médio}
+    . Botão para acesso de atividades e pendencias localizado na data;
+    . Acesso a turmas (de sua escolha);
+    . Abas de acesso a atividades não entregues e concluidas.
+
+AGENDA[2]{difícil}
+    . Acesso a atividades e entragas por data (semanal, mensal);
+    . Escolha do acesso a qual turmas voce verá (atividades);
+    . Botão para avançar semanas.
+
+PESSOAS [3]{fácil}
+    . Acesso a contatos entre professores e participantes da turma.
+
+CONFIGURAÇÕES[2]{médio}
+    . Acesso a edição de perfil;
+    . Gerenciamento de contas;
+    . Funções atribuidas a notificações.
+
+TURMAS ARQUIVADAS[2]{médio}
+    . Acesso a turmas arquivadas.

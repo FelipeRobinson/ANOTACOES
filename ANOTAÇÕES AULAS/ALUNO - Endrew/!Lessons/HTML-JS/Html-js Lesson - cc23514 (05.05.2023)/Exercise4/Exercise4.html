@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Exercice 4</title>
+
+    </head>
+
+
+    <body>
+
+        <form id="Form">
+            <fieldset>
+
+                <legend>Fomulário</legend>
+
+                <p>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" maxlength="40" placeholder="Ex: Endrew Oliveira" required>
+                </p>
+
+                <p>
+                    <label for="ra" class="seura">RA</label>
+                    <input type="text" id="ra" name="ra" pattern="[0-9A-Z]{5}" placeholder="Ex: 23514" required>
+                </p>
+
+                <p>
+                    <label for="age" class="suaid">Idade</label>
+                    <input type="number" id="age" name="age" min="1" max="100" placeholder="Ex: 18" required>
+                </p>
+
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z]+\.[a-zA-Z]+.[b-r]{2,}" placeholder="Ex: endrew@gmail.com.br" required>
+                </p>
+
+                <div class="bttn"><button type="submit" class="btn">Enviar</button></div>
+
+            </fieldset>
+        </form>
+          
+        <script src="./functions.js"></script>
+          
+
+    </body>
+
+</html>

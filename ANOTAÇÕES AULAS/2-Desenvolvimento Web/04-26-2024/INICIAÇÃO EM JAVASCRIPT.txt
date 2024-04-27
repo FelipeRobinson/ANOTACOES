@@ -1,0 +1,19 @@
+INICIAÇÃO EM JAVASCRIPT:
+-----------------------------------------------------
+  - A syntex primária é o 'chamamento' 
+	<script></script>
+  - Comentário é /* */ ou //
+  - No JS tem diferença de minúsculo para maiúsculo
+  - Mensagem de alert: alert("#")
+  - Mensagem de confirmação: confirm("#")
+    (O objeto de confirmação, transforma sua
+     em True or False)
+
+  - Classe{}
+  - características = atributos
+  - comportamentos = métodos = FUNÇÕES
+
+
+
+
+(PERGUNTAS: - Não entendi a lógica do RETURN)
