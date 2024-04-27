@@ -1,0 +1,97 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+table {
+    border-width: 1px;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    font-size: 20px;
+    width: 80px;
+    height: 20px;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+h3 {
+    color: grey;
+    font-size: 20px;
+}
+
+h4 {
+    color: black;
+    font-size: 20px;
+}
+
+.colorBlue{
+    color: blue;
+    font-size: 20px;
+}
+
+.colorRed {
+    color: red;
+    font-size: 20px;
+}
+
+.colorGrey {
+    color: rgb(126, 125, 125);
+    font-size: 20px;
+}
+
+#alighLeft {
+    text-align: left;
+}
+
+#omg {
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.metais-alcalinos {
+    background-color: rgba(242, 200, 64, 0.815);
+}
+
+.metais-representativos {
+    background-color: rgba(128, 255, 179, 0.375);
+}
+
+.metais-alcalinos-terrosos {
+    background-color: yellow;
+}
+
+.semi-metais {
+    background-color: green;
+    width: 49px;
+}
+
+.metais-de-transicao {
+    background-color: orange;
+    width: 49px;
+}
+
+.nao-metais {
+    background-color: rgb(0, 255, 0);
+}
+
+.lantanideos {
+    background-color: rgb(249, 229, 188);
+}
+
+.halogenios {
+    background-color: rgba(53, 209, 121, 0.668);
+}
+
+.actinideos {
+    background-color: pink;
+}
+
+.gases-nobres {
+    background-color: rgba(29, 168, 255, 0.799);
+}
