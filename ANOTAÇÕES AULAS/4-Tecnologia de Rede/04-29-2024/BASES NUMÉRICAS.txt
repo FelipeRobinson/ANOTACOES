@@ -1,0 +1,4 @@
+BASES NUMÉRICAS:
+---------------------------------------------------------------------------------
+  - Revendo como transformar números binários em decimal e números decimais em binário
+  - Fazendo exercícios e executando tabelas no EXEL
