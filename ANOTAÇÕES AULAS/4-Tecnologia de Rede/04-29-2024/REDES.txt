@@ -1,0 +1,21 @@
+MÁSCARAS DE REDE:
+-----------------------------------------------------------------
+  - Oque é máscara de rede? Ela que ajuda o intervalo em uma rede;
+  - Oque acontece se eu usar uma rede Classe A com uma máscara de Classe C?
+	- A rede apenas terá uma quantidade de IP's pequena.
+  - Para saber se os IP's estão na mesma rede você precisa analisar a máscara.
+  - Quando olhar para uma máscara, você deve determinar quantos bits são usados
+    para rede e host.
+
+MÁSCARA: 255.255.255.240
+
+
+
+Máscaras classicas:
+  - Classe A = 255.0.0.0
+  - Classe B = 255.255.0.0
+  - Classe C = 255.255.255.0
+
+      11111111.11111111.11111111.00000000
+      11111111.11111111.11111111.00101110
+	255   .   255  .   255  .   46
