@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1 - HTML with JS</title>
+    <script>
+        function dandoBoasVindas() {
+            alert("Boa noite... seguindo com JS!");
+        }
+
+        function clicouNoButton_1() {
+            alert("Entrando na função 1...");
+        }
+
+        function clicouNoButton_2() {
+            document.write("Campinas, 03 de maio de 2024");
+        }
+
+        function mudaCorTitulo(novaCor) {
+            // var serve para criar uma variável
+            var element = document.getElementById("texto");
+            // elemento = frase (onde está o id=texto)
+            element.style.color = novoCor;
+        }
+
+        function formatacaoTitulo() {
+            titulo = documento.getElementById("tituloPrincipal");
+            titulo.style.backgroundColor = "#FF0000";
+            titulo.style.border = "5px solid #BB00FF";
+            titulo.style.fontFamily = "Tahoma";
+            titulo.style.fontSize = "14px";
+
+            camposDeEntrada = document.getElementByName("titulo1");
+            camposDeEntrada[0].style.backgroundColor = "#FF0000";
+            camposDeEntrada[1].style.border = "4px solid #FF000";
+            camposDeEntrada[2].style.fontSize = "30px";
+
+            frases = document.getElementByClassName("subTitulo");
+            frases[0].style.fontWeight = "bold";
+            frases[1].style.fontStyle = "italic";
+        }
+        
+        // uma variável pode ser global caso seja criada fora das functions
+
+        function init() {
+            formatacaoTitulo()
+        }
+        window.onload = init;
+    </script>
+</head>
+<body onload="dandoBoasVindas();">
+    <!-- o "onload" irá mostrar um alerta logo que a pg se iniciar -->
+    <p id="texto">Colegio Técnico de Campinas</p>
+    <br>
+    <button onclick="mudaCorTitulo('blue');">AZUL</button>
+    <button onclick="mudaCorTitulo('red');">VERMELHO</button>
+    <br><br>
+    <h1 id="tituloPrincipal">Aprendendo GetElementByID - JS</h1>
+    <!-- getElementByName("name") -->
+    Nome do curso........: <input type="text" name="titulo1"><br>
+    Data Inicio do curso: <input type="text" name="titulo1"><br>
+    Duração do curso.....: <input type="text" name="titulo1"><br>
+    <!-- getElementByClassName("nome da classe") -->
+    <p class="subTitulo">Hoje eu sofro com JS (Fazendo uma CALCULADORA)</p>
+    <p class="subTitulo">Usando HTML, CSS e JS</p>
+</body>
+</html>
