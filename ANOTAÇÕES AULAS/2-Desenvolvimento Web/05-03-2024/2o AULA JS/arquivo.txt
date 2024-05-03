@@ -33,13 +33,7 @@
 
             camposDeEntrada = document.getElementsByName("titulo1");
             camposDeEntrada[0].style.backgroundColor = "#FF0000";
-            camposDeEntrada[0].style.border = "4px solid #FF000";
-            camposDeEntrada[0].style.fontSize = "30px";
-            camposDeEntrada[1].style.backgroundColor = "#FF0000";
             camposDeEntrada[1].style.border = "4px solid #FF000";
-            camposDeEntrada[1].style.fontSize = "30px";
-            camposDeEntrada[2].style.backgroundColor = "#FF0000";
-            camposDeEntrada[2].style.border = "4px solid #FF000";
             camposDeEntrada[2].style.fontSize = "30px";
 
             frases = document.getElementsByClassName("subTitulo");
@@ -55,8 +49,7 @@
         window.onload = init;
     </script>
 </head>
-<!-- onload="dandoBoasVindas();"> -->
-<body>
+<body onload="dandoBoasVindas();">
     <!-- o "onload" irá mostrar um alerta logo que a pg se iniciar -->
     <p id="texto">Colegio Técnico de Campinas</p>
     <br>
