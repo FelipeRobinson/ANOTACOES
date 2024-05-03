@@ -21,22 +21,22 @@
             // var serve para criar uma variável
             var element = document.getElementById("texto");
             // elemento = frase (onde está o id=texto)
-            element.style.color = novoCor;
+            element.style.color = novaCor;
         }
 
         function formatacaoTitulo() {
-            titulo = documento.getElementById("tituloPrincipal");
-            titulo.style.backgroundColor = "#FF0000";
-            titulo.style.border = "5px solid #BB00FF";
+            titulo = document.getElementById("tituloPrincipal");
+            titulo.style.backgroundColor = "#ff0000";
+            titulo.style.border = "5px solid #bb00ff";
             titulo.style.fontFamily = "Tahoma";
             titulo.style.fontSize = "14px";
 
-            camposDeEntrada = document.getElementByName("titulo1");
+            camposDeEntrada = document.getElementsByName("titulo1");
             camposDeEntrada[0].style.backgroundColor = "#FF0000";
             camposDeEntrada[1].style.border = "4px solid #FF000";
             camposDeEntrada[2].style.fontSize = "30px";
 
-            frases = document.getElementByClassName("subTitulo");
+            frases = document.getElementsByClassName("subTitulo");
             frases[0].style.fontWeight = "bold";
             frases[1].style.fontStyle = "italic";
         }
@@ -44,7 +44,7 @@
         // uma variável pode ser global caso seja criada fora das functions
 
         function init() {
-            formatacaoTitulo()
+            formatacaoTitulo();
         }
         window.onload = init;
     </script>
@@ -58,9 +58,9 @@
     <br><br>
     <h1 id="tituloPrincipal">Aprendendo GetElementByID - JS</h1>
     <!-- getElementByName("name") -->
-    Nome do curso........: <input type="text" name="titulo1"><br>
+    Nome do curso: <input type="text" name="titulo1"><br>
     Data Inicio do curso: <input type="text" name="titulo1"><br>
-    Duração do curso.....: <input type="text" name="titulo1"><br>
+    Duração do curso: <input type="text" name="titulo1"><br>
     <!-- getElementByClassName("nome da classe") -->
     <p class="subTitulo">Hoje eu sofro com JS (Fazendo uma CALCULADORA)</p>
     <p class="subTitulo">Usando HTML, CSS e JS</p>
