@@ -20,3 +20,18 @@ PYTHON com BANCO DE DADOS:
 
   - Estamos aprendendo Banco de Dados RELACIONAIS (tendo mais modelos para executar dados)
     - Banco de dados que organizam os dados em tabelas
+
+
+  - APLICANDO:
+    - Devemos intalar o pyobdc direto no cmd e aplicar o code em .txt e abrir o arquivo no cmd
+  
+  
+  obtemConexao.conexao=None
+  def obtemConexao (driver, servidor, usuario, senha, bd)
+    if obtemConexao.conexao == none:
+      obtemConexao.conexao = pyodbc.connect(f"Driver = (driver):"
+                                            f"Server = (servidor):"
+                                            f"UID = (usuario):"
+                                            f"Pwd = (senha):"
+                                            f"Database = (bd):")
+    return obtemConexao.conexao
