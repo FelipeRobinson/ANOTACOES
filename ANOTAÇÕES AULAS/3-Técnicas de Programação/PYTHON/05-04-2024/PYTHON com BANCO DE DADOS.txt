@@ -1,2 +1,22 @@
 PYTHON com BANCO DE DADOS:
 -----------------------------------------------
+  - Apenas arquivos guardam dados persistêntes;
+  - Programas: SQL Server Maneger Studio & SQL 'Regulus' (grava os arquivos)
+				(os dois estão ligados)
+			     (até mesmo quando n queremos)
+			  (ele cria arquivos e não nos mostra)
+  - A ligação entre PY e BDD está na criação de arquivos que guardam mensagens indesejadamente;
+  - Os BDD dão suporte a *transação (*é o conjunto de operações que realizam uma ação em conjunto
+    com um sentido, interdependentes);
+      - Commands in BDD
+	 - BEGGIN TRANSECTION = (aciona a *transação)
+  	 - COMMIT = aciona tudo no BD
+  	 - GROUBACK = desfaz tudo do BD
+  - Redes protegem arquivos (no nosso caso, é uma proteção grosseira)
+  - o BDD tem um nível alto de sutileza (ele guarda muitas informações, que as vezes nem sabemos
+    que existe, os famosos META-DADOS)
+     - Dados que sabemos que existe = DADOS
+     - Dados que não sabemos que existe = META-DADOS
+
+  - Estamos aprendendo Banco de Dados RELACIONAIS (tendo mais modelos para executar dados)
+    - Banco de dados que organizam os dados em tabelas
