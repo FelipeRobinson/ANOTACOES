@@ -90,15 +90,6 @@ alter table ct_CAMPEONATO
 	add DataInicio smalldatetime not null,
 		DataFim smalldatetime not null
 
-create table ct_CAMPEONATO_JOGADOR (
-	idCampeonato INT not null,
-	idJogador INT not null
-
-	PRIMARY KEY (idCampeonato, idJogador)
-	CONSTRAINT fk_ct_CAMPEONATO_JOGADOR_ct_CAMPEONATO FOREIGN KEY (idCampeonato) REFERENCES ct_CAMPEONATO (id),
-	CONSTRAINT fk_ct_CAMPEONATO_JOGADOR_ct_JOGADOR FOREIGN KEY (idJogador) REFERENCES ct_JOGADOR (id)
-)
-
 create table ct_TIME_JOGADOR (
 	idTime INT not null,
 	idJogador INT not null
@@ -124,19 +115,19 @@ SELECT * FROM ct_ESTADO
 
 --============================================================ EXERCÍCIO 2 ============================================================================--
 -- 1) Inserir uns valores na tabela ESTADO
-INSERT INTO ct_ESTADO (id,Nome)
-VALUES ('SP','São Pedro'),
-	   ('MG','Minas Gerais'),
-	   ('RJ','Rio de Janeiro'),
-	   ('ES','Espirito Santo'),
-	   ('AC','Acre'),
-	   ('AL','Alagoas'),
-	   ('AP','Amapá'),
-	   ('AM','Amazonas'),
-	   ('BA','Bahia'),
-	   ('CE','Ceará'),
-	   ('DF','Distrito Federal'),
-	   ('GO','Goiás'),
+INSERT INTO ct_ESTADO (Nome)
+VALUES ('São Pedro'),
+	   ('Minas Gerais'),
+	   ('Rio de Janeiro'),
+	   ('Espirito Santo'),
+	   ('Acre'),
+	   ('Alagoas'),
+	   ('Amapá'),
+	   ('Amazonas'),
+	   ('Bahia'),
+	   ('Ceará'),
+	   ('Distrito Federal'),
+	   ('Goiás'),
 	   ('Maranhã'),
 	   ('Mato Grosso'),
 	   ('Mato Grosso do Sul'),
@@ -153,25 +144,43 @@ VALUES ('SP','São Pedro'),
 	   ('Sergipe'),
 	   ('Tocantins')
 
--- 2) Selecione todos os campos dos registros da tabela ESTADO
 
+-- 2) Selecione todos os campos dos registros da tabela ESTADO
 SELECT * 
 FROM ct_ESTADO
 
--- 3)
 
-INSERT INTO ct_CIDADES (Nome)
-VALUES ('Campinas'),
-	   ('Valinhos'),
-	   ('Indaiatuba'),
-	   ('Belo Horizonte'),
-	   ('Niterói'),
-	   ('Petropolis'),
-	   ('Vitoria'),
-	   ('Vila Velha'),
-	   ('Recife'),
-	   ('Belém'),
-	   ('Curitiba'),
-	   ('Mato Grosso'),
-	   ('Sergibe'),
-	   ('Tocantins')
+-- 3)Insira as cidades relacionando os idEstado com o estado da tabela ESTADO
+INSERT INTO ct_CIDADES (Nome,idEstado)
+VALUES ('Campinas',1),
+	   ('Valinhos',1),
+	   ('Indaiatuba',1),
+	   ('Belo Horizonte',2),
+	   ('Niterói',3),
+	   ('Petropolis',3),
+	   ('Vitoria',4),
+	   ('Vila Velha',4),
+	   ('Recife',19),
+	   ('Belém',18),
+	   ('Curitiba',16),
+	   ('Cuibá',14),
+	   ('Aracajú',26),
+	   ('Palmas',27)
+
+SELECT * FROM ct_CIDADES
+SELECT * FROM ct_ESTADO
+
+-- 4) Selecione o nome da Cidade e o nome do Estado de todos os registro
+SELECT ct_CIDADES.Nome as CIDADE, ct_ESTADO.Nome as ESTADO
+FROM ct_CIDADES, ct_ESTADO
+WHERE ct_CIDADES.idEstado = ct_ESTADO.id;
+
+
+-- 5) Select all in table CIDADE
+SELECT * FROM ct_CIDADES
+
+
+-- 6) Select every camps with 'registro' in SÃO PEDRO
+SELECT *
+FROM
+WHERE
