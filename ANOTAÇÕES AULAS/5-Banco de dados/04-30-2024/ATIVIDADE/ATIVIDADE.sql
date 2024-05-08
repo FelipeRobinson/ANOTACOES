@@ -141,7 +141,7 @@ alter table ct_TIME
 
 -- 15) Apague a tabela ESTADO
 alter table ct_CIDADES
-	drop CONSTRAINT fk_ct_CIDADE_ct_ESTADO
+	drop CONSTRAINT fk_ct_CIDADES_ct_ESTADO
 
 drop table ct_ESTADO			
 
@@ -156,9 +156,14 @@ alter table ct_CAMPEONATO_TIME
 drop table ct_CAMPEONATO
 
 -- 18) Apague tudo
-drop table ct_TIME
+alter table ct_TIME
+	drop constraint fk_ct_TIME_ct_CIDADES
 
-drop table ct_CAMPEONATO_JOGADOR
+alter table ct_TIME_JOGADOR
+	drop constraint fk_ct_TIME_JOGADOR_ct_JOGADOR
+
+
+drop table ct_CAMPEONATO_TIME
 
 drop table ct_CIDADES
 
@@ -166,8 +171,6 @@ drop table ct_JOGADOR
 
 drop table ct_TECNICO
 
-drop table ct_CAMPEONATO
-
 drop table ct_TIME_JOGADOR
 
-drop table ct_CAMPEONATO_TIME
+drop table ct_TIME
