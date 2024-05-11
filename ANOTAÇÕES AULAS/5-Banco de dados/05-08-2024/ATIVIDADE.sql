@@ -1,4 +1,4 @@
---============================================================ EXERCÍCIO 1 ============================================================================--
+--============================================================ PARTE 1 ============================================================================--
 create table ct_TIME (
 	id INT not null,
 	Nome VarChar(20) not null,
@@ -111,9 +111,10 @@ create table ct_CAMPEONATO_TIME (
 alter table ct_TIME
 	add idTecnico INT IDENTITY not null
 
-SELECT * FROM ct_ESTADO
+SELECT * 
+FROM ct_ESTADO
 
---============================================================ EXERCÍCIO 2 ============================================================================--
+--============================================================ PARTE 2 ============================================================================--
 -- 1) Inserir uns valores na tabela ESTADO
 INSERT INTO ct_ESTADO (Nome)
 VALUES ('São Pedro'),
@@ -167,8 +168,11 @@ VALUES ('Campinas',1),
 	   ('Aracajú',26),
 	   ('Palmas',27)
 
-SELECT * FROM ct_CIDADES
-SELECT * FROM ct_ESTADO
+SELECT * 
+FROM ct_CIDADES
+
+SELECT * 
+FROM ct_ESTADO
 
 -- 4) Selecione o nome da Cidade e o nome do Estado de todos os registro
 SELECT ct_CIDADES.Nome as CIDADE, ct_ESTADO.Nome as ESTADO
@@ -181,6 +185,25 @@ SELECT * FROM ct_CIDADES
 
 
 -- 6) Select every camps with 'registro' in SÃO PEDRO
-SELECT *
-FROM
-WHERE
+SELECT ct_CIDADES.Nome as CIDADE
+FROM ct_CIDADES
+INNER JOIN ct_ESTADO on ct_ESTADO.id = ct_CIDADES.idEstado
+WHERE ct_ESTADO.Nome = 'São Pedro'
+
+
+-- 7) Altere o valor 'São Pedro' para 'São Paulo'
+UPDATE ct_ESTADO
+SET Nome = 'São Paulo'
+WHERE Nome = 'São Pedro'
+
+
+-- 8) Select again 'noma da Cidade' and 'nome do Estado' for all tables CIDADES
+SELECT ct_CIDADES.Nome as CIDADE, ct_ESTADO.Nome as ESTADO
+FROM ct_CIDADES, ct_ESTADO
+WHERE ct_CIDADES.idEstado = ct_ESTADO.id;
+
+
+-- 9) Delete estado for table ESTADO 
+DELETE
+FROM ct_ESTADO
+WHERE Nome = 'Pará'
