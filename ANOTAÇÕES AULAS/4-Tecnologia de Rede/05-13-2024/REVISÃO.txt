@@ -1,0 +1,33 @@
+CALCULOS EM MÁSCARA DE IP:
+-------------------------------------------------------------------------------------------
+  -Exercitando:
+1. Vamos descobrir
+a) o endereço de rede
+b) o endereço de broadcast
+c) a quantidade de endereços IPs válidos para os dados abaixo:
+
+IP = 74.125.137.157
+MR = 255.255.255.128
+
+IP de rede: 74.125.137.
+
+
+2. Outro exercício
+
+IP = 200.144.183.244
+
+
+
+MR = 255.255.255.224
+	  
+224 = 11100000
+5*0 = 2^^5 = 32 bits.
+
+
+3. Outro exercício
+IP = 143.106.213.77/25
+
+MR = 255.255.255.128
+
+Ips: 254 (os ips possíveis menos o broadcast e o ip da rede) - 128 (bits de rede) = 126
+
