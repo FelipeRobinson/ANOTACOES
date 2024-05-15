@@ -1,0 +1,13 @@
+KAN BAN:
+---------------------------------------------------------------------------------------
+
+  - Oque é?
+      - É um metodo de organização.
+  - Como serve?
+      - É usado com postits, em colunas como:
+		- 'To Do' (oque é para fazer)
+		- 'Doing' (oque está em execução)
+		- 'Done'  (oque já foi feito)
+  - Oque nos trás:
+      - Métricas, parecido com scrum, porém utiliza datamento para a execução de tarefas (To Do)
+      - 

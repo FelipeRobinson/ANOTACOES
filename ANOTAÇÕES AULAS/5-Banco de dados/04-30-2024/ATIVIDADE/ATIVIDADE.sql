@@ -36,7 +36,7 @@ alter table ct_JOGADOR
 
 -- 4) Altere o campo 'nome' na tabela TECNICO para varchar(40)
 alter table ct_TECNICO
-	alter column Nome Varchar (40) Not null
+	alter column Nome Varchar (40) Not null 
 
 -- 5) Criar uma tabela com nome ESTADO (parecido com a tabela TECNICO), e apague o campo estado da tabela TIME, e inclua o campo chave da nova tabela criada
 create table ct_ESTADO (
@@ -57,10 +57,8 @@ alter table ct_TIME
 
 -- 6) Crie um campo idEstado na tabela CIDADE com uma FK a tabela ESTADO. Apague a referencia da tabela TIME na tabela ESTADO
 alter table ct_CIDADES
-	add idEstado INT not null
-	
-alter table ct_CIDADES
-	add constraint fk_ct_CIDADES_ct_ESTADO FOREIGN KEY (idEstado) REFERENCES ct_ESTADO (id)
+	add idEstado INT not null,
+	    constraint fk_ct_CIDADES_ct_ESTADO FOREIGN KEY (idEstado) REFERENCES ct_ESTADO (id)
 
 alter table ct_TIME
 	drop constraint fk_ct_TIME_ct_ESTADO
@@ -74,9 +72,7 @@ alter table ct_TIME
 
 alter table ct_TIME
 	add Cidade INT not null
-
-alter table ct_TIME
-	add constraint fk_ct_TIME_ct_CIDADES FOREIGN KEY (Cidade) REFERENCES ct_CIDADES
+	    constraint fk_ct_TIME_ct_CIDADES FOREIGN KEY (Cidade) REFERENCES ct_CIDADES
 
 
 -- 8) Crie uma tabela com o nome de CAMPEONATO
@@ -96,7 +92,7 @@ alter table ct_CAMPEONATO
 
 alter table ct_CAMPEONATO
 	add DataInicio smalldatetime not null,
-		DataFim smalldatetime not null
+		DataFim smalldatetime
 
 -- 10) Crie uma tabela com o nome de CAMPEONATO_JOGADOR
 create table ct_CAMPEONATO_JOGADOR (

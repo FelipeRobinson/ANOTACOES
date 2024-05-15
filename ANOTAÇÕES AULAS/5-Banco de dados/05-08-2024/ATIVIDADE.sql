@@ -188,7 +188,7 @@ SELECT * FROM ct_CIDADES
 SELECT ct_CIDADES.Nome as CIDADE
 FROM ct_CIDADES
 INNER JOIN ct_ESTADO on ct_ESTADO.id = ct_CIDADES.idEstado
-WHERE ct_ESTADO.Nome = 'São Pedro'
+WHERE ct_ESTADO.Nome = 'São Pedro' 
 
 
 -- 7) Altere o valor 'São Pedro' para 'São Paulo'
@@ -205,5 +205,62 @@ WHERE ct_CIDADES.idEstado = ct_ESTADO.id;
 
 -- 9) Delete estado for table ESTADO 
 DELETE
+FROM ct_CIDADES
+WHERE Nome = 'Belém'
+
+DELETE
 FROM ct_ESTADO
 WHERE Nome = 'Pará'
+
+
+-- 10) Apague todas as cidades cujo nome é 'Rio de Janeiro'
+DELETE
+FROM ct_CIDADES
+WHERE Nome IN ('Niterói','Petrópolis','Petropolis')
+
+SELECT * FROM ct_CIDADES
+
+
+-- 11) Altere para 'Estados do Brasil' o nome de todos os registros da tabela ESTADO
+------------------------------ IGNORAR O EXERCÍCIO 11 ------------------------------
+
+
+-- 12) Selecione o 'nome da Cidade' e o 'Nome do Estado' de todos os registros da tabela CIDADES
+SELECT ct_CIDADES.Nome as CIDADE, ct_ESTADO.Nome as ESTADO
+FROM ct_CIDADES, ct_ESTADO
+WHERE ct_CIDADES.idEstado = ct_ESTADO.id;
+
+
+-- 13) Insira os seguintes valores a tabela TÉCNICO
+INSERT INTO ct_TECNICO (Nome)
+VALUES ('Luis Zubeldía'),
+	  ('Abel Ferreira'),
+	  ('António Oliveira'),
+	  ('Tite'),
+	  ('Ramónn Diaz'),
+	  ('Artur Jorge')
+
+
+-- 14) Insira os seguintes times na tabela de TIME
+INSERT INTO ct_TIME (Nome,Cidade)
+VALUES ('São Paulo',26),
+	   ('Palneira',26),
+	   ('Corinthians',26),
+	   ('Botafogo',14),
+	   ('Vasco',14)
+	  
+	  SELECT * FROM ct_TIME
+	  SELECT * FROM ct_TECNICO
+
+-- 15) Associe aos tecnicos seus devidos times
+INSERT INTO ct_TIME (idTecnico)
+VALUES (1),
+	   (2),
+	   (3),
+	   (4),
+	   (5),
+	   (6)
+
+
+-- 16) Crie 6 jogadores em cada TIME
+SELECT * FROM ct_JOGADOR
