@@ -1,0 +1,29 @@
+body {
+    background: black;
+}
+
+form {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+form input {
+    height: 30%;
+    width: 300px;
+}
+
+button {
+    margin-left: 43.4%;
+    background-color: red;
+    width: 200px;
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
