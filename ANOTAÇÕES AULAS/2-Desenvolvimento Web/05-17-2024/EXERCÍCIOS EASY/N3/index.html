@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA MONSTRA</title>
+</head>
+<body>
+    <script src="../N3/script.js"></script>
+    <form name="frmDados" method="post" action="">
+        Digite seu 1o número: <input type="number" name="txt_Num1">
+        <br>
+        Digite seu 2o número: <input type="number" name="txt_Num2">
+        <br><br>
+    </form>
+    Escolha uma opção: <input type="text" id="escolhido">
+    <p id="a">a) Somar os dois números</p>
+    <p id="b">b) Subtrair o primeiro pelo segundo</p>
+    <p id="c">c) Subtrair o segundo pelo primeiro</p>
+    <p id="d">d) O produto do primeiro pelo segundo</p>
+    <p id="e">e) Dividir o primeiro pelo segundo</p>
+    <p id="f">f) Dividir o segundo pelo primero</p>
+    <p id="g">g) O resto da divisão do primeiro pelo segundo</p>
+
+    <button name="botao" onclick="calcularNum(frmDados)">CALCULAR</button>
+</body>
+</html>

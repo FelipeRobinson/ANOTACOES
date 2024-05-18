@@ -3,5 +3,5 @@ function ConcluiDados(frmDados) {
     num2 = parseInt(frmDados.txt_Idade.value);
     soma = num1 + num2
 
-    alert("A soma dos números dá " + soma)
+    alert("A soma da porra dos números dá " + soma)
 }
