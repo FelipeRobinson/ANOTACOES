@@ -1,0 +1,19 @@
+PLANEJAMENTO DE REDE:
+-----------------------------------------------------------------------------------------------
+  - Quais os requisítos básicos dessa Rede?
+	- Tamanho;
+	- Velocidade;
+	- Tipo de conexão.
+  - Identificar o projeto Lógico.
+	- Selecionar a topologia da Rede;
+	- Criar uma lista de protocolos;
+	- Escolher um meio de segurança para a Rede;
+	- Montar as Políticas de Segurança e Procedimentos Associados.
+  - Identificar o projeto Físico.
+	- Selecionar uma internet;
+	- Selecionar os equipamentos dessa empresa;
+	- Orçamentar o meio de compra e gastos com a criação de rede.
+  - Oque pensar antes de montar uma Rede?
+  - Oque fazer para montar uma Rede?
+  - Estratégias para montar uma Rede.
+  - Saber o objetivo para montar uma Rede.
