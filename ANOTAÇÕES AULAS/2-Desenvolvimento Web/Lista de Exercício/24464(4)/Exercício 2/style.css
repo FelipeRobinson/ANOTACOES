@@ -1,0 +1,26 @@
+body {
+    background: black;
+    color: white;
+    margin-top: 150px;
+    margin-left: 700px;
+}
+
+input {
+    border: 1px;
+    border-radius: 2px;
+}
+
+button {
+    background: red;
+    color: black;
+    border: 2px;
+    border-radius: 3px;
+    margin-left: 40px;
+}
+
+button:hover {
+    background: brown;
+    color: black;
+    border: 2px;
+    border-radius: 3px;
+}
