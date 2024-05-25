@@ -5,7 +5,7 @@ function conferirDados() {
         alert("Não pode ficar em branco o sue nome lindeza!") 
     }
     else if (certo_nome.value.length > tamanho_max) {
-        alert("Teu nome não tem mais de 40 varra né pae...");
+        alert("Teu nome não tem mais de 40 letra né pae...");
     }
 
     var certo_ra = document.getElementById("RA");

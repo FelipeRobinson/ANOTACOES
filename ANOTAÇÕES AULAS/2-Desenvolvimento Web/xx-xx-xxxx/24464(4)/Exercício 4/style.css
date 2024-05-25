@@ -5,15 +5,19 @@
 }
 
 body {
-    background: aliceblue;
+    background: rgb(0, 0, 0);
     text-align: center;
 }
 
 h1 {
     margin-top: 250px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+p {
+    color: white;
 }
 
 .center {
@@ -21,15 +25,16 @@ h1 {
 }
 
 button {
-    background: rgb(99, 99, 99);
+    background: rgb(190, 0, 0);
     border: 0;
     border-radius: 5px;
     width: 100px;
     height: 35px;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
 }
 
 button:hover {
-    background: rgb(176, 176, 176);
+    background: rgb(0, 0, 0);
+    color: rgb(190, 0, 0);
 }
