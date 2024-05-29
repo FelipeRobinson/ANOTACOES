@@ -1,6 +1,3 @@
-print("\n**********  JOGO DA VELHA PAIR PROGRAMING  **********")
-print("*************  POR FELIPE E THIAGO  *************\n")
-
 def mostraJogo(jogadas):
     for lin in range(3):
         for col in range(3):
@@ -36,6 +33,9 @@ def trocaDeJogador(jog):
     return 'O' if jog == 'X' else 'X'
 
 import os
+
+print("\n**********  JOGO DA VELHA PAIR PROGRAMING  **********")
+print("*************  POR FELIPE E THIAGO  *************\n")
 
 jogadas = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
 vezDeQuem = 'X'
