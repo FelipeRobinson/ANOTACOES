@@ -27,7 +27,7 @@ FROM ct_JOGOS j
 	INNER JOIN ct_TIME ta   on j.timeA = ta.id
 	INNER JOIN ct_TIME tb   on j.timeB = tb.id
 	INNER JOIN ct_CIDADES c on j.idCidades = c.id
--- querendo saber os jogos desse mês --
+-- querendo saber os jogos desse mÃªs --
 WHERE month(Data) = 5
 
 -- ou --
