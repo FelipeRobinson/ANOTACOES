@@ -243,15 +243,15 @@ VALUES ('Luis Zubeldía'),
  
 
 -- 14)
-INSERT INTO ct_TIME (Nome,Cidade)
-VALUES ('São Paulo',26),
-	   ('Palneira',26),
-	   ('Corinthians',26),
-	   ('Botafogo',14),
-	   ('Vasco',14)
+INSERT INTO ct_TIME (id, Nome,Cidade)
+VALUES (1, 'São Paulo',26),
+	   (2, 'Palneira',26),
+	   (3, 'Corinthians',26),
+	   (4, 'Botafogo',14),
+	   (5, 'Vasco',14)
 	  
 	  SELECT * FROM ct_TIME
-	  SELECT * FROM ct_TECNICO
+	  SELECT * FROM ct_JOGADOR
 
 -- 15)
 INSERT INTO ct_TIME (idTecnico)
