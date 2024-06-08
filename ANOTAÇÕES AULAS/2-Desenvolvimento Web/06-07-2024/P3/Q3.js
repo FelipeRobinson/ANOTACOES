@@ -1,14 +1,12 @@
-function piramd() {
-    var numb = ""
-    var numero = parseInt(document.getElementById(piramd))
-    for a in range (0, numero) {
-        for b in range (0, numero-1){
-            document.write(numb)
-            var num =+ 1
+function gerarPiramide() {
+    var num = parseInt(document.getElementById('piramid').value);
+    var resultado = '';
+
+    for (var i = 1; i <= num;) {
+        for (var j = 1; j <= i;) {
+            var numeroFormatado = i.padStart(2, '0');
+            resultado += numeroFormatado + ' ';
         }
     }
-}
-
-function montar() {
-    document.write(piramd)
+    alert(resultado);
 }
