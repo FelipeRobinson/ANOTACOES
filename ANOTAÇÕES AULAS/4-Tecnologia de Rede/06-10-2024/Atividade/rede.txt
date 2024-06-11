@@ -1,0 +1,19 @@
+→ Zeus: 48 IPs
+a) intervalo de IPs válidos: 192.10.69.0 até 192.10.69.47 
+b) máscara de Rede: 255.255.255.192
+c) IP de REDE: 192.10.69.0
+d) IP de BROADCAST: 192.10.69.47
+
+
+→ Apolo: 44 IPs
+a) intervalo de IPs válidos: 192.10.70.0 até 192.10.70.43
+b) máscara de Rede: 255.255.255.192
+c) IP de REDE: 192.10.70.0
+d) IP de BROADCAST: 192.10.70.43
+
+
+→ Atena: 33 IPs
+a) intervalo de IPs válidos: 192.10.71.0 até 192.10.71.32
+b) máscara de Rede: 255.255.255.0
+c) IP de REDE: 192.10.71.0
+d) IP de BROADCAST: 192.10.71.32
