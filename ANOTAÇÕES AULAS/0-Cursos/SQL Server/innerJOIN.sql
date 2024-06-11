@@ -26,7 +26,8 @@ INSERT AMIGOS (Nome, Idade)
 VALUES ('Diogo','16'),
        ('Joãozin','15'),
        ('João Pedro', '16'),
-       ('João Vini', '16')
+       ('João Vini', '16'),
+       ('Thiaguinho','19')
 
 
 SELECT * FROM FAMILIA
