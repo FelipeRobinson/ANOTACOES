@@ -11,13 +11,9 @@ def atores_so_de_flms_maiores_que (dur, flms, atrs):
                 if f["Duracao"] < dur:
                     if a["Id"] not in atrs_de_filmes_curtos:
                         atrs_de_filmes_curtos.append(a["Id"])
+    return atrs_que_ja_atuaram
     
     '''
     quando esses "for" terminarem, as listas "atrs_que_ja_atuaram" & "atrs_de_filmes_curtos" 
     estará pronta para ser usada (receber parametros e ordens)
     '''
-    for e in atrs:
-        for a in atrs_que_ja_atuaram:
-            for f in atrs_de_filmes_curtos:
-                if a not in f:
-                    print(e [a not in f])
