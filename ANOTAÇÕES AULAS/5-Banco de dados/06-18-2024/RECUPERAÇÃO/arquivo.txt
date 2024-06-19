@@ -13,9 +13,29 @@ REVENDO E CORRIGINDO A PROVA:
 
 - PERGUNTAS:
     - Oque é o char? Porque ele pode ou não estar acompanhado do VAR?
-    - Como funciona o negocio de equivalencia no INNER JOIN? (Repitir a explicação)
-    - Oque é o 'DISTINCT...'?
-    - Oque é 'ORDER By'?
+    
+    char === string, ou seja, texto
+    varchar(30) inseri nome com 7 letras. Ele ocupa 7 "espaços" de memoria
+       char(30)inseri nome com 7 letras. Ele ocupa 30 "espaços" de memoria
 
-- RESPOSTAS:
-    - 
+
+    - Como funciona o negocio de equivalencia no INNER JOIN? (Repitir a explicação)
+    SELECT ci.nome,es.nome 
+    from cidade ci, estado es
+    WHERE ci.uf = es.sigla // sigla é PK em es e UF é fk na cidade
+
+
+    SELECT ci.nome,es.nome 
+    from cidade ci
+      inner join estado es ON ci.uf = es.sigla
+
+
+    - Oque é 'ORDER BY' & 'GROUP BY'? 
+    ORDER By --> ordenação dos resultados 
+    order by nome DESC -- decrescente 
+
+    GROUP BY --> faz agrupamento de dados. 
+    SELECT di.Nome, count(*)
+    FROM disciplina di  
+     INNER JOIN matricula ma ON ma.codDisciplina = di.codigo
+    GROUP BY di.nome
