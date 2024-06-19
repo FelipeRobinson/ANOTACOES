@@ -1,0 +1,21 @@
+REVENDO E CORRIGINDO A PROVA:
+    - De onde extrair informações como RELACIONAMENTOS para fazer inner join?
+    - 
+
+
+- INNER JOIN:
+    - Ele pega uma tabela que já existe, ele vai juntar a tabela do 'FROM' e junta na nova
+      tabela;
+    - O INNER JOIN sempre usa o 'ON' (como se fosse uma equivalencia), que serve para relacionar colunas de tabelas 
+      diferentes com valores IGUALITÁRIOS.
+    - Você precisa saber oque você tem, e oque você quer filtrar, traçando caminhos.
+
+
+- PERGUNTAS:
+    - Oque é o char? Porque ele pode ou não estar acompanhado do VAR?
+    - Como funciona o negocio de equivalencia no INNER JOIN? (Repitir a explicação)
+    - Oque é o 'DISTINCT...'?
+    - Oque é 'ORDER By'?
+
+- RESPOSTAS:
+    - 

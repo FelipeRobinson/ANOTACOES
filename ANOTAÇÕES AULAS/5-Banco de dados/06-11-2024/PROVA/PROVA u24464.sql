@@ -1,18 +1,18 @@
-CREATE TABLE dbo.joinCIDADE (
+CREATE TABLE joinCIDADE (
    Codigo int identity(1,1) not null, 
    Nome varchar(50) not null
 
    CONSTRAINT pk_joincidade PRIMARY KEY (codigo)
 )
 
-CREATE TABLE dbo.joinESTADO (
+CREATE TABLE joinESTADO (
     UF char(2) not null, 
     Nome varchar(50) not null
 
    CONSTRAINT pk_joinestado PRIMARY KEY (uf)
 )
 
-CREATE TABLE dbo.joinCLIENTE (
+CREATE TABLE joinCLIENTE (
     Codigo int identity(1,1) not null, 
     Nome varchar(50) not null, 
     Endereço varchar(50), 
@@ -24,7 +24,7 @@ CREATE TABLE dbo.joinCLIENTE (
    CONSTRAINT fk_joincliente_estado FOREIGN KEY (uf) REFERENCES joinEstado(uf)
 )
 
-CREATE TABLE dbo.joinPRODUTO (
+CREATE TABLE joinPRODUTO (
    Codigo int identity(1,1) not null, 
    Descricao varchar(50) not null , 
    Preco money not null
@@ -32,7 +32,7 @@ CREATE TABLE dbo.joinPRODUTO (
    CONSTRAINT pk_joinproduto PRIMARY KEY (codigo)
 )
 
-CREATE TABLE dbo.joinVENDEDOR (
+CREATE TABLE joinVENDEDOR (
    codigo int identity(1,1) not null, 
    Nome varchar(50) not null, 
    Comissao float not null,
@@ -41,7 +41,7 @@ CREATE TABLE dbo.joinVENDEDOR (
    CONSTRAINT pk_joinvendedor PRIMARY KEY (codigo)
 )
 
-CREATE TABLE dbo.joinPEDIDO (
+CREATE TABLE joinPEDIDO (
    Num_Pedido int identity(1,1) not null ,
    Prazo_Entrega int not null, 
    Cod_Cliente int not null, 
@@ -53,7 +53,7 @@ CREATE TABLE dbo.joinPEDIDO (
    CONSTRAINT fk_joinpedido_vendedor FOREIGN KEY (Cod_Vendedor) REFERENCES joinVendedor(codigo)
 )
 
-CREATE TABLE dbo.joinITEMPEDIDO (
+CREATE TABLE joinITEMPEDIDO (
    num_pedido int not null ,
    Cod_produto int not null, 
    Quantidade int not null,
@@ -71,7 +71,7 @@ VALUES('Campinas'),
       ('Jundiai')
 
 -- SELECT * from joinCidade
-INSERT INTO joinEsTADO 
+INSERT INTO joinESTADO 
 VALUES ('SP','São Paulo'),
        ('RJ','Rio de Janeiro'),
        ('MG','Minas Gerais'),
@@ -177,6 +177,14 @@ VALUES (1,1,12),
        (24,5,5),
        (25,3,1),
        (26,2,4)
+
+drop table joinITEMPEDIDO
+drop table joinPEDIDO
+drop table joinVENDEDOR
+drop table joinPRODUTO
+drop table joinCLIENTE
+drop table joinESTADO
+drop table joinCIDADE
 
 
 /* 1) Indique o comando SQL para listar todas as Cidades 
