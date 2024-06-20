@@ -84,11 +84,11 @@ SELECT sum(ip.Quantidade * pr.Preco ) as SALÁRIO
 
 
 -- 7)
-SELECT sum(ip.Quantidade * pr.Preco ) as SALÁRIO
+SELECT sum(ip.Quantidade * pr.Preco) as SALÁRIO
   FROM joinITEMPEDIDO ip
        INNER JOIN joinPRODUTO pr ON ip.Cod_produto = pr.Codigo
        INNER JOIN joinPEDIDO pe ON ip.num_pedido = pe.Num_Pedido
-WHERE pr.Descricao = 'Pizza'
+ WHERE pr.Descricao = 'Pizza'
       AND month(pe.Data) = 3
       AND year(pe.Data) = 2024 -- year(GEATDADE) --
 /*

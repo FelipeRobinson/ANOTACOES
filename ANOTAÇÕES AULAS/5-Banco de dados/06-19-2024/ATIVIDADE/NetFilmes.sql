@@ -16,17 +16,17 @@ CREATE TABLE netFilmes_Diretor(
 
 -- Crialção da Tabela de Gênero
 CREATE TABLE netFilmes_Genero(
-    id int identity(1,1)   not null,
-	descricao varchar(50)    not null
+    id int identity(1,1) not null,
+	descricao varchar(50) not null
 
-	 CONSTRAINT pk_netFilmes_Genero PRIMARY KEY (id)
+    CONSTRAINT pk_netFilmes_Genero PRIMARY KEY (id)
 )
 
 -- Criação da Tabela de Filme
 CREATE TABLE netFilmes_Filme(
    id int identity(1,1) not null,
    nome varchar(40) not null,
-   idGenero int         not null 
+   idGenero int not null 
 
    CONSTRAINT pk_netFilmes_Filme PRIMARY KEY (id)
    CONSTRAINT fk_netFilmes_Filme_Genero FOREIGN KEY (idGenero) REFERENCES netFilmes_Genero (id)
