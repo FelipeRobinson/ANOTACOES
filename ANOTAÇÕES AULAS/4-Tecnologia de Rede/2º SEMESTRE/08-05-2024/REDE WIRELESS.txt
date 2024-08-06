@@ -1,0 +1,23 @@
+REDE SEM FIO = WIRELESS
+-----------------------------------------------------------------------------------------------------------------------------
+
+    - O que é WIRELESS?
+    - O que é uma WLAN?
+    - O que é o WI-FI?
+        - Wirelles Fidelity
+        - é um conjunto de especificações técnicas para redes locais sem fio (WLAN), 
+          baseada no padrão I3e 802.11.
+
+    - (O bluetooht tbm é uma rede sem fio, porém com outras especificações)
+    
+    - REDES SEM FIO:
+        - Os sinais analógicos tem características como amplitude, frequência e fase;
+            - AMPLITUDE:
+                - altura da onda
+                - Quanto maior a amplitude, maior energia da onda
+            - FREQUÊNCIA:
+                - Distância entre uma onda e outra
+            - FASE:
+                - Indica a posição relativa da onda em relação a uma outra.
+
+    - 1Hz = 1 ciclo por segundo
