@@ -10,7 +10,7 @@ http.createServer((request,response) => /*o nome do => é fat arrow*/ {
 
     /*
     if(request.url == "/ola") {
-        response.end("<h1>NODE_JS diz: Ola para voce tambem</h1>")
+        response.end("./")
     }
     if(request.url == "/hasta_la_vista_baby") {
         response.end("<h1>NODE_JS diz: Tchau pra tu troxa!!!</h1>")
