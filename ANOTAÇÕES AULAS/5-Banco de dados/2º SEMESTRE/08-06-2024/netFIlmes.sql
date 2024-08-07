@@ -64,8 +64,6 @@ CREATE TABLE netFilmes_Cliente(
     CONSTRAINT pk_netFilmes_Cliente PRIMARY KEY (id)
 )
 
-
-/******************************************************************************************************
 CREATE TABLE netFilmes_ClienteFilme(
     idCliente int not null,
     idFilme int not null,
@@ -75,8 +73,8 @@ CREATE TABLE netFilmes_ClienteFilme(
 	CONSTRAINT fk_netFilmes_CFilme_Cliente FOREIGN KEY (idCliente) REFERENCES netFilmes_Cliente (id),
 	CONSTRAINT fk_netFilmes_CFilme_Filme FOREIGN KEY (idFilme) REFERENCES netFilmes_Filme (id)
 )
-******************************************************************************************************/
 
+/******************************************************************************************************
 CREATE TABLE netFilmes_ClienteFilme(   
     idCliente int not null, 
     idFilme int not null, 
@@ -84,6 +82,8 @@ CREATE TABLE netFilmes_ClienteFilme(
     
     CONSTRAINT pk_netFilmes_ClienteFilme PRIMARY KEY (idCliente, idFilme, data) 
 )
+******************************************************************************************************/
+
 
 
 /*************************************** 
@@ -265,6 +265,28 @@ VALUES  (1, 1, 01/10/2024), (1, 5, 02/15/2024),
     PREPARANDO OS SELECTS DE
           TUUUUDOOOOO
 *************************************/
+
+SELECT C.nome, count(CeF.data)
+  FROM netFilmes_ClienteFilme CeF
+       JOIN netFilmes_Cliente C ON C.id = CeF.idCliente
+GROUP BY C.nome
+HAVING count(CeF.data) = 0
+
+
+SELECT *
+  FROM netFilmes_Ator ATOR
+       LEFT JOIN netFilmes_AtoresDoFilme ATORdoFILME ON ATORdoFILME.idAtor = ATOR.id
+WHERE idFilme IS NULL
+ORDER BY nome
+
+
+SELECT nome
+  FROM netFilmes_DiretoresDoFilme DIRdoFIL
+       RIGHT JOIN netFilmes_Diretor DIR ON DIRdoFIL.idDiretor = DIR.id
+WHERE idFilme IS NULL
+ORDER BY nome
+
+
 
 -- 1)
 SELECT ATOR.nome
