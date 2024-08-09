@@ -1,0 +1,49 @@
+Press ^C at any time to quit.
+package name: (nodezera) server.js
+version: (1.0.0)
+description: Create a server in NODE
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords:
+author: Felbs
+license: (ISC)
+About to write to Z:\NODEZERA\package.json:
+
+{
+  "name": "server.js",
+  "version": "1.0.0",
+  "description": "Create a server in NODE",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felbs",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+Z:\NODEZERA>dir
+ O volume na unidade Z é Dados
+ O Número de Série do Volume é 54C2-A542
+
+ Pasta de Z:\NODEZERA
+
+09/08/2024  19:54    <DIR>          .
+09/08/2024  19:54    <DIR>          ..
+09/08/2024  19:54               234 package.json
+               1 arquivo(s)            234 bytes
+               2 pasta(s)      452.546.560 bytes disponíveis
+
+Z:\NODEZERA>npm install -g nodemon
+
+added 29 packages in 3s
+
+4 packages are looking for funding
+  run `npm fund` for details
+
+Z:\NODEZERA>color a
+
+Z:\NODEZERA>npm install express
