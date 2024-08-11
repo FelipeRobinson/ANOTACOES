@@ -44,7 +44,7 @@ public class Data {
         return true;
     }
 
-    public Data (byte dia, byte mes, short ano) {
+    public Data(byte dia, byte mes, short ano) {
         if (!Data.isValida(dia, mes, ano))
             throw new Exception ("Data Inválida");
         
@@ -53,13 +53,39 @@ public class Data {
         this.ano = ano;
     } 
 
-    public void setDia (byte dia) throws Exception {
-        if (!Data.isValida(dia, this.mes, this.ano))
+    public void setDia(byte dia) throws Exception {
+        if (!Data.isValida(/*this.dia*/dia, this.mes, this.ano))
             throw new Exception ("Data Inválida");
         this.dia = dia;
     }
 
-    public byte getDia () {
+    public byte getDia() {
         return this.dia;
     }
+
+// AS ALTERAÇÕES DA ÚLTIMA AUlA COMEÇAM AQUI.
+
+    public void setMes(byte mes) throws Exception {
+        if (!Data.isValida(dia, this.mes, this.ano))
+            throw new Exception ("Data Inválida");
+        this.mes = mes;
+    }
+
+    public byte getMes() {
+        return this.mes;
+    }    
+
+    public void setAno(short ano) throws Exception {
+        if (!Data.isValida(dia, this.mes, this.ano))
+            throw new Exception ("Data Inválida");
+        this.ano = ano;
+    }
+
+    public short getAno() {
+        return this.ano;
+    }
+
+// AS ALTERAÇÕES DA ÚLTIMA AULA ACABAM AQUI.
+// PELO OQUE EU ME LEMBRE, ERA PARA NOS FAZERMOS O "throws Excepition" PARA O MES E O ANO.
+
 }
