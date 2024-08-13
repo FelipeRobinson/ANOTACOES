@@ -44,6 +44,7 @@ public class Data {
         return true;
     }
 
+    /*ESSE É O CONSTRUTOR*//*MESMO NOME DA CLASSE*/
     public Data (byte dia, byte mes, short ano) throws Exception{
         if (!Data.isValida(dia, mes, ano))
             throw new Exception ("Data Inválida");
@@ -52,7 +53,9 @@ public class Data {
         this.mes = mes;
         this.ano = ano;
     } 
-
+    
+    
+    /*SELECIONANDO E SETANDO DIA*/
     public void setDia (byte dia) throws Exception {
         if (!Data.isValida(dia, this.mes, this.ano))
             throw new Exception ("Data Inválida");
@@ -61,5 +64,34 @@ public class Data {
 
     public byte getDia () {
         return this.dia;
+    }
+    
+    
+    /*SELECIONANDO E SETANDO MES*/
+    public void setMes (byte mes) throws Exception {
+        if (!Data.isValida(this.dia, mes, this.ano))
+            throw new Exception ("Data Inválida");
+        this.mes = mes;
+    }
+
+    public byte getMes () {
+        return this.mes;
+    }
+    
+    
+    /*SELECIONANDO E SETANDO ANO*/
+    public void setAno (short ano) throws Exception {
+        if (!Data.isValida(this.dia, this.mes, ano))
+            throw new Exception ("Data Inválida");
+        this.ano = ano;
+    }
+
+    public short getAno () {
+        return this.ano;
+    }
+    
+    public void avanceUmDia () {
+        // PARA FAZER
+        // Ele tera que fazer o dia para mais um, porém se o dia passar de 31 ele deve voltar ao um, e se o mes passsar do 12, ele deve voltar ao 1
     }
 }
