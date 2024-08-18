@@ -90,8 +90,35 @@ public class Data {
         return this.ano;
     }
     
-    public void avanceUmDia () {
-        // PARA FAZER
-        // Ele tera que fazer o dia para mais um, porém se o dia passar de 31 ele deve voltar ao um, e se o mes passsar do 12, ele deve voltar ao 1
+    // Ele tera que fazer o dia para mais um, porém se o dia passar de 31 ele deve voltar ao um, e se o mes passsar do 12, ele deve voltar ao 1
+
+    public static int proximoDia (byte dia, byte mes, short ano) {
+        if (dia == 31)
+            return dia =+ '1';
+        if (dia == 31 && mes == 12)
+            return dia =+ '1'; 
+            return mes = '1';
+        if (mes == 2 && dia == 28)
+            return mes + 1;
+            return dia = '1';
+        if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 30)
+            return mes + 1;
+            return dia = '1';
+        if (ano % 4 == 0)
+            if (dia == 31)
+                return dia =+ '1';
+            if (dia == 31 && mes == 12)
+                return dia =+ '1'; 
+                return mes = '1';
+            if (mes == 2 && dia == 28)
+                return mes + 1;
+                return dia = '1';
+            if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 30)
+                return mes + 1;
+                return dia = '1';
+            else
+                dia + 1
+        else
+            dia + 1;
     }
 }
