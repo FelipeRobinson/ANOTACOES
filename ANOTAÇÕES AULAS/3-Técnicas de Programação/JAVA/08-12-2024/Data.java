@@ -44,6 +44,7 @@ public class Data {
         return true;
     }
 
+    /*ESSE É O CONSTRUTOR*//*MESMO NOME DA CLASSE*/
     public Data (byte dia, byte mes, short ano) throws Exception{
         if (!Data.isValida(dia, mes, ano))
             throw new Exception ("Data Inválida");
@@ -52,40 +53,72 @@ public class Data {
         this.mes = mes;
         this.ano = ano;
     } 
-
-    public void setDia(byte dia) throws Exception {
-        if (!Data.isValida(/*this.dia*/dia, this.mes, this.ano))
+    
+    
+    /*SELECIONANDO E SETANDO DIA*/
+    public void setDia (byte dia) throws Exception {
+        if (!Data.isValida(dia, this.mes, this.ano))
             throw new Exception ("Data Inválida");
         this.dia = dia;
     }
 
-    public byte getDia() {
+    public byte getDia () {
         return this.dia;
     }
-
-// AS ALTERAÇÕES DA ÚLTIMA AUlA COMEÇAM AQUI.
-
-    public void setMes(byte mes) throws Exception {
-        if (!Data.isValida(dia, this.mes, this.ano))
+    
+    
+    /*SELECIONANDO E SETANDO MES*/
+    public void setMes (byte mes) throws Exception {
+        if (!Data.isValida(this.dia, mes, this.ano))
             throw new Exception ("Data Inválida");
         this.mes = mes;
     }
 
-    public byte getMes() {
+    public byte getMes () {
         return this.mes;
-    }    
-
-    public void setAno(short ano) throws Exception {
-        if (!Data.isValida(dia, this.mes, this.ano))
+    }
+    
+    
+    /*SELECIONANDO E SETANDO ANO*/
+    public void setAno (short ano) throws Exception {
+        if (!Data.isValida(this.dia, this.mes, ano))
             throw new Exception ("Data Inválida");
         this.ano = ano;
     }
 
-    public short getAno() {
+    public short getAno () {
         return this.ano;
     }
+    
+    // Ele tera que fazer o dia para mais um, porém se o dia passar de 31 ele deve voltar ao um, e se o mes passsar do 12, ele deve voltar ao 1
 
-// AS ALTERAÇÕES DA ÚLTIMA AULA ACABAM AQUI.
-// PELO OQUE EU ME LEMBRE, ERA PARA NOS FAZERMOS O "throws Excepition" PARA O MES E O ANO.
-
+    public static int proximoDia (byte dia, byte mes, short ano) {
+        if (dia == 31)
+            return dia =+ '1';
+        if (dia == 31 && mes == 12)
+            return dia =+ '1'; 
+            return mes = '1';
+        if (mes == 2 && dia == 28)
+            return mes + 1;
+            return dia = '1';
+        if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 30)
+            return mes + 1;
+            return dia = '1';
+        if (ano % 4 == 0)
+            if (dia == 31)
+                return dia =+ '1';
+            if (dia == 31 && mes == 12)
+                return dia =+ '1'; 
+                return mes = '1';
+            if (mes == 2 && dia == 28)
+                return mes + 1;
+                return dia = '1';
+            if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 30)
+                return mes + 1;
+                return dia = '1';
+            else
+                dia + 1
+        else
+            dia + 1;
+    }
 }
