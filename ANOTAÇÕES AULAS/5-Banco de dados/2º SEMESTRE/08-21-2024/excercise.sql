@@ -1,4 +1,4 @@
--- 1)
+-- 1) --
 CREATE FUNCTION CalcularDigitoVerificador (@nrConta INT)
 RETURNS INT
 AS
@@ -17,7 +17,7 @@ BEGIN
 END;
 
 
--- 2)
+-- 2) --
 CREATE FUNCTION ObterSaldoNaData (
     -- Obtendo os parâmetros --
     @nrConta INT,
@@ -60,7 +60,7 @@ BEGIN
 END;
 
 
--- 3-)
+-- 3) --
 CREATE FUNCTION ObterValorCreditádoNaData (
     -- Obtendo os parâmetros --
     @nrConta INT,
@@ -75,6 +75,8 @@ BEGIN
     DECLARE @saldoPrevisto MONEY;
     DECLARE @creditosFuturos MONEY;
     DECLARE @debitosFuturos MONEY;
+
+    
 
     -- Pegando o saldo atual da CONTA --
     SELECT @saldoAtual = saldo
