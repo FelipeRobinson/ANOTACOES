@@ -92,23 +92,14 @@ public class Data {
     
     // Ele tera que fazer o dia para mais um, porém se o dia passar de 31 ele deve voltar ao um, e se o mes passsar do 12, ele deve voltar ao 1
 
-    public static int proximoDia (byte dia, byte mes, short ano) {
-        if (dia == 31)
-            return dia =+ '1';
-        if (dia == 31 && mes == 12)
-            return dia =+ '1'; 
-            return mes = '1';
-        if (mes == 2 && dia == 28)
-            return mes + 1;
-            return dia = '1';
-        if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 30)
-            return mes + 1;
-            return dia = '1';
-        if (ano % 4 == 0)
+    public static proximoDia((byte) dia, (byte) mes, (short) ano) {
+        Data d = new Data((byte)dia, (byte)mes, (short)ano);
+
+        if(Data.isValida(this.dia, this.mes, this.ano))
             if (dia == 31)
-                return dia =+ '1';
+                return dia + '1';
             if (dia == 31 && mes == 12)
-                return dia =+ '1'; 
+                return dia + '1'; 
                 return mes = '1';
             if (mes == 2 && dia == 28)
                 return mes + 1;
@@ -116,9 +107,40 @@ public class Data {
             if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 30)
                 return mes + 1;
                 return dia = '1';
-            else
-                dia + 1
-        else
-            dia + 1;
+            if (ano % 4 == 0)
+                if (dia == 31)
+                    return dia + '1';
+                if (dia == 31 && mes == 12)
+                    return dia + '1';
+                    return mes = '1';
+                if (mes == 2 && dia == 28)
+                    return mes + '1';
+                    return dia = '1';
+                if (mes == '4' || mes == '6' || mes == '9' || mes == 11 && dia == 30)
+                    return mes + '1';
+                    return dia = '1';
+                else
+    }
+
+
+    // criando uma instância para criar a data Reveillon
+    public static void main (String[] args){
+        try {
+
+            Data d2 = new Data((byte)25, (byte)12, (short)2024);
+            System.out.printf("O natal será %d/%d/%o/n");
+            d2.setDia((byte)24);
+            d2.setMes((byte)8);
+            d2.setAno((short)2024);
+
+            Data d1 = new Data ((byte)31, (byte)12, (short)2024);
+            System.out.println("O Reveilon será" + d1.getDia() + "/" + d1.getMes() + "/" + d1.getAno() + "!");
+            d1.setDia((byte)19);
+            d1.setMes((byte)1);
+            d1.setAno((short)1966);
+        }
+        catch () {
+
+        }
     }
 }
