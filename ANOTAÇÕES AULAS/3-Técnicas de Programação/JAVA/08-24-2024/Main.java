@@ -1,9 +1,6 @@
-public class Main
-{
-    public static void main (String[] args)
-    {
-        try
-        {
+public class Main {
+    public static void main (String[] args) {
+        try {
             Data d = new Data ((byte)31,(byte)12,(short)2024);
             
             System.out.println ("O Reveillon será "+
@@ -20,10 +17,8 @@ public class Main
                                d.getMes(),
                                d.getAno());        
         }
-        catch (Exception erro)
-        {
+        catch (Exception erro) {
             System.err.println (erro.getMessage());
         }
-
     }
 }

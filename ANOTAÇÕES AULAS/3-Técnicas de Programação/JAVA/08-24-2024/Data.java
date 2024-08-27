@@ -85,7 +85,7 @@ public class Data {
     public Data getDiaSeguinte () {
         if (this.ano==1582 && this.mes==10 && this.dia==4) { 
             try {
-            return new Data ((byte)15,(byte)10,(short)1582);
+                return new Data ((byte)15,(byte)10,(short)1582);
             } 
             catch (Exception erro1) {}
         } 

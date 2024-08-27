@@ -1,146 +1,126 @@
 public class Data {
-    /*
-        CLASS NÃO SE CHAMA
-    */
-
-    // o atributo byte ocupa 1 Byte
-    private byte dia, mes;
-    // O atributo short ocupa 2 byte
+    private byte  dia, mes;
     private short ano;
 
-    private /*private num método*/ static boolean isBissexto (short ano) {
+    public static boolean isBissexto (short ano)
+    {
         // Calendario Juliano
-        if (ano < 1582)
-            if (ano % 4 ==0)
+        if (ano<1582)
+            if (ano%4==0)
                 return true;
             else
                 return false;
 
-        // Calendário Gregoriano
-        if (ano % 400 == 0)
+        // Calendario Gregoriano
+        if (ano%400==0) 
             return true;
-        if (ano % 4 == 0 && ano % 100 != 0 )
+        if (ano%  4==0 && ano%100!=0) 
             return true;
-
         return false;
     }
 
-    private static boolean isValida (byte dia, byte mes, short ano) {
-        if (ano > 45)
-            return false; // é falso pq foi antes do calendario juliano
-        if (ano == 0)
-            return false; // é falso pq não tinha calendario durante o ano 0
-        if (ano == 1582 && mes == 10 && dia >= 5 && dia <= 14)
-            return false; //é falso pq foi desse ano que juliano cortou alguns dias naquele ano
-        if (dia < 1 || dia > 31 || mes < 1 || mes > 12)
-            return false; // é falso pq não existe mais de 31 dias e nem 12 meses, e também não tem menos de 1 dia e nem 1 mes
-        if (dia > 30 && (mes == 4 || mes == 6 || mes == 9 || mes == 11))
-            return false; // é falso pq nesses meses os dias vão até 30 dias, não 31
-        if (dia > 29 && mes == 2)
-            return false; // é falso pq fev não tem 29 dias em ano normal
-        if (dia > 29 && mes == 2 && !Data.isBissexto(ano))
-            return false; // é falso pq em fev não tem em ano bissexto TEM 29 dias em fev
-            
+    public static boolean isValida (byte dia, byte mes, short ano) {
+        if (ano<-45) 
+            return false; 
+        if (ano== 0) 
+            return false;
+        if (ano==1582 && mes==10 && dia>=5 && dia<=14) 
+            return false;
+
+        if (dia<1 || dia>31 || mes<1 || mes>12) 
+            return false;
+
+        if (dia>30 && (mes==4 || mes==6 || mes==9 || mes==11)) 
+            return false;
+        if (dia>29 && mes==2) 
+            return false;
+        if (dia>28 && mes==2 && !Data.isBissexto(ano)) 
+            return false;
+
         return true;
     }
 
-    /*ESSE É O CONSTRUTOR*//*MESMO NOME DA CLASSE*/
-    public Data (byte dia, byte mes, short ano) throws Exception{
-        if (!Data.isValida(dia, mes, ano))
-            throw new Exception ("Data Inválida");
-        
-        this.dia = dia;
-        this.mes = mes;
-        this.ano = ano;
-    } 
-    
-    
-    /*SELECIONANDO E SETANDO DIA*/
+    public Data (byte dia, byte mes, short ano) throws Exception {
+        if (!Data.isValida(dia,mes,ano))
+            throw new Exception ("Data invalida");
+
+        this.dia=dia;
+        this.mes=mes;
+        this.ano=ano;
+    }
+
     public void setDia (byte dia) throws Exception {
-        if (!Data.isValida(dia, this.mes, this.ano))
-            throw new Exception ("Data Inválida");
-        this.dia = dia;
+        if (!Data.isValida(dia,this.mes,this.ano))
+            throw new Exception ("Dia invalido");
+
+        this.dia=dia;
     }
 
     public byte getDia () {
         return this.dia;
     }
     
-    
-    /*SELECIONANDO E SETANDO MES*/
     public void setMes (byte mes) throws Exception {
-        if (!Data.isValida(this.dia, mes, this.ano))
-            throw new Exception ("Data Inválida");
-        this.mes = mes;
+        if (!Data.isValida(this.dia,mes,this.ano))
+            throw new Exception ("Mes invalido");
+
+        this.mes=mes;
     }
 
     public byte getMes () {
         return this.mes;
     }
     
-    
-    /*SELECIONANDO E SETANDO ANO*/
     public void setAno (short ano) throws Exception {
-        if (!Data.isValida(this.dia, this.mes, ano))
-            throw new Exception ("Data Inválida");
-        this.ano = ano;
+        if (!Data.isValida(this.dia,this.mes,ano))
+            throw new Exception ("Ano invalido");
+
+        this.ano=ano;
     }
 
     public short getAno () {
         return this.ano;
     }
-    
-    // Ele tera que fazer o dia para mais um, porém se o dia passar de 31 ele deve voltar ao um, e se o mes passsar do 12, ele deve voltar ao 1
 
-    public static proximoDia((byte) dia, (byte) mes, (short) ano) {
-        Data d = new Data((byte)dia, (byte)mes, (short)ano);
-
-        if(Data.isValida(this.dia, this.mes, this.ano))
-            if (dia == 31)
-                return dia + '1';
-            if (dia == 31 && mes == 12)
-                return dia + '1'; 
-                return mes = '1';
-            if (mes == 2 && dia == 28)
-                return mes + 1;
-                return dia = '1';
-            if (mes == 4 || mes == 6 || mes == 9 || mes == 11 && dia == 30)
-                return mes + 1;
-                return dia = '1';
-            if (ano % 4 == 0)
-                if (dia == 31)
-                    return dia + '1';
-                if (dia == 31 && mes == 12)
-                    return dia + '1';
-                    return mes = '1';
-                if (mes == 2 && dia == 28)
-                    return mes + '1';
-                    return dia = '1';
-                if (mes == '4' || mes == '6' || mes == '9' || mes == 11 && dia == 30)
-                    return mes + '1';
-                    return dia = '1';
-                else
+    public Data getDiaSeguinte () {
+        if (this.ano==1582 && this.mes==10 && this.dia==4) { 
+            try {
+                return new Data ((byte)15,(byte)10,(short)1582);
+            } 
+            catch (Exception erro1) {}
+        } 
+        else if (this.ano==-1 && this.mes==12 && this.dia==31) { 
+            try {
+                return new Data ((byte)1,(byte)1,(short)1);
+            } 
+            catch (Exception erro2){}} 
+        else { 
+            try {
+                return new Data (this.dia+1,this.mes,this.ano);
+            } 
+            catch (Exception erro3) { 
+                try {
+                    return new Data ((byte)1,this.mes+1,this.ano);
+                } 
+                catch (Exception erro4) { 
+                    try {
+                        return new Data ((byte)1,(byte)1,this.ano+1);
+                    } 
+                    catch (Exception erro4) {}
+                }
+            }
+        }
     }
 
+    public Data getVariosDiasAdiante (int qtd) throws Exception {
+        // faça
+    }
 
-    // criando uma instância para criar a data Reveillon
-    public static void main (String[] args){
-        try {
+    public Data getDiaAnterior () {
+        // faça
+    }
 
-            Data d2 = new Data((byte)25, (byte)12, (short)2024);
-            System.out.printf("O natal será %d/%d/%o/n");
-            d2.setDia((byte)24);
-            d2.setMes((byte)8);
-            d2.setAno((short)2024);
-
-            Data d1 = new Data ((byte)31, (byte)12, (short)2024);
-            System.out.println("O Reveilon será" + d1.getDia() + "/" + d1.getMes() + "/" + d1.getAno() + "!");
-            d1.setDia((byte)19);
-            d1.setMes((byte)1);
-            d1.setAno((short)1966);
-        }
-        catch () {
-
-        }
+    public Data getVariosDiasAtras (int qtd) throws Exception {
+        // faça
     }
 }
