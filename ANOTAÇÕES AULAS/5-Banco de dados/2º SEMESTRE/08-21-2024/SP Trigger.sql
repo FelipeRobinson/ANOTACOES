@@ -54,18 +54,18 @@ CREATE TABLE trAGENDAMENTO(
 )
 
 INSERT INTO trCLIENTES 
-values ('52154','Marcelo Antonio Santos','mar@uol.com','36254587'),
+VALUES ('52154','Marcelo Antonio Santos','mar@uol.com','36254587'),
        ('23423','Gil Faber','gf211@uol.com','2345476'),
        ('68767','Beth Brunella','bb@uol.com','32342347'),
        ('12333','Cris Antunes','ca@uol.com','39789587')
 
 INSERT INTO trAGENCIA(nome) 
-values ('Barao de Itapura'),
+VALUES ('Barao de Itapura'),
        ('Culto A Ciencia'),
        ('Centro')
 
 INSERT INTO trCONTA 
-values (1,10,5,0,'52154',100),
+VALUES (1,10,5,0,'52154',100),
        (2,100,0,0,'23423',520),
        (2,110,5,1,'68767',210),
        (3,120,0,0,'12333',325)
