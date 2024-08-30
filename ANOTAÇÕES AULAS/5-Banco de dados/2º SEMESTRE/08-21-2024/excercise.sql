@@ -10,7 +10,7 @@ BEGIN
     -- Aqui pegamos a declaração da metade do número da CONTA
     SET @metadeDaConta = @nrConta / 2;
 
-    -- Aqui verificamos qual é o último número apos a metade ter sido definido
+    -- Aqui verificamos qual é o último número apos a metade
     SET @digitoVerificado = @metadeDaConta % 10;
 
     RETURN @digitoVerificado;
@@ -20,7 +20,6 @@ END;
 
 -- 2)
 CREATE FUNCTION ObterSaldoNaData (
-    -- Obtendo os parâmetros --
     @nrConta INT,
     @idAgencia INT,
     @data SMALLDATETIME
@@ -39,21 +38,18 @@ BEGIN
       FROM trCONTA
      WHERE nrConta = @nrConta AND idAgencia = @idAgencia;
 
-    -- Calculando o total de crédito até a data de referencia --
     SELECT @creditos = ISNULL(SUM(valor), 0)
       FROM trMOVIMENTACAO
      WHERE nrConta = @nrConta AND idAgencia = @idAgencia
            AND data <= @data
            AND credito = 1;
 
-    -- Calculando o total de débito até a data de referência --
     SELECT @debitos = ISNULL(SUM(valor), 0)
       FROM trMOVIMENTACAO
      WHERE nrConta = @nrConta AND idAgencia = @idAgencia
            AND data <= @data
            AND credito = 0;
 
-    -- Calculando o valor final, sendo ele a soma do saldo inicial e do crédito, e a subtração do débito pelo crédito --
     SET @saldoFinal = @saldoInicial + @creditos - @debitos;
 
     -- RETORNANDO O SALDO FINAL --
@@ -252,7 +248,3 @@ BEGIN
         THROW;
     END CATCH
 END;
-
-
-
--- 6)
