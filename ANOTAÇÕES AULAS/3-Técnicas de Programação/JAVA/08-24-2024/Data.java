@@ -84,28 +84,18 @@ public class Data {
 
     public Data getDiaSeguinte () {
         if (this.ano==1582 && this.mes==10 && this.dia==4) { 
-            try {
-                return new Data ((byte)15,(byte)10,(short)1582);
-            } 
+            try { return new Data ((byte)15,(byte)10,(short)1582);} 
             catch (Exception erro1) {}
         } 
         else if (this.ano==-1 && this.mes==12 && this.dia==31) { 
-            try {
-                return new Data ((byte)1,(byte)1,(short)1);
-            } 
+            try {return new Data ((byte)1,(byte)1,(short)1);} 
             catch (Exception erro2){}} 
         else { 
-            try {
-                return new Data (this.dia+1,this.mes,this.ano);
-            } 
+            try {return new Data (this.dia+1,this.mes,this.ano);} 
             catch (Exception erro3) { 
-                try {
-                    return new Data ((byte)1,this.mes+1,this.ano);
-                } 
+                try {return new Data ((byte)1,this.mes+1,this.ano);} 
                 catch (Exception erro4) { 
-                    try {
-                        return new Data ((byte)1,(byte)1,this.ano+1);
-                    } 
+                    try {return new Data ((byte)1,(byte)1,this.ano+1);} 
                     catch (Exception erro4) {}
                 }
             }
@@ -113,7 +103,10 @@ public class Data {
     }
 
     public Data getVariosDiasAdiante (int qtd) throws Exception {
-        // faça
+        if (qtd <= 0) {
+            throw new Exception ("Quantidade inválida!");
+            for (i = 0; i < qtd; i++) this.getDiaSeguinte();
+        }
     }
 
     public Data getDiaAnterior () {
