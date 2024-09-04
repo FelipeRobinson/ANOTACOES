@@ -5,14 +5,14 @@ CREATE TABLE trCLIENTES(
    Telefone varchar(40) not null,
 
    constraint pk_clientes primary key  (rg)
-) 
+)
 
 CREATE TABLE trAGENCIA(
    id Int Identity not null,
    Nome varchar(40) not null,
 
    constraint pk_agencia primary key  (id)
-) 
+)
 
 CREATE TABLE trCONTA(
    idAgencia int not null,
@@ -25,7 +25,7 @@ CREATE TABLE trCONTA(
    constraint pk_conta primary key  (idAgencia,nrConta),
    constraint fk_conta_agencia foreign key (idAgencia) references trAgencia(id),
    constraint fk_conta_cliente foreign key (idCliente) references trClientes(rg)
-) 
+)
 
 CREATE TABLE trMOVIMENTACAO(
    id Int Identity not null,
