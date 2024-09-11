@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-03T22:22:19.121795"
+    rpa="false" schemaversion="5">
+    <suite id="s1" name="Saucedemo Test" source="Z:\automation\automacao\robot\saucedemo_test.robot">
+        <test id="s1-t1" name="Acessar página Saucedemo" line="5">
+            <kw name="New Page https://www.saucedemo.com/">
+                <msg time="2024-09-03T22:22:19.168671" level="FAIL">No keyword with name 'New Page
+                    https://www.saucedemo.com/' found.</msg>
+                <status status="FAIL" start="2024-09-03T22:22:19.168671" elapsed="0.000000">No
+                    keyword with name 'New Page https://www.saucedemo.com/' found.</status>
+            </kw>
+            <kw name="Wait for Elements State css=div.login_logo">
+                <arg>visible</arg>
+                <status status="NOT RUN" start="2024-09-03T22:22:19.168671" elapsed="0.000000" />
+            </kw>
+            <kw name="Close Browser">
+                <status status="NOT RUN" start="2024-09-03T22:22:19.168671" elapsed="0.000000" />
+            </kw>
+            <status status="FAIL" start="2024-09-03T22:22:19.168671" elapsed="0.000000">No keyword
+                with name 'New Page https://www.saucedemo.com/' found.</status>
+        </test>
+        <status status="FAIL" start="2024-09-03T22:22:19.137421" elapsed="0.031250" />
+    </suite>
+    <statistics>
+        <total>
+            <stat pass="0" fail="1" skip="0">All Tests</stat>
+        </total>
+        <tag>
+        </tag>
+        <suite>
+            <stat pass="0" fail="1" skip="0" id="s1" name="Saucedemo Test">Saucedemo Test</stat>
+        </suite>
+    </statistics>
+    <errors>
+        <msg time="2024-09-03T22:22:19.106171" level="ERROR">Error in file
+            'Z:\automation\automacao\robot\saucedemo_test.robot' on line 2: Non-existing setting
+            'Library Browser'.</msg>
+    </errors>
+</robot>
