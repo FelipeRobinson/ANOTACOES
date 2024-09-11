@@ -4,11 +4,12 @@ CREATE TABLE curClientes (
 
 	constraint pk_curClientes PRIMARY KEY (id)
 )
-
 INSERT INTO curClientes (nome)
 VALUES ('Mercado das Flores'), 
-	   ('Pedro Paulo COm�rcio Ltda'),
+	   ('Pedro Paulo Comercio Ltda'),
 	   ('Alez Marins')
+
+
 
 CREATE TABLE curProdutos (
 	id int identity not null,
@@ -18,14 +19,15 @@ CREATE TABLE curProdutos (
 
 	constraint pk_curProdutos PRIMARY KEY (id)
 )
-
 INSERT INTO curProdutos(descricao, estoque, valorUnitario)
-VALUES ('Caneta BIC Super',100,10.25),
-       ('Caderno 100 Folhas',5,20.25),
-       ('Papel Bolha',80,14.56),
-       ('Teclado Simples',80,70.30),
-       ('Mesa de Plastico',350,34.20),
-       ('Gaveteiro',580,60.50)
+VALUES ('Caneta BIC Super', 100, 10.25),
+       ('Caderno 100 Folhas', 5, 20.25),
+       ('Papel Bolha', 80, 14.56),
+       ('Teclado Simples', 80, 70.30),
+       ('Mesa de Plastico', 350, 34.20),
+       ('Gaveteiro', 580, 60.50)
+
+
 
 CREATE TABLE curVendas (
 	id int identity not null,
@@ -35,7 +37,6 @@ CREATE TABLE curVendas (
 
 	constraint pk_curVendas PRIMARY KEY (id)
 )
-
 INSERT INTO curVendas (data, idCliente, situacao) 
 VALUES (getdate()-20, 1, 0),
 	   (getdate()-30, 1, 0),
@@ -45,6 +46,8 @@ VALUES (getdate()-20, 1, 0),
 	   (getdate()-80, 2, 0),
 	   (getdate()-20, 3, 0),
 	   (getdate()-20, 3, 1)
+
+
 
 CREATE TABLE curItens (
 	idVenda int not null,
