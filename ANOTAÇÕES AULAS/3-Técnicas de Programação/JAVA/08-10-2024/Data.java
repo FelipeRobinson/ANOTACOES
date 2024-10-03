@@ -96,7 +96,7 @@ public class Data {
             catch (Exception erro2){}} 
         else { 
             try {
-                return new Data (this.dia+1,this.mes,this.ano);
+                return new Data (this.dia+1, this.mes, this.ano);
             } 
             catch (Exception erro3) { 
                 try {
@@ -112,6 +112,7 @@ public class Data {
         }
     }
 
+    /*
     public Data getVariosDiasAdiante (int qtd) throws Exception {
         // faça
     }
@@ -123,4 +124,5 @@ public class Data {
     public Data getVariosDiasAtras (int qtd) throws Exception {
         // faça
     }
+    */
 }
