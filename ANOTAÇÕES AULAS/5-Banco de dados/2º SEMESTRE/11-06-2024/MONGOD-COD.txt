@@ -1,0 +1,13 @@
+MONGOS CODES:
+
+- VISUALIZAR OS DB's:
+show dbs
+
+- DROPAR UM DB:
+1º      use { nome do db }
+2º      db.dropDatabase()
+
+MONSTAR OQUE TEM DENTRO DO DB (AS COLEÇÕES):
+1º      use { NOME DO DB }
+2º      show collections
+
