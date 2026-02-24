@@ -1,0 +1,25 @@
+ALP  -  24-02
+
+DESENVOLVENDO LÓGICA DE PROGRAMAÇÃO
+
+- Programando em C
+
+
+ESTRUTURA BÁSICA EM C
+-------------------------------------------------------------------------------------------
+Declarar BIBLIOTECAS
+
+Declarar Variáveis/Constantes
+
+int main() {
+    Declarar Variáveis
+
+    Comandos
+    -
+    -
+    
+    Comandos
+    -
+    -
+}
+-------------------------------------------------------------------------------------------
