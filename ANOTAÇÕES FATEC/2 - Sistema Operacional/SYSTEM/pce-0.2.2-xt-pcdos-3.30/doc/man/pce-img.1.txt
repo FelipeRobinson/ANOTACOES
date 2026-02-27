@@ -1,0 +1,87 @@
+PCE-IMG(1)                            pce                           PCE-IMG(1)
+
+
+
+NAME
+       pce-img - the PCE disk image utility
+
+
+SYNOPSIS
+       pce-img create [options] [output-file]
+
+       pce-img convert [options] [input-file] [options] [output-file]
+
+
+DESCRIPTION
+       pce-img(1) is used to create and convert disk image files.
+
+
+OPTIONS
+       -c, --cylinders c
+              Set the number of cylinders.
+
+       -C, --min-cluster-size size
+              Set the minimum cluster size for QED images. The default is 0.
+
+       -f, --offset offset
+              Set  the starting offset of the disk image for formats that sup-
+              port it.
+
+       -g, --geometry c h s
+              Set the disk geometry. This is the same as using the -c, -h  and
+              -s options.
+
+       -h, --heads h
+              Set the number of heads.
+
+       -i, --input filename
+              Set the input file name.
+
+       -m, --megabytes size
+              Set the disk size in MiB.
+
+       -n, --size blocks
+              Set the disk size in 512 byte blocks.
+
+       -o, --output filename
+              Set the output file name.
+
+       -q, --quiet
+              Be quiet.
+
+       -s, --sectors s
+              Set the number of sectors per track.
+
+       -w, --cow filename
+              Set the COW file name.
+
+       --help Print usage information.
+
+       --version
+              Print version information.
+
+
+EXAMPLES
+       Create a 1 GiB PIMG image:
+
+              $ pce-img create -m 1024 -o image.pimg
+
+       Create a 10 MB PIMG image
+
+              $ pce-img create -g 306 4 17 -o image.pimg
+
+       Convert a PIMG image to a raw image
+
+              $ pce-img convert source.pimg dest.img
+
+
+SEE ALSO
+       pce-ibmpc(1), pce-macplus(1), pfdc(1)
+
+
+AUTHOR
+       Hampa Hug <hampa@hampa.ch>
+
+
+
+HH                                2012-01-30                        PCE-IMG(1)

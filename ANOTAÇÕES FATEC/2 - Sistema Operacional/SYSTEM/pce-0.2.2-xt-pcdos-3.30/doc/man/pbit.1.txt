@@ -1,0 +1,148 @@
+PBIT(1)                               pce                              PBIT(1)
+
+
+
+NAME
+       pbit - convert and modify PBIT image files
+
+
+SYNOPSIS
+       pbit [options] [input-file] [options] [output-file]
+
+
+DESCRIPTION
+       pbit(1) is used to modify and convert PBIT images files.
+
+
+OPTIONS
+       -c, --cylinder cyl1[-cyl2]
+              Select a range of cylinders.
+
+       -e, --edit what val
+              For  all  selected tracks, set track attribute what to val.  For
+              boolean attributes, a value of 0 disables the attribute and  any
+              other value enables it.  Recognized attributes are:
+
+              clock  The bit clock rate.
+
+              data   Initialize the track using val.
+
+              size   Set the track size in bits.
+
+       -f, --info
+              Print  information  about  the  current  image or the next image
+              loaded.
+
+       -h, --head head1[-head2]
+              Select a range of heads.
+
+       -i, --input filename
+              Load an image from filename.
+
+       -I, --input-format format
+              Set the input file format to format.  Valid formats are:
+
+              pbit   The native PBIT file format.
+
+              tc     Transcopy dump format. Support for this format is  highly
+                     experimental.
+
+       -l, --list-short
+              List  all  tracks  in  the  current  image  or in the next image
+              loaded.  Using this options prints one line per track.
+
+       -L, --list-long
+              List all tracks in the  current  image  or  in  the  next  image
+              loaded.
+
+       -o, --output filename
+              Set the output file name. Before exiting, the current image will
+              be written to this file.
+
+       -O, --output-format format
+              Set the output file format to format. See the -I  option  for  a
+              list of valid formats.
+
+       -p, --operation name [arg...]
+              Perform an operation on the current image. Valid operations are:
+
+              auto-align-gcr
+                     Automatically align Macintosh GCR tracks to the index.
+
+              comment-add text
+                     Add text to the image comment.
+
+              comment-load filename
+                     Load the image comment from file filename.
+
+              comment-print
+                     Print the current image comment.
+
+              comment-save filename
+                     Save the current image comment to filename.
+
+              comment-set text
+                     Set the image comment to text.
+
+              decode type filename
+                     Decode  the  image  and save it as a pfdc sector image to
+                     filename.  Valid decode types are:
+
+                     gcr    Apple Macintosh GCR
+
+                     mfm    IBM MFM
+
+              delete Delete all selected tracks.
+
+              double-step
+                     Remove odd numbered tracks.
+
+              double-step-even
+                     Remove even numbered tracks.
+
+              encode type filename
+                     Load a pfdc sector image from  filename  and  encode  it.
+                     Valid encode types are:
+
+                     gcr    Apple Macintosh GCR
+
+                     mfm    IBM MFM
+
+              info   Print information about the current image (same as -f).
+
+              new    Create new tracks.
+
+              rotate bits
+                     Rotate all selected tracks left by bits bits.
+
+              save filename
+                     Save all selected tracks to filename. The contents of the
+                     tracks are written sequentially to the file.
+
+       -r, --data-rate rate
+              Set the default data rate. The default is  500000.  If  rate  is
+              greater than 1000 it is assumed to be in bits per second, other-
+              wise it is assumed to be in kbits per seconds.
+
+       -t, --track c h
+              Select tracks. This is the same as using the -c and -h options.
+
+       -v, --verbose
+              Enable verbose operation.
+
+       --help Print usage information.
+
+       --version
+              Print version information.
+
+
+SEE ALSO
+       pce-ibmpc(1), pce-macplus(1), pce-img(1), pfdc(1)
+
+
+AUTHOR
+       Hampa Hug <hampa@hampa.ch>
+
+
+
+HH                                2012-03-10                           PBIT(1)

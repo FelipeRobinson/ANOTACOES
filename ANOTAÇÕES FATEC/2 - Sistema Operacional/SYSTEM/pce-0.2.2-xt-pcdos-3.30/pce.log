@@ -1,0 +1,341 @@
+pce-ibmpc version 0.2.2
+Copyright (C) 1995-2012 Hampa Hug <hampa@hampa.ch>
+CONFIG:   file="pce-5160.cfg"
+SYSTEM:   model=5160 floppies=2 patch-init=0 patch-int19=0
+RAM:      addr=0x00000000 size=524288 file=<none>
+ROM:      addr=0x000f0000 size=65536 file=<none>
+ROM:      addr=0x000c8000 size=32768 file=<none>
+CPU:      model=8088 speed=1X
+DMAC:     addr=0x00000000 size=0x0010
+PIC:      addr=0x00000020 size=0x0002
+PIT:      addr=0x00000040 size=0x0004
+PPI:      addr=0x00000060 size=0x0004
+SPEAKER:  volume=250 srate=44100 lowpass=8000 driver=sdl:lowpass=0
+TERM:     driver=sdl ESC=ESC aspect=4/3 min_size=512*384 scale=1 mouse=[1/1 1/1]
+VIDEO:    device=cga
+VIDEO:    CGA io=0x03d4 addr=0xb8000 size=0x04000 font=0
+DISK:     drive=0 type=auto blocks=0 chs=0/0/0 rw file=fd0.pfdc
+DISK:     drive=1 type=auto blocks=0 chs=0/0/0 rw file=fd1.pfdc
+DISK:     drive=128 type=auto blocks=41820 chs=615/4/17 rw file=hd0.pimg
+FDC:      addr=0x000003f0 irq=6 accurate=1 eot=1 drv=[0 1 2 3]
+HDC:      addr=0x00000320 irq=5 drv=[128 129] sectors=17 switches=0x0a id=""
+SERPORT:  COM1 addr=0x03f8 irq=4 multichar=r=1/w=1 uart=8250
+SERPORT:  COM1 driver=stdio:file=ser1.out:flush=1
+SERPORT:  COM2 addr=0x02f8 irq=3 multichar=r=1/w=1 uart=8250
+SERPORT:  COM2 driver=stdio:file=ser2.out:flush=1
+PARPORT:  LPT1 addr=0x0378 driver=stdio:file=par1.out:flush=1
+PARPORT:  LPT2 addr=0x0278 driver=stdio:file=par2.out:flush=1
+Load:     file=rom/ibm-xt-1986-05-09.rom format=binary addr=0x000f0000
+Load:     file=rom/ibm-mfm-1985-10-28.rom format=binary addr=0x000c8000
+[0000:0000] reset pc
+[F000:FFF0] reset keyboard
+[F000:F9ED] reset keyboard
+[F000:F9ED] reset keyboard
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+host system too slow, skipping 1 second.
+host system too slow, skipping 1 second.
+host system too slow, skipping 1 second.
+host system too slow, skipping 1 second.
+host system too slow, skipping 1 second.
+host system too slow, skipping 1 second.
+host system too slow, skipping 1 second.
+host system too slow, skipping 1 second.
+11E0:017B: undefined operation [61 74]
+pce: hook [69 63] AX=0113 BX=0004 CX=0000 DX=0000
+11E0:01A7: undefined operation [69 65]
+11E0:01A8: undefined operation [65 6e]
+11E0:01A9: undefined operation [6E 74]
+11E0:01F1: undefined operation [69 6c]
+11E0:01F2: undefined operation [6C 65]
+11E0:01F3: undefined operation [65 20]
+11E0:01F7: undefined operation [6E 6e]
+11E0:01F8: undefined operation [6E 6f]
+11E0:01F9: undefined operation [6F 74]
+11E0:0243: undefined operation [6E 76]
+11E0:0246: undefined operation [6C 69]
+11E0:0247: undefined operation [69 64]
+11E0:0248: undefined operation [64 20]
+11E0:024C: undefined operation [6C 65]
+11E0:024D: undefined operation [65 6e]
+11E0:024E: undefined operation [6E 61]
+11E0:024F: undefined operation [61 6d]
+11E0:0250: undefined operation [6D 65]
+11E0:0251: undefined operation [65 20]
+11E0:0258: undefined operation [6C 65]
+11E0:0259: undefined operation [65 20]
+11E0:0288: undefined operation [6C 65]
+11E0:0289: undefined operation [65 28]
+11E0:0296: undefined operation [64 20]
+11E0:0301: undefined operation [61 67]
+11E0:0302: undefined operation [67 65]
+11E0:0303: undefined operation [65 20]
+11E0:0309: undefined operation [6E 6f]
+11E0:030A: undefined operation [6F 74]
+11E0:030F: undefined operation [65 70]
+11E0:0314: undefined operation [64 20]
+11E0:031A: undefined operation [61 6c]
+11E0:031B: undefined operation [6C 6c]
+11E0:031C: undefined operation [6C 20]
+11E0:0322: undefined operation [63 65]
+11E0:0323: undefined operation [65 73]
+11E0:0333: undefined operation [65 20]
+11E0:0337: undefined operation [64 65]
+11E0:0338: undefined operation [65 20]
+11E0:033C: undefined operation [67 65]
+11E0:033D: undefined operation [65 3a]
+host system too slow, skipping 1 second.
+pce-ibmpc version 0.2.2
+Copyright (C) 1995-2012 Hampa Hug <hampa@hampa.ch>
+CONFIG:   file="pce-5160.cfg"
+SYSTEM:   model=5160 floppies=2 patch-init=0 patch-int19=0
+RAM:      addr=0x00000000 size=524288 file=<none>
+ROM:      addr=0x000f0000 size=65536 file=<none>
+ROM:      addr=0x000c8000 size=32768 file=<none>
+CPU:      model=8088 speed=1X
+DMAC:     addr=0x00000000 size=0x0010
+PIC:      addr=0x00000020 size=0x0002
+PIT:      addr=0x00000040 size=0x0004
+PPI:      addr=0x00000060 size=0x0004
+SPEAKER:  volume=250 srate=44100 lowpass=8000 driver=sdl:lowpass=0
+TERM:     driver=sdl ESC=ESC aspect=4/3 min_size=512*384 scale=1 mouse=[1/1 1/1]
+VIDEO:    device=cga
+VIDEO:    CGA io=0x03d4 addr=0xb8000 size=0x04000 font=0
+DISK:     drive=0 type=auto blocks=0 chs=0/0/0 rw file=fd0.pfdc
+DISK:     drive=1 type=auto blocks=0 chs=0/0/0 rw file=fd1.pfdc
+DISK:     drive=128 type=auto blocks=41820 chs=615/4/17 rw file=hd0.pimg
+FDC:      addr=0x000003f0 irq=6 accurate=1 eot=1 drv=[0 1 2 3]
+HDC:      addr=0x00000320 irq=5 drv=[128 129] sectors=17 switches=0x0a id=""
+SERPORT:  COM1 addr=0x03f8 irq=4 multichar=r=1/w=1 uart=8250
+SERPORT:  COM1 driver=stdio:file=ser1.out:flush=1
+SERPORT:  COM2 addr=0x02f8 irq=3 multichar=r=1/w=1 uart=8250
+SERPORT:  COM2 driver=stdio:file=ser2.out:flush=1
+PARPORT:  LPT1 addr=0x0378 driver=stdio:file=par1.out:flush=1
+PARPORT:  LPT2 addr=0x0278 driver=stdio:file=par2.out:flush=1
+Load:     file=rom/ibm-xt-1986-05-09.rom format=binary addr=0x000f0000
+Load:     file=rom/ibm-mfm-1985-10-28.rom format=binary addr=0x000c8000
+[0000:0000] reset pc
+[F000:FFF0] reset keyboard
+[F000:F9ED] reset keyboard
+[F000:F9ED] reset keyboard
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+host system too slow, skipping 1 second.
+pce-ibmpc version 0.2.2
+Copyright (C) 1995-2012 Hampa Hug <hampa@hampa.ch>
+CONFIG:   file="pce-5160.cfg"
+SYSTEM:   model=5160 floppies=2 patch-init=0 patch-int19=0
+RAM:      addr=0x00000000 size=524288 file=<none>
+ROM:      addr=0x000f0000 size=65536 file=<none>
+ROM:      addr=0x000c8000 size=32768 file=<none>
+CPU:      model=8088 speed=1X
+DMAC:     addr=0x00000000 size=0x0010
+PIC:      addr=0x00000020 size=0x0002
+PIT:      addr=0x00000040 size=0x0004
+PPI:      addr=0x00000060 size=0x0004
+SPEAKER:  volume=250 srate=44100 lowpass=8000 driver=sdl:lowpass=0
+TERM:     driver=sdl ESC=ESC aspect=4/3 min_size=512*384 scale=1 mouse=[1/1 1/1]
+VIDEO:    device=cga
+VIDEO:    CGA io=0x03d4 addr=0xb8000 size=0x04000 font=0
+DISK:     drive=0 type=auto blocks=0 chs=0/0/0 rw file=fd0.pfdc
+DISK:     drive=1 type=auto blocks=0 chs=0/0/0 rw file=fd1.pfdc
+DISK:     drive=128 type=auto blocks=41820 chs=615/4/17 rw file=hd0.pimg
+FDC:      addr=0x000003f0 irq=6 accurate=1 eot=1 drv=[0 1 2 3]
+HDC:      addr=0x00000320 irq=5 drv=[128 129] sectors=17 switches=0x0a id=""
+SERPORT:  COM1 addr=0x03f8 irq=4 multichar=r=1/w=1 uart=8250
+SERPORT:  COM1 driver=stdio:file=ser1.out:flush=1
+SERPORT:  COM2 addr=0x02f8 irq=3 multichar=r=1/w=1 uart=8250
+SERPORT:  COM2 driver=stdio:file=ser2.out:flush=1
+PARPORT:  LPT1 addr=0x0378 driver=stdio:file=par1.out:flush=1
+PARPORT:  LPT2 addr=0x0278 driver=stdio:file=par2.out:flush=1
+Load:     file=rom/ibm-xt-1986-05-09.rom format=binary addr=0x000f0000
+Load:     file=rom/ibm-mfm-1985-10-28.rom format=binary addr=0x000c8000
+[0000:0000] reset pc
+[F000:FFF0] reset keyboard
+[F000:F9ED] reset keyboard
+[F000:F9ED] reset keyboard
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+11E0:0109: undefined operation [61 6e]
+pce-ibmpc version 0.2.2
+Copyright (C) 1995-2012 Hampa Hug <hampa@hampa.ch>
+CONFIG:   file="pce-5160.cfg"
+SYSTEM:   model=5160 floppies=2 patch-init=0 patch-int19=0
+RAM:      addr=0x00000000 size=524288 file=<none>
+ROM:      addr=0x000f0000 size=65536 file=<none>
+ROM:      addr=0x000c8000 size=32768 file=<none>
+CPU:      model=8088 speed=1X
+DMAC:     addr=0x00000000 size=0x0010
+PIC:      addr=0x00000020 size=0x0002
+PIT:      addr=0x00000040 size=0x0004
+PPI:      addr=0x00000060 size=0x0004
+SPEAKER:  volume=250 srate=44100 lowpass=8000 driver=sdl:lowpass=0
+TERM:     driver=sdl ESC=ESC aspect=4/3 min_size=512*384 scale=1 mouse=[1/1 1/1]
+VIDEO:    device=cga
+VIDEO:    CGA io=0x03d4 addr=0xb8000 size=0x04000 font=0
+DISK:     drive=0 type=auto blocks=0 chs=0/0/0 rw file=fd0.pfdc
+DISK:     drive=1 type=auto blocks=0 chs=0/0/0 rw file=fd1.pfdc
+DISK:     drive=128 type=auto blocks=41820 chs=615/4/17 rw file=hd0.pimg
+FDC:      addr=0x000003f0 irq=6 accurate=1 eot=1 drv=[0 1 2 3]
+HDC:      addr=0x00000320 irq=5 drv=[128 129] sectors=17 switches=0x0a id=""
+SERPORT:  COM1 addr=0x03f8 irq=4 multichar=r=1/w=1 uart=8250
+SERPORT:  COM1 driver=stdio:file=ser1.out:flush=1
+SERPORT:  COM2 addr=0x02f8 irq=3 multichar=r=1/w=1 uart=8250
+SERPORT:  COM2 driver=stdio:file=ser2.out:flush=1
+PARPORT:  LPT1 addr=0x0378 driver=stdio:file=par1.out:flush=1
+PARPORT:  LPT2 addr=0x0278 driver=stdio:file=par2.out:flush=1
+Load:     file=rom/ibm-xt-1986-05-09.rom format=binary addr=0x000f0000
+Load:     file=rom/ibm-mfm-1985-10-28.rom format=binary addr=0x000c8000
+[0000:0000] reset pc
+[F000:FFF0] reset keyboard
+[F000:F9ED] reset keyboard
+[F000:F9ED] reset keyboard
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+pce-ibmpc version 0.2.2
+Copyright (C) 1995-2012 Hampa Hug <hampa@hampa.ch>
+CONFIG:   file="pce-5160.cfg"
+SYSTEM:   model=5160 floppies=2 patch-init=0 patch-int19=0
+RAM:      addr=0x00000000 size=524288 file=<none>
+ROM:      addr=0x000f0000 size=65536 file=<none>
+ROM:      addr=0x000c8000 size=32768 file=<none>
+CPU:      model=8088 speed=1X
+DMAC:     addr=0x00000000 size=0x0010
+PIC:      addr=0x00000020 size=0x0002
+PIT:      addr=0x00000040 size=0x0004
+PPI:      addr=0x00000060 size=0x0004
+SPEAKER:  volume=250 srate=44100 lowpass=8000 driver=sdl:lowpass=0
+TERM:     driver=sdl ESC=ESC aspect=4/3 min_size=512*384 scale=1 mouse=[1/1 1/1]
+VIDEO:    device=cga
+VIDEO:    CGA io=0x03d4 addr=0xb8000 size=0x04000 font=0
+DISK:     drive=0 type=auto blocks=0 chs=0/0/0 rw file=fd0.pfdc
+DISK:     drive=1 type=auto blocks=0 chs=0/0/0 rw file=fd1.pfdc
+DISK:     drive=128 type=auto blocks=41820 chs=615/4/17 rw file=hd0.pimg
+FDC:      addr=0x000003f0 irq=6 accurate=1 eot=1 drv=[0 1 2 3]
+HDC:      addr=0x00000320 irq=5 drv=[128 129] sectors=17 switches=0x0a id=""
+SERPORT:  COM1 addr=0x03f8 irq=4 multichar=r=1/w=1 uart=8250
+SERPORT:  COM1 driver=stdio:file=ser1.out:flush=1
+SERPORT:  COM2 addr=0x02f8 irq=3 multichar=r=1/w=1 uart=8250
+SERPORT:  COM2 driver=stdio:file=ser2.out:flush=1
+PARPORT:  LPT1 addr=0x0378 driver=stdio:file=par1.out:flush=1
+PARPORT:  LPT2 addr=0x0278 driver=stdio:file=par2.out:flush=1
+Load:     file=rom/ibm-xt-1986-05-09.rom format=binary addr=0x000f0000
+Load:     file=rom/ibm-mfm-1985-10-28.rom format=binary addr=0x000c8000
+[0000:0000] reset pc
+[F000:FFF0] reset keyboard
+[F000:F9ED] reset keyboard
+[F000:F9ED] reset keyboard
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+pce-ibmpc version 0.2.2
+Copyright (C) 1995-2012 Hampa Hug <hampa@hampa.ch>
+CONFIG:   file="pce-5160.cfg"
+SYSTEM:   model=5160 floppies=2 patch-init=0 patch-int19=0
+RAM:      addr=0x00000000 size=524288 file=<none>
+ROM:      addr=0x000f0000 size=65536 file=<none>
+ROM:      addr=0x000c8000 size=32768 file=<none>
+CPU:      model=8088 speed=1X
+DMAC:     addr=0x00000000 size=0x0010
+PIC:      addr=0x00000020 size=0x0002
+PIT:      addr=0x00000040 size=0x0004
+PPI:      addr=0x00000060 size=0x0004
+SPEAKER:  volume=250 srate=44100 lowpass=8000 driver=sdl:lowpass=0
+TERM:     driver=sdl ESC=ESC aspect=4/3 min_size=512*384 scale=1 mouse=[1/1 1/1]
+VIDEO:    device=cga
+VIDEO:    CGA io=0x03d4 addr=0xb8000 size=0x04000 font=0
+DISK:     drive=0 type=auto blocks=0 chs=0/0/0 rw file=fd0.pfdc
+DISK:     drive=1 type=auto blocks=0 chs=0/0/0 rw file=fd1.pfdc
+DISK:     drive=128 type=auto blocks=41820 chs=615/4/17 rw file=hd0.pimg
+FDC:      addr=0x000003f0 irq=6 accurate=1 eot=1 drv=[0 1 2 3]
+HDC:      addr=0x00000320 irq=5 drv=[128 129] sectors=17 switches=0x0a id=""
+SERPORT:  COM1 addr=0x03f8 irq=4 multichar=r=1/w=1 uart=8250
+SERPORT:  COM1 driver=stdio:file=ser1.out:flush=1
+SERPORT:  COM2 addr=0x02f8 irq=3 multichar=r=1/w=1 uart=8250
+SERPORT:  COM2 driver=stdio:file=ser2.out:flush=1
+PARPORT:  LPT1 addr=0x0378 driver=stdio:file=par1.out:flush=1
+PARPORT:  LPT2 addr=0x0278 driver=stdio:file=par2.out:flush=1
+Load:     file=rom/ibm-xt-1986-05-09.rom format=binary addr=0x000f0000
+Load:     file=rom/ibm-mfm-1985-10-28.rom format=binary addr=0x000c8000
+[0000:0000] reset pc
+[F000:FFF0] reset keyboard
+[F000:F9ED] reset keyboard
+[F000:F9ED] reset keyboard
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+pce-ibmpc version 0.2.2
+Copyright (C) 1995-2012 Hampa Hug <hampa@hampa.ch>
+CONFIG:   file="pce-5160.cfg"
+SYSTEM:   model=5160 floppies=2 patch-init=0 patch-int19=0
+RAM:      addr=0x00000000 size=524288 file=<none>
+ROM:      addr=0x000f0000 size=65536 file=<none>
+ROM:      addr=0x000c8000 size=32768 file=<none>
+CPU:      model=8088 speed=1X
+DMAC:     addr=0x00000000 size=0x0010
+PIC:      addr=0x00000020 size=0x0002
+PIT:      addr=0x00000040 size=0x0004
+PPI:      addr=0x00000060 size=0x0004
+SPEAKER:  volume=250 srate=44100 lowpass=8000 driver=sdl:lowpass=0
+TERM:     driver=sdl ESC=ESC aspect=4/3 min_size=512*384 scale=1 mouse=[1/1 1/1]
+VIDEO:    device=cga
+VIDEO:    CGA io=0x03d4 addr=0xb8000 size=0x04000 font=0
+DISK:     drive=0 type=auto blocks=0 chs=0/0/0 rw file=fd0.pfdc
+DISK:     drive=1 type=auto blocks=0 chs=0/0/0 rw file=fd1.pfdc
+DISK:     drive=128 type=auto blocks=41820 chs=615/4/17 rw file=hd0.pimg
+FDC:      addr=0x000003f0 irq=6 accurate=1 eot=1 drv=[0 1 2 3]
+HDC:      addr=0x00000320 irq=5 drv=[128 129] sectors=17 switches=0x0a id=""
+SERPORT:  COM1 addr=0x03f8 irq=4 multichar=r=1/w=1 uart=8250
+SERPORT:  COM1 driver=stdio:file=ser1.out:flush=1
+SERPORT:  COM2 addr=0x02f8 irq=3 multichar=r=1/w=1 uart=8250
+SERPORT:  COM2 driver=stdio:file=ser2.out:flush=1
+PARPORT:  LPT1 addr=0x0378 driver=stdio:file=par1.out:flush=1
+PARPORT:  LPT2 addr=0x0278 driver=stdio:file=par2.out:flush=1
+Load:     file=rom/ibm-xt-1986-05-09.rom format=binary addr=0x000f0000
+Load:     file=rom/ibm-mfm-1985-10-28.rom format=binary addr=0x000c8000
+[0000:0000] reset pc
+[F000:FFF0] reset keyboard
+[F000:F9ED] reset keyboard
+[F000:F9ED] reset keyboard
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 0 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)
+HDC:      init drive 1 (c=615 h=4 s=17 rc=615 wp=300 ecc=11 size=20910.0K)

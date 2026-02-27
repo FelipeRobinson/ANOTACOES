@@ -1,0 +1,50 @@
+OS  -  13-02-2026
+
+QUAL A FUNÇÃO:
+- Um conjunto de tarefas executadas pelo processador;
+- Consiste em controlar o funcionamento da computador;
+- Gerencia a utilização e compartilhamento de diversos recursos.
+
+
+VISÃO (Camadas):
+- Máquina de Camadas (conhecer detalhes sem saber sobre o todo da máquina, mas uma parte):
+	1. Aplicações			4. Linguagem de Máquina
+	2. Utilitários			5. Microprogramação
+	3. Sistema Operacional		6. Circuitos Eletrônicos
+	- SOFTWARE'S			- HARDWARE'S (só entende linguagem de máquina)
+
+OBS:
+- OS e Aplicações Convencionais se diferenciam pela execução das tarefas em função do tempo.
+- Rotinas (execução das tarefas em sequência) linear e concorrentes em função de eventos ASSÍNCRONOS
+	Linear:
+		
+	Assíncronas/Concorrentes:
+		
+- Contêm funções básicas;
+- O OS te da:
+	- fácil acesso aos recursos do sistema: pendrives, teclado, mouse, entre outros.
+	- fácil acesso ao compartilhamento protegido de dados
+- Nem um computador entende linguagem C, apenas quando são compilados
+
+LINHA CRONOLÓGICA:
+- Em 1945: ENIAC realizava cálculos básicos. Uma máquina GIGANTE, sem sistema operacional e programada por cabos. Tinha 5,5M de altura por 25M de comprimento e pesava incríveis 30 TONELADAS.
+- PRIMEIRA GEN: os computadores de primeira geração são os computadores que funcionavam a válvulas eletrônicas. Geração de 1942-1959.
+- SEGUNDA GEN: Substitui a válvula por transistores. Gen de 1959-1965. Ele é uma melhora significativa do modelo antigo para o atual, pois o transistor não precisa de um tempo para aquecer, gasta menos energia, e diminui significativamente de tamanho, mas ainda sim era GIGANTE.
+- TERCEIRA GEN: Nessa geração eles passam a utilizar além de transistores para circuitos integrados que são transistores e outros componentes. Gen de 1965-1975.
+- QUARTA GEN: Surge os primeiros computadores pessoais, pois eram baseados em circuitos integrados (VLSI) e por consequência os microprocessadores. Gen tem inicio em 1975, e até hoje eles melhoram esse método. O COMPUTADOR PASSOU A SER RIDICULAMENTE MENOR.
+
+ARQUITETURA DE VON NEUMANN:
+- Estrutura básica do hardware:
+	- Memória Principal
+	- Dispositivos de E/S
+	- Processador/UCP
+	- Barramento
+- Dispositivos de entrada e saída:
+	- Periféricos
+	- Memória secundária
+
+Refs:
+- https://www.youtube.com/shorts/P6Gjg1XGNOQ
+- Filmes:
+	- JOBS
+	- JOGO DA IMITAÇÃO

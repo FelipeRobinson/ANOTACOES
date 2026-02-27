@@ -1,0 +1,90 @@
+OS  -  20-02-2026
+
+CAMADAS COMPUTACIONAL
+
+- MEMÓRIA PRINCIPAL
+- PROCESSADOR
+- DISPOSITÍVOS DE ENTRADA/SAÍDA
+
+Sistemas Operacionais:
+- Na IBM PC/XR 5160 with PC-DOS 3.30
+- http://www.hampa.ch/pce/download.html
+
+Apenas interface texto
+Execute: CARREGANDO O PROGRAMA NA MEMÓRIA
+- "Debug"
+- "r" (registors = registradores (É uma memória extremamente rápida (CS=10E0)))
+- A 0100 (abriu a memória ram pra carregar as instruções)
+- MOV AX, 4 (mova para o verificar AX 4)
+- MOV BX, 6 (coloca o dados dentro dos registradores)
+- ADD AX, BX (adicione o conteúdo de AX em BX)
+- NOP (finalizar "NO OPERATION")
+- "enter"
+- U 0100 (lista oq foi carregado)
+Execução: EXECUTAR A ROTINA DO COMPUTADOR (CICLO DE BUSCA E EXECUÇÃO)
+(Leia a memória ram, e jogue as instruções para que o computador leia elas)
+- T
+- R IP 
+- 100
+- R
+Execução: TREINO
+- A 0100 (abrir a memoria para fazer a edição)
+- MOV AX, C0
+- MOV BX, 4F
+- MOV AX, BX
+- MOV BX, A
+- ADD AX, BX
+- NOP
+- U 0100
+Execução: SUBTRAÇÃO
+- A 0100
+- MOV AX, 5
+- MOX BX, 3
+- SUB AX, BX (subtração de registradores)
+- NOP
+- U 0100
+- T
+Execução: MULTIPLICAÇÃO
+- A 0100
+- MOV AX, 5
+- MOX BX, 3
+- MUL AX, BX
+- NOP
+- U 0100
+- T
+Execução: DIVISÃO
+- A 0100
+- MOV AX, 6
+- MOX BX, 3
+- DIV AX, BX
+- NOP
+- U 0100
+- T
+
+EXERCÍCIO
+- R IP
+- 0100
+- A 0100
+- MOV AX, CA
+- MOV BX, 3
+- MUL BX
+- MOV BX, F0
+- MOV CX, 8
+- ADD BX, CX
+- DIV BX
+
+RESULTADO FICOU EM AX
+
+
+OBS: COMO VERIFICAR SE O EXERCÍCIO DEU CERTO
+- Ir até a calculadora
+- Verificar o valor da sua lógica de soma, subtração, movimentação...
+
+OBS: processador só trabalha com a memória ram
+- Todas as instruções que eu quero fazer, eu devo colocar na memória
+- Quando vc escreve um programa que mexe com coisas sensíveis, você tem que tomar cuidado em apagar depois de rodar o programa, pois ele fica rodando na memória. Cavalo de Tróia fica lendo dados da memória e caso um dado é lido, ele transfere, pois a máquina não apaga os dados deixados na memória automaticamente.
+- 2 Gigaherts é 2 bilhões de -T por segundo
+- Quem troca o programa utilizado é o OS, trocando seus endereços
+- FLAGS: notificação de ocorrência (PL - NG)
+DÚVIDAS:
+- Porque a gente fica carregando valores na memória?
