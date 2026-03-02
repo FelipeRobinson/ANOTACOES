@@ -1,0 +1,64 @@
+ENG SOFT  -  02-03-2026
+
+DESENVOLVIMENTO DE SOFTWARE:
+
+Como desenvolver um software com qualidade?
+	- Ter qualidade no produto
+	- Atender expectativas
+	- Resolver as dores do cliente
+
+
+ATIVIDADE 3
+- O que as vagas de engenharia de software requerem?
+
+
+Diálogo:
+- Software embarcado
+
+
+SLIDES: INTRODUÇÃO À ENGENHARIA DE SOFTWARE
+- software não é como hardware, não quebra, apensa há falhas por defeitos
+projeto, não por uso.
+- IBM: goat beggin do PC no mundo.
+- Hoje a IBM é goat em Software;
+- Erros de software ocorrem por falta de testes, "escalabilidade";
+
+- OBSOLECÊNCIA:
+	- O hardware sofre disso, o software não;
+	- TESTING:	
+		- "Na minha máquina funciona, na do usuário não"
+		- Teste Alfa, Beta;
+
+- Onde podemos usar softwares:
+	- Sf. de Sistemas:
+		- Mais bases, conversam com o hardware;
+	- Sf. de Aplicação:
+		- Aplicativos para gerenciamento;
+	- Sf. Ciêntifico:
+		- Cuidado e gerenciamento genético
+	- Sf. Embutido:
+		- União de várias práticas de programação/Aplicação
+		- Restrições:
+			- Arquitetura;
+			- Memória;
+			- Armazenamento;
+	- Sf. Linha de Prod.:
+		- Resolução de problemas personalizados;
+
+- COMPUTAÇÃO OBLIQUA:
+	- Programação em todos os meios:
+		- IoT;
+		- Computadores;
+		- Luz;
+		- Camera.
+
+- MITOS:
+	- 1: Manuais bastam;
+	- 2: Mais programadores bastam;
+	- 3: Ferramentas de última geração são melhores;
+	- 4: Terceiurização ajuda.
+
+
+
+
+OBS: ADS é a computação enquanto meio (estudos gerais);
