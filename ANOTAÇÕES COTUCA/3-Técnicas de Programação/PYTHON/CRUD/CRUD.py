@@ -76,7 +76,7 @@ def ondeEsta (nom,agd):
             inicio=meio+1
             
     return [False,inicio]
-obtemConexao
+    obtemConexao
 
 def insercao_de_contato(nome, aniversario, endereco, telefone, celular, email):
     tabela = (f"insert into CONTATO (nome, aniversario, endereco, telefone, celular, email) values ('{aniversario}', '{endereco}', '{telefone}', '{celular}')")

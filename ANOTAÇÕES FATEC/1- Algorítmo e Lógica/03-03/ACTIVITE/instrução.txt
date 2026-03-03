@@ -1,0 +1,3 @@
+Criar um código em C:
+
+- Ler e rodar um programa onde ele faça o cálculo da área de um retângulo
