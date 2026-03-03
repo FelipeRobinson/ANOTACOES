@@ -1,0 +1,74 @@
+[ADS-1M-ES1] EXERCÍCIO 3
+Felipe da Costa Robinson
+Miguel Rybaltowski Marion
+
+Que competências o mercado está necessitando de um engenheiro de software?
+
+As principais competências requeridas:
+	- Proativo;
+	- Conhecimento técnico adequado;
+	- Compreensão de metodologias ágeis;
+	- Experiência no mercado;
+	- Excelente comunicação e trabalho em equipe
+	- Flexibilidade e resiliência;
+	- Inglês intermediário;
+	- Colaboração em equipe e desenvolvimento colaborativo;
+	- Trabalho com sistemas de larga escala (habilidade mais técnica).
+
+
+- Nubank: Engenheiro de Software Senior
+
+As a Software Engineer, You’re Expected To:
+	- Work with large scale distributed systems
+	- Collaborate with building microservices
+	- Have practical knowledge of agile software development methodologies
+	- Work with continuous delivery and infrastructure as code
+	- Horizontally scalable microservices written mostly in Clojure, using Finagle and leveraging upon functional programming techniques and hexagonal architecture
+	- High throughput jobs and inter-service communication using Kafka
+	- Continuous Integration and Deployment into AWS
+	- Storing data in Datomic and DynamoDB
+	- Monitoring and observability with Prometheus
+	- Running as much as possible in Kubernetes
+	- Demonstrated ability to lead technical initiatives across multiple teams without direct authority
+	- Experience mentoring senior engineers and raising the technical bar across organizations
+	- Practical knowledge of agile software development methodologies and previous experience with CI/CD
+	- Good communication skills to prevent risks and explain trade-offs clearly to both technical and non-technical stakeholders
+	- Advanced English skills
+
+
+
+- MedSimples: Engenheiro de Software Full stack, Sênior
+
+Responsabilidades:
+	- Ciclo Completo de Desenvolvimento: Atuar ativamente em todo de desenvolvimento, desde o refinamento técnico de requisitos, passando pela codificação, testes, até a 	- implantação em produção.
+	- Engenharia de Produto: Criar, manter e integrar sistemas complexos, focando em performance e segurança.
+	- Arquitetura e Qualidade: Garantir a aplicação de boas práticas de código (Clean Code) e padrões arquiteturais escaláveis.
+	- Trabalhar em conjunto com equipes distribuídas, participando de dailies e planejamentos.
+	- Melhoria Contínua: Contribuir proativamente com a equipe para identificar gargalos e propor melhorias nos processos de desenvolvimento e na esteira de CI/CD.
+
+Requisitos:
+	- Conhecimento e experiência em frontend em: React.js, Vite
+	- Conhecimento e experiência no Backend utilizando Node.js e TypeScript
+	- Banco de Dados: PostgreSQL, Drizzle ORM
+	- Autonomia e Proatividade: Capacidade de identificar um problema e resolvê-lo sem precisar de microgerenciamento.
+	- Mentoria: Paciência e didática para repassar conhecimento.
+	- Resiliência e Agilidade: Capacidade de atuar em um ambiente de startup/healthtech onde as prioridades podem mudar.
+	- Colaboração: Capacidade de trabalhar em equipe, compartilhando ideias, favorecendo um ambiente positivo para se trabalhar com outras pessoas.
+
+
+
+- Kryptus: Estágio em Desenvolvimento de Software
+Desejáveis:
+	- Alguma experiência como Desenvolvedor de Software;
+	- Python/Framework Angular;
+	- Criação e integração de APIs.
+	- Conceitos de Cloud Native;
+	- Conhecimento de boas práticas de desenvolvimento seguro de software;
+	- Experiência com testes unitários;
+	- Solução de problemas em ambiente Linux;
+	- Experiência em ferramentas de versionamento de código (ex.: git);
+	- Boa comunicação e trabalho em equipe;
+	- Inglês intermediário.
+
+
+
