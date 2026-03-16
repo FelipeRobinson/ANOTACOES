@@ -1,4 +1,4 @@
-# ANOTAÇÕES DO COTUCA
+# ANOTAÇÕES DA FATEC
 *by FELIPE (2K26)* <br>
 *ADS MAT 1*
 
