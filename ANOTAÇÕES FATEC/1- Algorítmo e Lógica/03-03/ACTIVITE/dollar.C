@@ -10,6 +10,6 @@ int main() {
     convert = real * dollar;
     // ação de trabalho
     
-    printf("Seu valor em dollar: $%2f\n", convert);
+    printf("Seu valor em dollar: $%2.f\n", convert);
     // resultado esperado
 }
