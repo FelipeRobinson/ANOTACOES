@@ -298,7 +298,7 @@ def excluir (agd):
     else:
         print('Remoção não realizada!')
 
-# daqui para cima, definimos subprogramas (ou módulos, é a mesma coisa)
+# daqui para cima, definimos subprogramas (ou módulos, "OBJETOS" é a mesma coisa)
 # daqui para baixo, implementamos o programa (nosso CRUD, C=create(inserir), R=read(recuperar), U=update(atualizar), D=delete(remover,apagar)
 
 apresenteSe()
