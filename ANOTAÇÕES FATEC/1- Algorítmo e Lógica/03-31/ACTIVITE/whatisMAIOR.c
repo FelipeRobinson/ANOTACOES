@@ -1,11 +1,11 @@
 int main () {
     int x, y, z;
 
-    printf("Digite um valor: ");
+    printf("Digite um valor: \n");
     scanf("%d", &x);
-    printf("Digite outro valor: ");
+    printf("Digite outro valor: \n");
     scanf("%d", &y);
-    printf("Mais um valor diferente");
+    printf("Mais um valor diferente: \n");
     scanf("%d", &z);
 
     if (x == y || x == z || z == y) {
@@ -16,7 +16,7 @@ int main () {
     if (x > y && x > z) {
         printf("O maior numero e: %d", x);
     }
-    if (y > x && y > z) {
+    if (y > z) {
         printf("O maior numero e: %d", y);
     }
     else {
