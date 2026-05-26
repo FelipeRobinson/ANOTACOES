@@ -1,0 +1,210 @@
+1-)
+Debian
+- Positiva: atualização fácil, instalação sem esforço de novos pacotes, estável, veloz e robusto.
+- Negativa: Novas versões demoram aproximadamente a cada dois 	anos, pouca inovação tecnológica, configuração manual, primeira 	atualização instável.
+Fedora
+ - Positiva: fácil uso (excelente para iniciantes), possui instalador Anaconda, GNOME e KDE (gestor de desktop), múltiplos drivers, diversas interfaces gráficas.
+- Negativa: falta de tradução e baixo desempenho quando utilizado como servidor.
+Slackware
+- Positiva: Estável e seguro.
+- Negativa: Requer alto nível de conhecimento para instalar e configurar, demora na atualização dos pacotes e apresentações visuais a serem otimizadas.
+Ubuntu
+ - Positiva: A mais utilizada atualmente em desktops e notebooks, uso simples, rápido e fácil, cronogramas de novas versões e suporte, interface unity.
+-	Negativa: congelamento ao voltar da hibernação, instabilidade e dificuldades no uso da interface Unity.
+Mint
+- Positiva: Fácil uso e instalação, estável, leve e manutenção facilitada com ferramentas próprias.
+- Negativa: interface datado e atualização de base lenta
+CentOS
+- Positiva: gratuito, robusto e seguro
+- Negativa: é mais adequado para testes, podendo ser menos estáveis, não possui mais atualizações e não possui suporte técnico.
+
+
+2-) AS distribuições do Linux são bem versáreis e variam de uma para a outra. Ao escolher sua versão, você precisa analisar as suas necessidades e limitações. De uma distribuição para a outra, alguns detalhes se alteram como: as bibliotecas e utilizáveis (GNU); o gerenciador de pacotes; e sua interface gráfica; sendo assim, você analisa se necessita de mais potência, mais acessibilidade, e seleciona a sua distribuição.
+
+3-) 
+GNOME
+Interface padrão do Ubuntu e Fedora, apresentando uma interface moderna e limpa.
+KDE Plasma
+Interface personalizável, onde o visual padrão é parecido com a do Windows.
+XFCE
+Interface leve e funcional, ideal para hardware antigos.
+Cinnamon
+Interface relembra do Windows, moderno e fácil para uso.
+
+
+
+
+4-) Alguns comandos são: 
+pwd - printa o caminho até o terminal
+cd - direciona até um repositório
+ls - lista os arquivos e diretórios em uma tree
+ln - dá um link/caminho até a pasta em que você está analisando
+df - exibe o espaço no disco destinado para cada função
+w - mostra os usuários conectados e oque estão fazendo.
+who - exibe quais usuários estão logados no sistema
+whoami - mostra o nome do usuário atual
+mkdir - cria diretórios
+cp - copia arquivos ou diretórios
+mv - move ou renomeia arquivos e diretórios
+rm - remove arquivos
+rmdir - remove diretórios
+cat - exibe o conteúdo de uma pasta
+head - mostra as primeiras linhas de um arquivo
+tail - mostra as últimas linhas de um arquivo
+more - exibe o conteúdo de arquivos página por página
+tar - compacta e descompacta arquivos
+chmod - altera permissões de arquivos e diretórios
+chown - altera o dono do diretório ou arquivo
+chgrp - altera o grupo de arquivos e diretórios
+file - identifica o tipo do arquivo
+clear - limpa a tela do terminar
+man - mostra a documentação do comando
+wc - conta linhas, palavras e caracteres de um arquivo
+ps - mostra os processos em execução
+top - monitora processos e uso do sistema ao vivo
+kill - encerra processo em execução
+shutdown - desliga ou reinicia o sistema
+
+
+5-) IMG
+
+
+
+6-) Exercício:
+
+#!/bin/bash
+
+echo "Digite um valor:"
+read VALOR
+
+if [ $VALOR -gt 0 ]
+then
+    echo "POSITIVO"
+
+elif [ $VALOR -lt 0 ]
+then
+    echo "NEGATIVO"
+
+else
+    echo "NULO"
+fi
+
+
+7-) IMG
+
+
+
+8-) Exercício:
+
+#!/bin/bash
+
+echo "Excluir o arquivo $1 ? (S/N)"
+read RESP
+
+if [ "$RESP" = "S" ]
+then
+    rm "$1"
+    echo "Arquivo removido com sucesso!"
+
+elif [ "$RESP" = "N" ]
+then
+    echo "Arquivo não foi removido"
+
+else
+    echo "Verifique o valor inserido"
+fi
+
+
+9-) IMG
+
+
+
+
+10-) Exercício:
+
+#!/bin/bash
+
+# Pergunta a pasta de origem
+echo "Digite a pasta que deseja copiar:"
+read origem
+
+# Verifica se a pasta existe
+if [ ! -d "$origem" ]; then
+    echo "A pasta não existe."
+    exit 1
+fi
+
+# Cria a pasta BACKUP
+mkdir -p BACKUP
+
+# Copia os arquivos
+cp -r "$origem"/* BACKUP/
+
+echo "Backup realizado com sucesso!"
+
+
+11-) Exercício:
+
+#!/bin/bash
+
+exibir_menu() {
+echo ""
+echo "1 Mostrar a Versao de Sistema Operacional"
+echo "2 Criar uma Pasta"
+echo "3 Apagar uma Pasta"
+echo "4 Copiar o Conteudo de uma Pasta para Outra Pasta"
+echo "5 Apagar um Arquivo"
+echo "0 Terminar o script"
+echo "Selecione uma das opcoes: (0-5)"
+echo ""
+}
+while true; do
+	clear
+	exibir_menu
+	read num
+	
+  case "$num" in
+    1)
+    	echo "Versao do Sistema:"
+    	uname -a
+    	read -p "Enter para voltar no Menu"
+    	;;
+    2)
+    	echo "Digite o nome da Pasta que deseja Criar"
+    	read nomePasta
+    	mkdir "$nomePasta"
+    	echo "Pasta criada"
+    	read -p "Enter para voltar no Menu"
+    	;;
+    3)
+    	echo "Digite o nome da Pasta que deseja Excluir"
+    	read nomePasta
+    	rm -rf "$nomePasta"
+    	echo "Pasta excluida"
+    	read -p "Enter para voltar no Menu"
+    	;;
+    4)
+    	echo "Pasta a ser copiado:"
+    	read ori
+    	echo "Pasta a ser transferido:"
+    	read des
+    	mkdir -p "$des"
+    	cp -r "$ori/." "$des/"
+    	echo "Conteudo copiado"
+    	read -p "Enter para voltar no Menu"
+    	;;
+    5)
+    	echo "Digite o nome do arquivo a ser apagado"
+    	read nomeArq
+    	rm -f "$nomeArq"
+    	echo "Arquivo apagado"
+    	read -p "Enter para voltar no Menu"
+    	;;
+    0)
+    	echo "saindo do script"
+    	sleep 1s
+    	clear
+    	break
+    	;;
+    esac
+done
