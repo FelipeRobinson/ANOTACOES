@@ -1,0 +1,57 @@
+FELIPE DA COSTA ROBINSON
+EXERCÍCIO 2 - BD
+
+
+1. Enumere as principais diferenças entre o processamento de dados com 
+arquivos convencionais e o processamento de dados com SGBD.
+R: As principais diferenças entre o processamento de dados com arquivos 
+convencionais e com SGDB são as métricas, as ferramentas e as técnologias 
+possíveis utilizando o SGDB que os arquivos convencionais não oferecem.
+
+
+2. Descreva alguns fatores que levam alguém a preferir o uso de arquivos 
+convencionais ao uso de SGBD. Descreva alguns fatores que levam 
+alguém a preferir o uso de SGBD ao uso de arquivos convencionais.
+R: Alguns fatores que levam alguém a preferir arquivos convencionais são
+o desconhecimento ou a falta de habilidade com o uso de SGDB, a falta de 
+prática com o uso de SGDB e o desconhecimento do que é SGDB. O que levam 
+o uso do SGDB em comparação com os arquivos convencionais são a praticidade
+na análise e inserção de dados, o uso facilitador da procura de dados, entre
+muitos outros.
+
+
+3. Defina, sem retornar ao capítulo acima, os seguintes conceitos: banco 
+de dados, sistema de gerência de banco de dados, modelo de dados, 
+modelo conceitual, modelo lógico, modelagem conceitual e projeto 
+lógico. Verifique a definição que você fez contra a apresentada no 
+capítulo.
+R: BD: um local onde é armazenado dados diversos;
+   SGDB: facilitar o uso do banco de dados;
+   Modelos de dados: são diferentes tipos que se pode armazenar conteúdos/dados;
+   Modelo Conceitual: é um modo de demonstrar o armazenamento de dados que é um jeito teórico feito em fórmatos e letras e números;
+   Modelo Lógico: é um outro modo de armazenar os dados mas esse já é um jeito mais de linguagem, como fica um banco de dados;
+   Modelagem Conceitual: são designs (diagramas) projetados do funcionamento e vinculos dos dados;
+   Projeto lógico: é a projeção/construção prática em DB do modelo conceitual construido na modelagem conceitual.
+
+
+4. A definição do fator de bloco de um arquivo faz parte de que modelo: do 
+modelo conceitual, do modelo lógico ou do modelo físico?
+R: Do modelo lógico, pois é nessa fase em que existe a construção em bloco do DB.
+
+R: Faz parte do modelo físico, pois o fator de bloco está relacionado à organização física dos dados em disco, definindo quantos 
+registros podem ser armazenados em cada bloco de armazenamento. *
+(Resposta por IA)
+
+
+5. A definição do tipo de um dado (numérico, alfanumérico,…) faz parte de 
+que modelo: do modelo conceitual, do modelo lógico ou do modelo 
+físico?
+R: Faz parte do modelo físico, pois é nessa etapa que precisamos definir qual será o tipo de dado armazenado.
+
+
+6. Qual a diferença entre a redundância de dados controlada e a 
+redundância de dados não controlada? Dê exemplos de cada uma 
+delas.
+R: A diferença está no método de armazenamento, no entendimento da analise do dado e na construção do armazenamento.
+Quando temos uma empresa que armazena os dados dos produto comprados, vendidos e estocados, e vemos que essa empresa armazena cada informação
+numa tabela diferente, observamos que ela pode conter o mesmo dado em análises semelhantes. 

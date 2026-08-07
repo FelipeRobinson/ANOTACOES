@@ -1,0 +1,16 @@
+FELIPE DA COSTA ROBINSON
+Exercício 1 - BD
+
+1. Um banco de Dados é um local onde se é armazenado dados para diferentes funções e análises e que deve ser protegido e tratado.
+
+2. Eu não me recordo de todos, mas temos o modelo relacional, o modelo não relacional e mais outro que de cabeça eu não me recordo.
+
+3. As características são o tratamento e o vínculo entre os dados.
+
+4. Modelagem, ao meu ver, são os mecanismos de vinculo e análise de dados e processamento do mesmo.
+
+5. A chave primária é uma classificação que damos para um dado dentro de uma tabela, considerando ele como um dado principal ou crucial.
+
+6. A chave estrangeira é uma outra classificação em que damos para um dado analisando a sua fonte e o seu vínculo.
+
+7. Não me recordo o que é trigger, mas pela tradução a trigger seria um gatilho para o vínculo de um modelo de dado dentro de uma tabela.
