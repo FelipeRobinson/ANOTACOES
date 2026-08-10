@@ -20,7 +20,7 @@ function conferirAmigos() {
     const num2 = parseInt(document.getElementById('num2').value);
 
     if (isNaN(num1) || isNaN(num2)) {
-        alert("Coloca algum bagulho nos campos antes brow!!!");
+        alert("Coloca algum bagulho nos campos antes bro!!!");
         return; // Sai da função se os campos estiverem vazios
     }
 

@@ -6,12 +6,13 @@ create table FAMILIA (
     CONSTRAINT pk_FAMILIA_Id PRIMARY KEY (Id)
 )
 
-INSERT FAMILIA (Nome, Idade, )
-VALUES ('Felipe','15'),
-       ('Manoela','14'),
+INSERT FAMILIA (Nome, Idade)
+VALUES ('Felipe','18'),
+       ('Manoela','17'),
        ('Ellen', '43'),
-       ('Tomaz', '80'),
-       ('Silveira','16')
+       ('Tomaz', '82'),
+       ('Silveira','18'),
+       ('Thiaguinho','19')
 
 
 create table AMIGOS (

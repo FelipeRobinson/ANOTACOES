@@ -25,7 +25,7 @@ function jogo() {
         return;
     }
 
-    if (tentativas >= 3) {
+    if (tentativas >= 5) {
         alert("Suas tentativas acabaram! O número era " + NumAleatorio);
         funcJogo();
     }
