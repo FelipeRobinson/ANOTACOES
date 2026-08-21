@@ -1,0 +1,58 @@
+FELIPE DA COSTA ROBINSON
+EXERCÍCIO 3 - BD
+
+
+1. Dê ao menos cinco exemplos dos conceitos básicos da abordagem ER apresentados neste capítulo: 
+entidade, relacionamento, atributo, generalização/especialização. 
+R: Entidade: Paciente, Medico, Conta, Banco, Remédio.
+   Relacionamento: Consulta, Pagamento, Ter, Tomar, Possuir.
+   Atributo: Nº da Camisa, Cor, Tamanho, Nome, id.
+   Especialização: funcionário: engenheiro, chefe; animal: terrestre, marítmo; pessoa: homem, mulher.;
+
+
+2. Explique a diferença entre uma entidade e uma ocorrência de entidade. Exemplifique. 
+R: A entidade é um conjunto de objetos no banco de dados, e a ocorrência de entidade é um modelo em que
+podemos observar  o relacionamento entre as entidades.
+
+
+3. O que é o papel de uma entidade em um relacionamento? Quando é necessário especificar o papel 
+das entidades de um relacionamento? 
+R:
+
+
+4. Considere o relacionamento CASAMENTO que aparece no DER da Figura 2.7. Segundo este DER o banco 
+de dados poderia conter um casamento em que uma pessoa está casada consigo mesma? O DER permite que 
+a mesma pessoa apareça em dois casamentos diferentes, uma vez como marido e outra vez com esposa? 
+Caso uma destas situações possa ocorrer, como deveria ser modificado o DER para impedi-las? 
+R:
+
+
+5. Confeccione um possível diagrama de ocorrências para o relacionamento SUPERVISÃO (Figura 2.8) e 
+suas respectivas entidades. 
+R:
+
+
+6. Confeccione um possível diagrama de ocorrências para o relacionamento COMPOSIÇÃO (Figura 2.9) e 
+suas respectivas entidades. 
+R:
+
+
+7. Mostre como o modelo ER da Figura 2.11 pode ser representado sem uso de relacionamentos ternários, 
+apenas usando relacionamentos binários. 
+R:
+
+
+8. Dê um exemplo de um relacionamento ternário. Mostre como a mesma realidade pode ser modelada 
+somente com relacionamentos binários. 
+R:
+
+
+9. Para o exemplo de relacionamento ternário da questão anterior, justifique a escolha das 
+cardinalidades mínima e máxima. 
+R:
+
+
+10. Considere o DER da Figura 2.12. Para que a restrição de cardinalidade mínima seja obedecida, que 
+ocorrências de entidade devem existir no banco de dados, quando for incluída uma ocorrência de 
+EMPREGADO? E quando for incluída uma ocorrência de MESA?
+R:
