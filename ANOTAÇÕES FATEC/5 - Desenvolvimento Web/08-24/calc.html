@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="text" id="txtNum1" placeholder="Número 1">
+    <input type="text" id="txtNum2" placeholder="Número 2">
+    <br>
+    <input type="button" value="+" id="btnSomar">
+    <input type="button" value="-" id="btnSubtracao">
+    <input type="button" value="*" id="btnMultiplicacao">
+    <input type="button" value="/" id="btnDivisao">
+    <br>
+    <input type="text" id="txtResultado" placeholder="Resultado" readonly>
+
+    <script>
+        btnSomar.addEventListener("click", Somar);
+        btnSubtracao.addEventListener("click", Subtrair);
+        btnMultiplicacao.addEventListener("click", Multiplicar);
+        btnDivisao.addEventListener("click", Dividir);
+        
+        function Somar() {
+            let num1 = parseFloat(txtNum1.value);
+            let num2 = parseFloat(txtNum2.value);
+            let resultado = num1 + num2;
+            txtResultado.value = resultado;
+        }
+        function Subtrair() {
+            let num1 = parseFloat(txtNum1.value);
+            let num2 = parseFloat(txtNum2.value);
+            let resultado = num1 - num2;
+            txtResultado.value = resultado;
+        }
+        function Multiplicar() {
+            let num1 = parseFloat(txtNum1.value);
+            let num2 = parseFloat(txtNum2.value);
+            let resultado = num1 * num2;
+            txtResultado.value = resultado;
+        }
+        function Dividir() {
+            let num1 = parseFloat(txtNum1.value);
+            let num2 = parseFloat(txtNum2.value);
+            let resultado = num1 / num2;
+            txtResultado.value = resultado;
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #000;
+            color: #fff;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            text-align: center;
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

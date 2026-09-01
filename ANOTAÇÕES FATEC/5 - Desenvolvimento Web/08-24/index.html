@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Introdução prática para JavaScript -->
+    <h1>Caixa de Diálogo e Mensagem</h1>
+    <input type="button" value="LOGIN" onclick="login()">
+
+    <script>
+        function login() {
+            var nome = prompt("Digite seu usuário:", "usuário");
+            alert("Bem-vindo, " + nome + "!");
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        input {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #000;
+            border-radius: 40px;
+        }
+    </style>
+</body>
+</html>
