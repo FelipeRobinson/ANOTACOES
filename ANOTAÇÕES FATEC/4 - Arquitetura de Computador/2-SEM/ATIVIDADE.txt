@@ -1,0 +1,22 @@
+FELIPE DA COSTA ROBINSON
+
+1. Um computador são o conjunto de componentes eletrônicos capaz de executar
+variados tipos de algoritmos e tratamentos de informação. (segundo os slides).
+O computador são compostos pordiferentes peças eletrônicas (hardware), por 
+dispositivos de entra e saída, como teclado, mouse, fone de ouvido, impressoras,
+etc, o que implementa o uso e a mecânica do computador.
+
+2. Converta BINÁRIO PARA DECIMAL:
+a-) 100110 = 38
+b) 011110 = 30
+c) 111011 = 62
+d) 1010000 = 80
+e) 11000101 = 197
+f) 011001100110101 = 13109
+g) 479(16) =
+h) 4AB(16) =
+i) BDE(16) =
+j) F0CA(16) =
+k) 2D3F(16) =
+
+128 + 64 + 5
