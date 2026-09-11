@@ -1,0 +1,102 @@
+FELIPE ROBINSON & KEVIN WU
+EXERCÍCIO 6
+
+6.1: 
+Exercício 6.1: Considere o banco de dados relacional definido parcialmente a seguir (faltam as chaves da tabela Empregado): 
+Empregado(CodigoEmpregado,Nome,NoPIS-PASEP), Dependente(CodigoEmpregado,NoDependente,Nome), CodigoEmpregado referencia Empregado.
+Na tabela Empregado, tanto CodigoEmpregado quanto NoPIS-PASEP podem ser chave primária. Qual você escolheria como chave primária? Porque? 
+R: Escolheriamos a Coluna CodigoEmpregado como primary key, pois ao vincular a foreign key de dependente, ele poderia apenas se vincular
+com uma primary key, oq torna necessário a identidade da coluna CodigoEmpregado ser uma primary key.
+
+6.2:
+Tome um livro sobre organização de arquivos e veja o que significa “chave secundária”. Explique porque o conceito de chave secundária não
+aparece na abordagem relacional. 
+R: A chave secundária seria um mecanismo de você dar prioridade a uma coluna que não fosse exclusivamente a primary key, e ele não aparece
+no modelo de abordagem relacional pois isso é um mecanismo de abordagem lógica, já esse conceito de chave secundária é um mecanismo de or_
+ganização física.
+
+6.3:
+A seguir aparece um esquema parcial para um banco de dados relacional. Identifique neste esquema as chaves primárias e chaves estrangeiras: 
+
+CREATE TABLE aluno {
+     CodigoAluno int not null primary key,
+     Nome varchar(60) not null,
+     CodigoCurso int foreign key.
+}
+
+CREATE TABLE curso {
+     CodigoCurso integer primary key,
+     Nome varchar(30).
+}
+
+CREATE TABLE disciplina {
+     CódigoDisciplina integer primary key,
+     Nome varchar(30),
+     Creditos integer,
+     CodigoDepartamento integer foreign key.
+}
+
+CREATE TABLE currículo {
+     CodigoCurso integer foreign key,
+     CodigoDisciplina integer foreign key,
+     Obrigatoria-Opcional varchar(60).
+}
+
+CREATE TABLE conceito {
+     CodigoAluno integer foreign key,
+     CodigoDisciplina integer foreign key,
+     Conceito varchar(60).
+}
+
+CREATE TABLE departamento {
+     CodigoDepartamento integer primary key,
+     Nome varchar(60).
+}
+
+
+6.4:
+PARTE A:
+
+- Para incluir uma linha na tabela precisamos verificar os seus novos relacionamentos
+e a sua nova estrutura e se ela pode ser adicionada visando a estrutura que já está 
+funcionando, se não vai alterar as foreign keys e as primarys keys.
+- Para excluir uma linha na tabela verificaremos os mesmos conceitos para inserir:
+verificar se não é um valor que pode ser nulo, verificar se não é uma chave identifi-
+cadora e se não está vinculado a outra tabela.
+
+---------------------------------------------------------------------------
+
+PARTE B: 
+
+CREATE TABLE medico (
+    CRM INT NOT NULL PRIMARY KEY,
+    NOME VARCHAR(80) NOT NULL,
+    ESPECIALIZACAO VARCHAR(100),
+);
+
+CREATE TABLE convenio (
+    CodigoConvenio INT NOT NULL PRIMARY KEY,
+    NOME VARCHAR(80) NOT NULL,
+);
+
+CREATE TABLE paciente (
+    CodigoConvenio INT NOT NULL,
+    NumeroPaciente INT NOT NULL,
+    NOME VARCHAR(80) NOT NULL,
+
+    PRIMARY KEY (CodigoConvenio, NumeroPaciente),
+
+    FOREIGN KEY (CodigoConvenio) REFERENCES convenio (CodigoConvenio)
+);
+
+CREATE TABLE consulta (
+    CodigoConvenio INT NOT NULL,
+    NumeroPaciente INT NOT NULL,
+    CRM INT NOT NULL,
+    datahora DATETIME NOT NULL,
+
+    PRIMARY KEY (CodigoConvenio, NumeroPaciente, CRM, datahora),
+
+    FOREIGN KEY (CodigoConvenio, NumeroPaciente) REFERENCES paciente (CodigoConvenio, NumeroPaciente),
+    FOREIGN KEY (CRM) REFERENCES medico (CRM)
+);
