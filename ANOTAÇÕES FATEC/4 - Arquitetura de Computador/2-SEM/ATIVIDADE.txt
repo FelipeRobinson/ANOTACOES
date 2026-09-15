@@ -6,17 +6,27 @@ O computador são compostos pordiferentes peças eletrônicas (hardware), por
 dispositivos de entra e saída, como teclado, mouse, fone de ouvido, impressoras,
 etc, o que implementa o uso e a mecânica do computador.
 
-2. Converta BINÁRIO PARA DECIMAL:
-a-) 100110 = 38
-b) 011110 = 30
-c) 111011 = 62
-d) 1010000 = 80
-e) 11000101 = 197
-f) 011001100110101 = 13109
-g) 479(16) =
-h) 4AB(16) =
-i) BDE(16) =
-j) F0CA(16) =
-k) 2D3F(16) =
+2. Converta BINÁRIO/HEXADECIMAL para DECIMAL:
+a-) 100110(2) = 38 (10)
+b) 011110(2) = 30 (10)
+c) 111011(2) = 62 (10)
+d) 1010000(2) = 80 (10)
+e) 11000101(2) = 197 (10)
+f) 011001100110101(2) = 13109 (10)
+g) 479(16) = 1145 (10)
+h) 4AB(16) = 1195 (10)
+i) BDE(16) = 3055 (10)
+j) F0CA(16) = 68106 (10)
+k) 2D3F(16) = 12095 (10)
 
-128 + 64 + 5
+3. Converta BINÁRIO/DECIMAL para HEXADECIMAL:
+a) 10011(2) =  (16) 
+b) 1110011100(2) =  (16)
+c) 100110010011(2) =  (16)
+d) 11111011110010(2) =  (16)
+e) 1000000000100010(2) =  (16)
+f) 486(10) =  (16)
+g) 2000(10) =  (16)
+h) 4096(10) =  (16)
+i) 5555(10) =  (16)
+j) 35479(10) =  (16)
