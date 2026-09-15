@@ -1,0 +1,50 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 8vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+.instruct {
+    font-size: large;
+    text-align: center;
+}
+
+#prova {
+    color: red;
+}
+
+.home-page {
+    margin: 10vh 40vh 10vh 40vh;
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+
+.home-page img {
+    margin-left: 5vh;
+    height: 30vh;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: large;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
