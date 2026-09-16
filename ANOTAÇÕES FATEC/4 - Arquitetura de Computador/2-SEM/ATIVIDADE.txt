@@ -6,6 +6,7 @@ O computador são compostos pordiferentes peças eletrônicas (hardware), por
 dispositivos de entra e saída, como teclado, mouse, fone de ouvido, impressoras,
 etc, o que implementa o uso e a mecânica do computador.
 
+
 2. Converta BINÁRIO/HEXADECIMAL para DECIMAL:
 a-) 100110(2) = 38 (10)
 b) 011110(2) = 30 (10)
@@ -19,14 +20,54 @@ i) BDE(16) = 3055 (10)
 j) F0CA(16) = 68106 (10)
 k) 2D3F(16) = 12095 (10)
 
-3. Converta BINÁRIO/DECIMAL para HEXADECIMAL:
-a) 10011(2) =  (16) 
-b) 1110011100(2) =  (16)
-c) 100110010011(2) =  (16)
-d) 11111011110010(2) =  (16)
-e) 1000000000100010(2) =  (16)
-f) 486(10) =  (16)
-g) 2000(10) =  (16)
-h) 4096(10) =  (16)
-i) 5555(10) =  (16)
-j) 35479(10) =  (16)
+
+3. Converta DECIMAL/HEXADECIMAL para BINÁRIO:
+a) 78 (10) = 1001110 (2)
+b) 102 (10) = 1100110 (2)
+c) 215 (10) = 11010111 (2)
+d) 404 (10) = 110010100 (2)
+e) 808 (10) = 1100101000 (2)
+f) 16383 (10) = 11111111111111 (2)
+g) 84 (16) = 10000100 (2)
+h) 7F (16) = 1111111 (2)
+i) 3B8C (16) = 11101110001100 (2)
+j) 47FD (16) = 100011111111101 (2)
+k) F1CD (16) = 1111000111001101 (2)
+
+
+4. Converta BINÁRIO/DECIMAL para HEXADECIMAL:
+a) 10011(2) = 13 (16) 
+b) 1110011100(2) = 39C (16)
+c) 100110010011(2) = 993 (16)
+d) 11111011110010(2) = 3EF2 (16)
+e) 1000000000100010(2) = 8022 (16)
+f) 486(10) = 1E6 (16)
+g) 2000(10) = 7D0 (16)
+h) 4096(10) = 1000 (16)
+i) 5555(10) = 15B3 (16)
+j) 35479(10) = 8A97 (16)
+
+
+5. Construa os circuitos lógicos para as expressões abaixo:
+
+a) X = AB + CDE
+
+
+b) X = A + (B + CD) · (B + A)
+
+
+c) F = (A + B) · (C + D) · E
+
+
+d) Y = A · B · (C + D) + E
+
+
+e) Y = (A + B) · (C + D) + E
+
+
+
+6. Com base nos circuitos, determine a fórmula:
+
+a) S = 
+
+b)
