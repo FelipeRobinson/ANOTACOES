@@ -1,0 +1,83 @@
+FELIPE DA COSTA ROBINSON & MATHEUS SLADOQ
+EXERCÍCIO 7
+
+
+
+PARTE A: 
+- Implementar o modelo lógico em modelo físico:
+
+CREATE TABLE CONTRIBUINTE (
+    CPF INT NOT NULL primary key,
+    nome VARCHAR(45) NOT NULL,
+    endereco VARCHAR(60),
+    telefone VARCHAR(15)
+);
+
+CREATE TABLE DECLARACAO_IMPOSTO_RENDA (
+    Contribuinte_CPF INT NOT NULL,
+    ano_exercicio DATE NOT NULL,
+    ano_base DATE NOT NULL,
+    valor INT NOT NULL,
+    restituicao_ou_pagamento BOOLEAN NOT NULL,
+
+    PRIMARY KEY (Contribuinte_CPF, ano_exercicio),
+    FOREIGN KEY (Contribuinte_CPF) REFERENCES CONTRIBUINTE(CPF)
+);
+
+CREATE TABLE MALHA_FINA (
+    Identificador INT NOT NULL primary key,
+    ano_exercicio DATE NOT NULL
+);
+
+CREATE TABLE CONTRIBUINTE_MALHA_FINA (
+    Malha_Fina_Identificador INT NOT NULL,
+    Contribuinte_CPF INT NOT NULL,
+    valor INT NOT NULL,
+    quantidade_de_prestacoes INT NOT NULL,
+
+    PRIMARY KEY (Malha_Fina_Identificador, Contribuinte_CPF),
+
+    FOREIGN KEY (Malha_Fina_Identificador) REFERENCES MALHA_FINA(Identificador),
+    FOREIGN KEY (Contribuinte_CPF) REFERENCES CONTRIBUINTE(CPF)
+);
+
+INSERT INTO CONTRIBUINTE
+(CPF, nome, endereco, telefone)
+VALUES
+(123456789, 'Joao Silva', 'Rua das Flores, 120', '19999991111'),
+(987654321, 'Maria Oliveira', 'Av. Brasil, 450', '19988882222'),
+(456789123, 'Carlos Souza', 'Rua Campinas, 75', '19977773333'),
+(321654987, 'Ana Santos', 'Rua Central, 230', '19966664444'),
+(741852963, 'Pedro Almeida', 'Av. Paulista, 1000', '11955556666');
+
+INSERT INTO MALHA_FINA
+(Identificador, ano_exercicio)
+VALUES
+(1, '2024-01-01'),
+(2, '2025-01-01'),
+(3, '2026-01-01');
+
+INSERT INTO DECLARACAO_IMPOSTO_RENDA
+(Contribuinte_CPF, ano_exercicio, ano_base, valor, restituicao_ou_pagamento)
+VALUES
+(123456789, '2026-01-01', '2025-01-01', 4500, TRUE),
+(987654321, '2026-01-01', '2025-01-01', 7200, FALSE),
+(456789123, '2026-01-01', '2025-01-01', 3100, TRUE),
+(321654987, '2025-01-01', '2024-01-01', 8900, FALSE),
+(741852963, '2025-01-01', '2024-01-01', 5600, TRUE);
+
+INSERT INTO CONTRIBUINTE_MALHA_FINA
+(Malha_Fina_Identificador, Contribuinte_CPF, valor, quantidade_de_prestacoes)
+VALUES
+(3, 123456789, 1200, 3),
+(3, 987654321, 2500, 5),
+(2, 321654987, 1800, 4);
+
+PARTE B:
+- Verificar as afirmativas se estão corretas ou não:
+
+(V) 1. A entidade Declaração_Imposto_de_Renda é uma entidade fraca; 
+(V) 2. O relacionamento entre Contribuinte e Malha_Fina é do tipo N:M; 
+(V) 3. O atributo CPF da entidade Contribuinte tem a função de chave estrangeira na entidade Declaração_Imposto_de_Renda e no relacionamento Contribuinte_Malha_Fina; 
+(F) 4. A entidade Malha_Fina não possui chave primária somente chave estrangeira; 
+(F) 5. O relacionamento Contribuinte_Malha_Fina é um relacionamento ternário. 
