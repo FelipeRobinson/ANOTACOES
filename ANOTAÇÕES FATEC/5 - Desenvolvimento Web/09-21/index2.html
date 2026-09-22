@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+    Item:
+    <input type="text" id="item">
+    <input type="button" value="Inserir" id="btInserir">
+    <input type="button" value="Remover" id="btRemover">
+    <h2>Sua lista:</h2>
+    <div>
+        <ol id="lista"></ol>
+    </div>
+
+    <script>
+        btInserir.addEventListener('click', inserir);
+        btRemover.addEventListener('click', remover);
+
+        let itens = new Array();
+
+        function exibir() {
+            lista.innerHTML = '';
+            for (let i = 0; i < itens.length; i++) {
+                lista.innerHTML += '<li>' + itens[i] + '</li>';
+            }
+        }
+
+        function inserir() {
+            itens[itens.length] = item.value;
+            exibir();
+        }
+
+        function remover() {
+            for (let i = 0; i < itens.length; i++) {
+                if (itens[i] == item.value) {
+                    itens.splice(i, 1);
+                }
+            }
+            exibir();
+        }
+    </script>
+</body>
+</html>

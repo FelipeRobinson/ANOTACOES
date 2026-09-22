@@ -51,23 +51,15 @@ j) 35479(10) = 8A97 (16)
 5. Construa os circuitos lógicos para as expressões abaixo:
 
 a) X = AB + CDE
-
-
 b) X = A + (B + CD) · (B + A)
-
-
 c) F = (A + B) · (C + D) · E
-
-
 d) Y = A · B · (C + D) + E
-
-
 e) Y = (A + B) · (C + D) + E
 
 
 
 6. Com base nos circuitos, determine a fórmula:
-
-a) S = 
-
-b)
+        _        _        _
+a) S = (ABC) + (ABC) + (ABC)
+         __       _      _  
+b) S = (ABC) + (ABC) + (ABC) + (ABC)

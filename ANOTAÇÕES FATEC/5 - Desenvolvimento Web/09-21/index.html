@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    Valor 1: <input type="text" id="n1"><br>
+    Valor 2: <input type="text" id="n2"><br>
+    <input type="button" value="Somar" id="btnSomar">
+    <input type="button" value="Subtrair" id="btnSubtrair">
+    <input type="button" value="Multiplicar" id="btnMultiplicar">
+    <input type="button" value="Dividir" id="btnDividir">
+    <input type="button" value="Exponenciação" id="btExp"><br>
+    Resultado: <input type="text" id="res" value="0" readonly><br>
+
+    <script>
+        btnSomar.addEventListener("click", () => {calcular("+");});
+        btnSubtrair.addEventListener("click", () => {calcular("-");});
+        btnMultiplicar.addEventListener("click", () => {calcular("*");});
+        btnDividir.addEventListener("click", () => {calcular("/");});
+        btExp.addEventListener("click", () => {calcular("E");});
+
+        function calcular(op) {
+            if(op == '+') {
+                res.value = parseFloat(n1.value) + parseFloat(n2.value);
+            } 
+            else if(op == '-') {
+                res.value = parseFloat(n1.value) - parseFloat(n2.value);
+            } 
+            else if(op == '*') {
+                res.value = parseFloat(n1.value) * parseFloat(n2.value);
+            } 
+            else if(op == '/') {
+                res.value = parseFloat(n1.value) / parseFloat(n2.value);
+            } 
+            else if(op == 'E') {
+                res.value = Math.pow(parseFloat(n1.value), parseFloat(n2.value));
+            }
+            else {
+                if(parseFloat(n2.value) == 0) {
+                    res.value = "Error!";
+                }
+                else {
+                    res.value = parseFloat(n1.value) / parseFloat(n2.value);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
