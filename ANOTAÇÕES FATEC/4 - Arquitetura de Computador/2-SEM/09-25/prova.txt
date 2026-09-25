@@ -1,0 +1,25 @@
+PROVA:
+
+- 1º conteúdo: papo introdutório, oq serve um computador, o que é um software, hardware;
+- 2º conteúdo: transformações de sistemas numéricos (binário, hexadecimal e decimal);
+- 3º conteúdo: circuito lógico: quais são as portas e saber desenhar.
+
+OBS: 1 questão que ele vai dar o circuito pronto e vamos ter que excrever a fórmula.
+
+
+
+1.
+2.
+a)
+b)
+c)
+d)
+e)
+3.
+a)
+b)
+c)
+d)
+e)
+4.
+5.
