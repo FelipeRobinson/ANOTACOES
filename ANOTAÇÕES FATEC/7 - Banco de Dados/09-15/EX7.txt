@@ -1,7 +1,5 @@
-FELIPE DA COSTA ROBINSON & MATHEUS SLADOQ
+FELIPE DA COSTA ROBINSON
 EXERCÍCIO 7
-
-
 
 PARTE A: 
 - Implementar o modelo lógico em modelo físico:

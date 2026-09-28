@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <h1>Imagens - EX1</h1>
+    <a onmouseover="mudar(lampada, './img/lamp-lig.png')" onmouseout="mudar(lampada, './img/lamp-desl.png')"><img id="lampada" src="./img/lamp-desl.png" border="0"></a>
+
+    <script>
+        function mudar(objeto, imagem){
+            objeto.src = imagem;
+        }
+    </script>
+
+    <h1>Imagens - EX2</h1>
+    <a id="a1" href="./img/lamp-lig.png"><img src="./img/lamp-desl.png" id="l1">Opção 1 <br></a>
+    <a id="a2" href="./img/lamp-lig.png"><img src="./img/lamp-desl.png" id="l2">Opção 2 <br></a>
+    <a id="a3" href="./img/lamp-lig.png"><img src="./img/lamp-desl.png" id="l3">Opção 3 <br></a>
+    <script>
+        var a1 = document.getElementById('a1');
+        var a2 = document.getElementById('a2');
+        var a3 = document.getElementById('a3');
+        a1.addEventListener('mouseout', function() { 
+            mudar(l1, "./img/lamp-desl.png"); 
+        });
+        a1.addEventListener('mouseover', function() { 
+            mudar(l1, "./img/lamp-lig.png"); 
+        });
+        a2.addEventListener('mouseout', function() { 
+            mudar(l2, "./img/lamp-desl.png"); 
+        });
+        a2.addEventListener('mouseover', function() { 
+            mudar(l2, "./img/lamp-lig.png"); 
+        });
+        a3.addEventListener('mouseout', function() { 
+            mudar(l3, "./img/lamp-desl.png"); 
+        });
+        a3.addEventListener('mouseover', function() { 
+            mudar(l3, "./img/lamp-lig.png"); 
+        });
+
+        function mudar(objeto, imagem) {
+           objeto.src = imagem;
+        }
+    </script>
+    <style>
+        img {
+            vertical-align: middle;
+            border: 0;
+            height: 64px;
+        }
+    </style>
+    -->
+
+    <h1>CARA OU COROA</h1>
+    <input type="button" value="Sortear" id="btSortear">
+    <input type="button" value="Limpar" id="btLimpar">
+    <div id="cara"></div>
+    <div id="coroa"></div>
+    <div id="total"></div>
+    <div id="area"></div>
+
+    <script>
+        let caras = 0;
+        let coroas = 0;
+        let porcentoCARA = 0;
+        let porcentoCOROA = 0;
+
+        btSortear.addEventListener('click', function() {
+            let face = Math.floor(Math.random() * 2);
+            let moeda = new Array('./img/moeda_1.jpg', './img/moeda_2.jpg');
+            area.innerHTML += '<img src="' + moeda[face] + '">';
+
+            if (face == 0) {
+                caras++;
+                porcentoCARA = (caras / (caras + coroas)) * 100;
+                cara.innerHTML = 'Cara: ' + caras + ' (' + porcentoCARA.toFixed(2) + '%)';
+            }
+            else {
+                coroas++;
+                porcentoCOROA = (coroas / (caras + coroas)) * 100;
+                coroa.innerHTML = 'Coroa: ' + coroas + ' (' + porcentoCOROA.toFixed(2) + '%)';
+            }
+
+            total.innerHTML = 'Total: ' + (caras + coroas);
+        });
+
+        btLimpar.addEventListener('click', function() {
+            caras = 0;
+            coroas = 0;
+            porcentoCARA = 0;
+            porcentoCOROA = 0;
+            cara.innerHTML = '';
+            coroa.innerHTML = '';
+            total.innerHTML = '';
+            area.innerHTML = '';
+        });
+    </script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        img {
+            height: 64px;
+        }
+    </style>
+</body>
+</html>
