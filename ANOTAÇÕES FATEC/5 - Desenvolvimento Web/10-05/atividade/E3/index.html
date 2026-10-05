@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>GEOMETRIA</title>
+    <title>MEGA-SENA</title>
 </head>
 <body>
-    
-    
+    <!--
+        3. A Mega-Sena é a maior loteria do Brasil, sendo organizada pela Caixa Econômica Federal. 
+        Para jogar, você pode escolher de 6 a 20 números entre 60 disponíveis (1 até 60). Com base 
+        nestas informações, criar uma página que realize a sugestão de números para a Mega-Sena. 
+        O usuário deverá informar quantos números ele quer sortear (6 a 20) e também quantos jogos 
+        pretende realizar.
+    -->
+
+    <h1>MEGA-SENA</h1>
+    <form id="formulario">
+        <label>Quantos números você quer sortear? (6 a 20)</label>
+        <input type="number" id="numSort" min="6" max="20" step="1" required>
+        <br>
+        <label>Quantos jogos você pretende realizar?</label>
+        <input type="number" id="numJogos" min="1" step="1" required style="width: 100px;">
+        <br>
+        <button type="button" id="btnGerar">Gerar jogos</button>
+    </form>
+    <section id="resultado" aria-live="polite"></section>
+
     <script src="./script.js"></script>
 </body>
 </html>

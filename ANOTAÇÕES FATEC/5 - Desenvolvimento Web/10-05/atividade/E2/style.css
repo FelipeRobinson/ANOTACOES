@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: red;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+    color: black;
+}
+
+#resultado {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: green;
+    font-style: italic;
+}
