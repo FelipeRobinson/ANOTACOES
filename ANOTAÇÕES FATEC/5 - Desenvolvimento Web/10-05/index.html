@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    Valor 1: <input type="text" id="v1" value="0"><br>
+    Valor 2: <input type="text" id="v2" value="0"><br>
+    Operação:
+    <input type="radio" id="somar" name="op" checked> Somar
+    <input type="radio" id="subtrair" name="op"> Subtrair
+    <input type="radio" id="multiplicar" name="op"> Multiplicar
+    <input type="radio" id="dividir" name="op"> Dividir<br>
+    <input type="button" value="Calcular" id="btCalc"><br>
+    Resultado: <input type="text" id="res" value="0" readonly>
+
+    <script>
+        btCalc.addEventListener("click", function() {
+            if(somar.checked) {
+                res.value = parseFloat(v1.value) + parseFloat(v2.value);
+            }
+            else if (subtrair.checked) {
+                res.value = parseFloat(v1.value) - parseFloat(v2.value);
+            }
+            else if (multiplicar.checked) {
+                res.value = parseFloat(v1.value) * parseFloat(v2.value);
+            }
+            else if (dividir.checked) {
+                res.value = parseFloat(v1.value) / parseFloat(v2.value);
+            }
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+        input {
+            border-radius: 20px;
+            border: none;
+        }
+        
+    </style>
+</body>
+</html>
