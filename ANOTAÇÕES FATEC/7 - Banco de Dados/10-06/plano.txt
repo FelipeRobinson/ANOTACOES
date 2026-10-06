@@ -1,0 +1,49 @@
+Módulo VI – Normalização de Banco de Dados 
+
+• Referência Bibliográfica: 
+    - FERREIRA, Fábio J. L. Banco de dados - Modelagem de dados – Capítulo 4 
+    - HEUSER, C. A. Projeto de Banco de Dados - 4. Bookman; Edição: 6ª (24 de 
+    novembro de 2008) – Capítulo 6 
+
+• Revisão das aulas anteriores 
+    • Conceito de Normalização de Banco de Dados o “A normalização é o processo 
+    pelo qual os dados são organizados no banco de tal modo que se possa protegê-los
+    estabelecendo relacionamentos sólidos, eliminando redundâncias e valores 
+    inconsistentes” Ferreira 
+
+
+• Primeira Forma Normal 
+    - “Para um banco de dados estar de acordo com a 1FN, é necessário que não 
+    existam grupos de valores repetidos, ou seja, se todos os valores forem únicos 
+    (atômicos = indivisíveis) então estaremos a obedecer essa forma normal” Ferreira 
+    - “diz-se que uma tabela está na primeira forma normal, quando ela não contém 
+    tabelas aninhadas” Heuser 
+    - Exemplos 
+
+• Segunda Forma Normal 
+    - “Para estar de acordo com a 2FN é necessário que a tabela esteja também na 1FN, 
+    e que todos os atributos que não forem chave sejam dependentes de toda a chave 
+    primária e não somente de parte dela. Um dos principais benefícios desta regra de 
+    normalização é evitar a presença de valores redundantes” Ferreira 
+    - “uma tabela encontra-se na segunda forma normal, quando, além de estar na 1FN, 
+    não contém dependências parciais” Heuser 
+    - Exemplos
+
+• Terceira Forma Normal 
+    - “Para estar de acordo com a 3FN é necessário que a tabela esteja cumprindo com 
+    a 1ª e a 2ª Formas Normais; além disso é necessário remover as colunas que 
+    possuam valores que podem ser obtidos a partir da comutação de valores de 
+    outras colunas da mesma tabela” Ferreira 
+    - “uma tabela encontra-se na terceira forma normal, quando, além de estar na 2FN, 
+    não contém dependências transitivas” Heuser 
+    - Exemplos
+
+
+• Exercício 9 – Normalização do banco de dados do Sistema para locadora de veículos 
+    - Em duplas 
+    - Data limite: 17.abr.2026 (entrega final e debate) 
+    - Aplicar as três formas normais estudadas no banco de dados do Sistema para 
+    locadora de veículos elaborado no 9 
+    - Acompanhamento da classe na elaboração do exercício 
+    - Entrega do exercício 
+    - Debate e reflexões coletivas com a classe

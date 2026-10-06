@@ -1,0 +1,33 @@
+FELIPE DA COSTA ROBINSON
+KEVIN HOU JUNG WU
+
+Exercício 9 - Formas Normais
+
+1. Aplicar a 1FN:
+- Para aplicar o 1FN precisamos que não haja valores repetidos nas 
+tabelas que nos construimos. Precisamos apagar a coluna END da tabela
+CLIENTE para que esse dado seja coerênte com a 1FN, e inserir uma tabela
+com colunas referênte a endereço: logradouro, nº, complemento, bairro,
+cidade, uf, cep. Após isso, avaliamos o LOCAL_RETIRADA e LOCAL_ENTREGA
+na tabela LOCAÇÃO e como esse local de entrega é o nome de uma filial e não
+um endereço, não há necessidade de fazer alteração para caber na 1FN.
+Contudo, apartir disso nossa tabela está perfeita para a 1FN.
+
+2. Aplicar a 2FN:
+- Para aplicar a 2FN, precisamos já ter aplicado a 1FN, e não podemos
+ter dependência parcial dos valores, ou seja, os atributos que nós 
+temos que não são PK, estão relacionados diretamente ao atributo ident
+e não fazem só uma parte dela, mas constitui a id. Nosso banco de dados
+está alinhado com a 2FN.
+
+3. Aplicar a 3FN:
+- E por fim, para aplicar a 3FN precisamos já ter aplicado as duas
+anteriores, e precisamos que não tenham dependência transitivas, isto
+é, a coluna não pode depender da outra, e no nosso banco de dados 
+nem uma coluna depende da outra. Nosso banco de dados está alinhado com
+as formas normais.
+
+Obs: Segue dois prints do design do nosso banco de dados mostrando as 
+tabelas que estão no nosso banco de dados, o tipo de dados armazenado 
+na coluna, os relacionamentos entre as tabelas e as foreing keys presentes 
+no nosso modelo de banco de dados.

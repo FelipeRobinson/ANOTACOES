@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>GEOMETRIA</title>
+    <title>Dados</title>
 </head>
 <body>
-    
-    
-    <script src="./script.js"></script>
+    <!--
+        4. Considerando um dado de jogo sendo lançado uma determinada quantidade de vezes, informada pelo
+        usuário, mostrar uma imagem correspondendo a cada lançamento e, ao final, um relatório indicando quantas
+        vezes e a porcentagem de cada lado sorteado.
+    -->
+    <h1>Dados</h1>
+    <p>Lançamentos de dados.</p>
+    <p id="lançamentos"></p>
+    <input type="number" id="quantidade" placeholder="Digite a quantidade de lançamentos">
+    <button id="iniciar">Iniciar Lançamentos</button>
+    <div id="resultados"></div>
+
+    <script src="./script.js">
+        btIniciar = document.getElementById("iniciar");
+        exResultados = document.getElementById("resultados");
+
+        btIniciar.addEventListener("click", function(){
+            let quantidade = document.getElementById("quantidade").value;
+            let sorteio = [];
+
+            
+        });
+    </script>
 </body>
 </html>
