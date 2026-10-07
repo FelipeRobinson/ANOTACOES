@@ -15,19 +15,34 @@
     <h1>Dados</h1>
     <p>Lançamentos de dados.</p>
     <p id="lançamentos"></p>
-    <input type="number" id="quantidade" placeholder="Digite a quantidade de lançamentos">
-    <button id="iniciar">Iniciar Lançamentos</button>
+    <input type="number" id="quantidade">
+    <button id="iniciar">Lançar</button>
+    <button id="limpar">Limpar</button>
     <div id="resultados"></div>
 
-    <script src="./script.js">
+    <script>
         btIniciar = document.getElementById("iniciar");
+        btLimpar = document.getElementById("limpar");
         exResultados = document.getElementById("resultados");
 
-        btIniciar.addEventListener("click", function(){
-            let quantidade = document.getElementById("quantidade").value;
-            let sorteio = [];
+        btIniciar.addEventListener("click", function () {
+            if (exResultados.childElementCount > 0) {
+                alert("Os dados já foram lançados. Use Limpar para fazer outro lançamento.");
+                return;
+            }
 
-            
+            const quantidade = document.getElementById("quantidade").value;
+
+            for (let i = 0; i < quantidade; i++) {
+                const numero = Math.floor(Math.random() * 6) + 1;
+                const img = document.createElement("img");
+                img.src = `./img/dado${numero}.jpg`;
+                exResultados.appendChild(img);
+            }
+        });
+
+        btLimpar.addEventListener("click", function(){
+            exResultados.innerHTML = "";
         });
     </script>
 </body>
