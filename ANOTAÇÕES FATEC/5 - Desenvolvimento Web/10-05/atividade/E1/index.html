@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>GEOMETRIA</title>
+    <title>Geometria</title>
 </head>
 <body>
-    <input type="text" id="lado1" value="0">
-    <input type="text" id="lado2" value="0"><br>
-    <button id="button">Calcular</button><br>
-    <input type="text" id="res" value="0" readonly><br>
+    <!--
+        1. A partir dos lados de um retângulo ou quadrado, digitados pelo usuário, elaborar uma página Web que
+        calcule e exiba o value da área da figura e mostre uma imagem indicado se é um retângulo ou um quadrado.
+        Lembrando que a área é obtida pela multiplicação da base (L) pela altura (A)
+    -->
 
-    
+    <h1>Calculadora de Área</h1>
+    <p>Lado1: </p>
+    <input type="number" id="lado1" value="0">
+    <p>Lado2: </p>
+    <input type="number" id="lado2" value="0">
+    <button id="btCal">Calcular</button>
+    <p>Área:</p>
+    <input type="text" id="res" value="0" readonly>
+    <img id="imgQuadrado" src="./img/quadrado.webp" alt="Quadrado" style="display:none">
+    <img id="imgRetangulo" src="./img/retangulo.png" alt="Retângulo" style="display:none">
+
     <script src="./script.js"></script>
 </body>
 </html>

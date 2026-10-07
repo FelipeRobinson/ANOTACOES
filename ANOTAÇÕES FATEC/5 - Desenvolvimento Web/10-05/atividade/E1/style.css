@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+    color: black;
+}
+
+img {
+    padding-top: 1rem;
+}
