@@ -1,0 +1,101 @@
+Exercício 10 – Criação de um banco de dados para Sistema de e-commerce 
+Em duplas 
+Data limite:13.out.2026 (entrega final e debate) 
+- A partir do MER/DER do exercício 4 - Sistema para e-commerce – pede-se a construção do Banco de Dados no SGBD MySQL. 
+
+WampServer 
+PHPMyAdmin 
+MySQL 
+
+() 1. Estrutura básica
+Precisamos transformar 
+
+() 2. Criação de base de dados 
+() 3. Criação de tabelas (CREATE TABLE) 
+
+CREATE TABLE CLIENTE (
+    cpf VARCHAR(14) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT,
+    endereco VARCHAR(150),
+    numero VARCHAR(10),
+    email VARCHAR(100)
+);
+
+CREATE TABLE FORNECEDOR (
+    cnpj VARCHAR(18) PRIMARY KEY,
+    numero VARCHAR(10),
+    email VARCHAR(100),
+    produto_fornecido VARCHAR(100),
+    quantidade INT,
+    tipo_produto VARCHAR(100)
+);
+
+CREATE TABLE PRODUTO (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    quantidade INT DEFAULT 0,
+    descricao TEXT,
+    cnpj VARCHAR(18) NOT NULL,
+
+    FOREIGN KEY (cnpj) REFERENCES FORNECEDOR(cnpj)
+);
+
+CREATE TABLE PEDIDO (
+    id_pedido INT PRIMARY KEY AUTO_INCREMENT,
+    cpf VARCHAR(14) NOT NULL,
+    codigo INT NOT NULL,
+    quantidade INT NOT NULL DEFAULT 1,
+    data_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (cpf) REFERENCES CLIENTE(cpf),
+    FOREIGN KEY (codigo) REFERENCES PRODUTO(codigo)
+);
+
+CREATE TABLE PAGAMENTO (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    cpf VARCHAR(14) NOT NULL,
+    qtd_produto INT,
+    data_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
+    valor DECIMAL(10,2) NOT NULL,
+
+    FOREIGN KEY (cpf) REFERENCES CLIENTE(cpf)
+);
+
+CREATE TABLE DISTRIBUIDOR (
+    id_distribuidor INT PRIMARY KEY AUTO_INCREMENT,
+    qtd_produto INT,
+    endereco_cliente VARCHAR(150),
+    data_hora_envio DATETIME
+);
+
+CREATE TABLE STATUS_ENVIO (
+    id_entrega INT PRIMARY KEY AUTO_INCREMENT,
+    data_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
+    local_produto VARCHAR(150)
+);
+
+CREATE TABLE ENVIAR (
+    codigo INT NOT NULL,
+    id_distribuidor INT NOT NULL,
+
+    PRIMARY KEY (codigo, id_distribuidor),
+    FOREIGN KEY (codigo) REFERENCES PRODUTO(codigo),
+    FOREIGN KEY (id_distribuidor) REFERENCES DISTRIBUIDOR(id_distribuidor)
+);
+
+CREATE TABLE POSTADO (
+    id_distribuidor INT NOT NULL,
+    id_entrega INT NOT NULL,
+
+    PRIMARY KEY (id_distribuidor, id_entrega),
+    FOREIGN KEY (id_distribuidor) REFERENCES DISTRIBUIDOR(id_distribuidor),
+    FOREIGN KEY (id_entrega) REFERENCES STATUS_ENVIO(id_entrega)
+);
+
+
+() 4. Criação das chaves primárias e estrangeiras (PRIMARY KEY, FOREIGN KEY) 
+() 5. População das tabelas (INSERT) 
+() 6. Seleção de elementos nas tabelas (SELECT) 
+() 7. Integração com MySQL Workbench 
+() 8. Engenharia Reversa 

@@ -1,0 +1,6 @@
+-- 1) Estrutura básica com criação do database, nome do banco;
+CREATE DATABASE nome_banco;
+
+USE nome_banco;
+
+-- 2) 
