@@ -1,0 +1,166 @@
+LISTAS:
+
+LISTA (21/09/26)
+1. PORTA XOR
+
+#include <stdio.h>
+
+int main() {
+    int a, b, i;
+    
+    if ( (!a && b) || (a && !b) ) {
+        printf("True");
+    }
+}
+
+2. VALOR DAS CONTAS
+a) (3 >= 2) ou (1 == 3)
+int main() {
+    if ((3>=2) || (1 == 3)) {
+        return 1;
+    }
+}
+OUTPUT: 1
+
+b) (1 + 1) == (3- 1)
+int main() {
+    if ((1+1) == (3-1) {
+        return 1;
+    }
+}
+OUTPUT: 1
+
+c) (1.5 * 4.0 > 6.0) e (1.0 != 2.0)
+int main() {
+    if ((1.5 * 4.0 > 6.0) && (1.0 != 2.0)) {
+        return 1;
+    }
+}
+OUTPUT: 0
+
+d) !(7 == 7)
+int main() {
+    if (!(7 == 7)) {
+        return 1;
+    }
+}
+OUTPUT: 0
+
+e) (2 != 3) || (4 < 1)
+int main() {
+    if ((2 != 3) || (4 < 1)) {
+        return 1;
+    }
+}
+OUTPUT: 1
+
+f) 1 || 0 && 0
+int main() {
+    if (1 || 0 && 0) {
+        return 1;
+    }
+}
+OUTPUT: 1
+
+g)) !(2 > 1 && 3 < 4)
+int main() {
+    if (!(2 > 1 && 3 < 4)) {
+        return 1;
+    }
+}
+OUTPUT: 0
+
+
+3. EQUIVALÊNCIA
+• !(A && B)
+• !A || !B
+
+OUTPUT: 1
+
+
+4. Escreva uma expressão lógica que seja verdadeira apenas quando idade
+for maior ou igual a 18 e menor que 60.
+
+#include <stdio.h>
+
+int main() {
+    int idade;
+    
+    printf("Digite sua idade: ");
+    scanf("%i", &idade);
+    if ( 18 < idade < 60) {
+        printf("%i", idade);
+    }
+    else {
+        printf("ERROR!");
+    }
+}
+
+
+5. Umestacionamento possui a seguinte regra: Um veículo pode entrar se o
+motorista possuir carteira de habilitação e o veículo estiver licenciado. Con
+sidere que você possui apenas as variáveis habilitado e licenciado.
+A primeira sugestão foi utilizar seguinte condição para negar a entrada:
+!(habilitado && licenciado). Reescreva a expressão anterior sem
+utilizar os parênteses e mantendo o mesmo significado lógico.
+
+#include <stdio.h>
+
+int main() {
+    int habilitado, licenciado;
+    
+    if (!(habilitado && licenciado) == (!habilitado && !licenciado)) {
+        return 1;
+    }
+}
+OUTPUT: 1
+
+
+6. Escreva uma expressão que seja verdadeira apenas quando A e B forem
+iguais, sem utilizar comparação (==).
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    if (!(a != b)) {
+        return 1;
+    }
+}
+OUTPUT: 1
+
+
+7. Escreva uma expressão que seja verdadeira apenas quando exatamente
+uma entre A, B e C for verdadeira.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    
+    if (a || b || c) {
+        return 1;
+    }
+}
+
+
+8. Um clube permite a entrada apenas para pessoas com idade entre 20 e
+49 anos. Uma regra de permissão foi implementada da seguinte forma:
+idade >= 20 && idade < 50. Escreva uma expressão lógica equivalente que represente quando a entrada deve ser negada. Não utilize apenas a expressão acima diretamente negada.
+
+#include <stdio.h>
+
+int main() {
+    int idade;
+    
+    scanf("%d", &idade);
+    if (!(idade >= 20 && idade < 50)) {
+        printf("Acesso negado!");
+    }
+}
+
+
+
+9. Sem utilizar o operador !, escreva uma expressão equivalente a !(A && B).
+

@@ -1,0 +1,11 @@
+ATIVIDADE - ENG. SOFT. (16-03)
+
+LEVANTAMENTO DOS CONHECIMENTOS PRELIMINARES AO TEMA DO SEMINÁRIO
+
+Tema: GOVERNANCIA DE TI
+
+O que é governancia: governancia vem de governar algo ou alguma coisa. Usamos muito para sistemas políticos governamentais, mas podemos usar para qualquer sistema, como o computacional.
+
+O que é TI: TI é uma sigla para Tecnologia de Informática e se refere a tudo de tecnologia, desde hardwares, como teclados, placas, ships, até softwares, como aplicações, etc.
+
+Como vincular os dois: Seguindo a mesma base de pensamento de o que é governancia e o que é TI, podemos observar que se trata do sistema que gerencia as tecnologias de Informática e administra seu uso e suas operações.

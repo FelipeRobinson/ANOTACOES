@@ -1,0 +1,11 @@
+FELIPE ROBINSON
+08-10
+
+O Curso é inteiramente feito pelo youtube. O acesso a esse curso está disponibilizado
+com um link da aula sempre fixado acima do arquivo .txt, e a pasta estara fixada nesse
+documento.
+
+Link: https://www.youtube.com/playlist?list=PLpaKFn4Q4GMOBAeqC1S5_Fna_Y5XaOQS2
+
+Professor: Pietro Martins
+Github: https://github.com/pietromartinso

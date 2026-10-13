@@ -1,0 +1,49 @@
+RESUME (OpenAI):
+
+Claro. A aula **“Linguagem C - Aula 1.1 - Aprenda a usar o DEV C++ (2022)”** é basicamente uma introdução ao ambiente de desenvolvimento **Dev-C++**, preparando o aluno para começar a programar em C.
+
+### 📝 Resumo da aula
+
+* **Dev-C++** é uma IDE usada para escrever, compilar e executar programas em **linguagem C/C++**.
+* A aula apresenta a **interface do programa**, mostrando onde ficam as principais ferramentas.
+* É explicado como **criar um novo projeto/arquivo** para começar um programa.
+* O código é escrito no **editor de texto** da IDE.
+* Depois de escrever o código, é necessário **compilar** para verificar se existem erros.
+* Se não houver erros, o programa pode ser **executado** para mostrar o resultado.
+* A aula também demonstra o processo básico de:
+  **criar → escrever o código → compilar → executar**.
+* É importante entender a diferença entre:
+
+  * **Erro de código:** impede a compilação.
+  * **Execução:** momento em que o programa realmente roda.
+* O Dev-C++ possui ferramentas para **salvar, editar, compilar e executar** os programas desenvolvidos.
+
+### 💻 Fluxo básico
+
+```text
+Criar arquivo
+     ↓
+Escrever código C
+     ↓
+Salvar
+     ↓
+Compilar
+     ↓
+Corrigir erros, se houver
+     ↓
+Executar
+     ↓
+Ver resultado
+```
+
+### 🎯 O que você precisa guardar dessa aula
+
+A aula **não é focada ainda em aprender a linguagem C em si**, mas em aprender a utilizar a ferramenta onde você vai desenvolver os programas.
+
+O mais importante é saber:
+
+> **Dev-C++ → escrever o código → compilar → executar → analisar o resultado.**
+
+A partir das próximas aulas, aí sim começam os conceitos de **`#include`, `main()`, variáveis, `printf`, `scanf`**, etc.
+
+[Assistir à videoaula no YouTube](https://www.youtube.com/watch?v=QgE1zh0xCns&utm_source=chatgpt.com)

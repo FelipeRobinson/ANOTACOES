@@ -1,0 +1,156 @@
+LISTAS:
+
+LISTA (25/09/26)
+
+1. Faça um programa que verifica se é Ímpar ou Par:
+#include <stdio.h>
+
+int main() {
+    int a;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &a);
+
+    if (a % 2 == 0) {
+        printf("O numero %d e par.\n", a);
+    } 
+    else {
+        printf("O numero %d e impar.\n", a);
+    }
+    return 0;
+}
+
+2. Faça um programa que imprima SIM de acordo com uma regra,
+e imprima NÃO caso contrário:
+#include <stdio.h>
+
+int main() {
+    int a;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &a);
+
+    if ((a % 2 == 0) && (a > 10)) {
+        printf("YES");
+    } 
+    else {
+        printf("NO");
+    }   
+
+    return 0;
+}
+
+3. Faça um programa que leia três números e imprima eles em 
+ordem crescente:
+#include <stdio.h>
+
+int main() {
+    int a, b, c, i, j, temp;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &a);
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &b);
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &c);
+
+    int v[3] = {a, b, c};
+
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2 - i; j++) {
+            if (v[j] > v[j + 1]) {
+                temp = v[j];
+                v[j] = v[j + 1];
+                v[j + 1] = temp;
+            }
+        }
+    }
+
+    for (i = 0; i < 3; i++) {
+        printf("%d ", v[i]);
+    }
+
+    return 0;
+}
+
+4. Faça um programa que calcule a conta de energia baseado
+no gasto kWh:
+#include <stdio.h>
+
+int main() {
+    float a, b;
+
+    printf("CALCULADORA DA CPFL\n");
+    printf("Quanto voce consumiu de energia (kWH): ");
+    scanf("%2.f", &a);
+
+    b = a * 0.85;
+
+    if (b < 75) {
+        printf("Voce nao consumiu energia suficiente para pagar a conta, o valor da sua conta e: R$ 75,00\n");
+    }
+    else {
+        printf("O valor da sua conta e: R$ %.2f\n", b);
+    }
+
+    return 0;
+}
+
+5. Faça um programa que leia três números e imprima o maior deles:
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    int v[3] = {a, b, c};
+
+    printf("Digite um numeros inteiros: ");
+    scanf("%d\n", &a);
+    printf("Digite um numeros inteiros: ");
+    scanf("%d\n", &b);
+    printf("Digite um numeros inteiros: ");
+    scanf("%d\n", &c);
+    
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (v[i] < v[j]) {
+                int k = v[i];
+                v[i] = v[j];
+                v[j] = k;
+            }
+        }
+    }
+
+    printf("\nO maior valor é %d", v[2]);
+}
+
+6. Faça um programa que leia o nome do operário e o número de
+peças fabricadas por ele no mês e exiba o nome do operário, sua
+classe e o salário que ele deve receber
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    char n[50];
+
+    printf("CALCULADORA DO SALÁRIO\n");
+    printf("Qual o seu nome: ");
+    scanf("%s", &n);
+    printf("\nQual o seu salario: ");
+    scanf("%d", &a);
+    printf("\nQuantas peças voce produziu: ");
+    scanf("%d", &b);
+
+    if (b >= 30) {
+        printf("SEU NOME: %s\n", n);
+        printf("\nSUA CLASSE: Classe A");
+        printf("\nSEU SALÁRIO: %d\n", a);
+    } 
+    else if(b < 30) {
+        printf("SEU NOME: %s", n);
+        printf("\nSUA CLASSE: Classe B");
+        printf("\nSUAS PEÇAS PRODUZIDAS: %d", b);
+        
+        int bonus = (a + ((b - 30) * 10));
+        printf("\nSEU SALÁRIO: %d", bonus);
+    }
+}

@@ -1,0 +1,5 @@
+SELECT paciente.nome as 'PACIENTE', medico.nome as 'MEDICO', convenio.nome as 'CONVENIO' 
+FROM paciente 
+INNER JOIN consulta ON paciente.codigoconvenio = consulta.codigoconvenio AND paciente.numeropaciente = consulta.numeropaciente 
+INNER JOIN medico ON medico.CRM = consulta.CRM;
+INNER JOIN 
