@@ -1,0 +1,60 @@
+1) Nome dos pacientes que realizaram consulta
+SELECT paciente.nome as "PACIENTE"
+FROM paciente
+INNER JOIN consulta ON paciente.codigoconvenio = consulta.codigoconveniovAND paciente.numeropaciente = consulta.numeropaciente 
+
+2) Nome dos pacientes e dos convênios que realizaram consulta
+SELECT paciente.nome as "PACIENTE", convenio.nome as "CONVENIO"
+FROM paciente
+INNER JOIN consulta ON paciente.codigoconvenio = consulta.codigoconvenio AND paciente.numeropaciente = consulta.numeropaciente
+INNER JOIN convenio ON paciente.codigoconvenio = convenio.codigoconvenio AND convenio.codigoconvenio = consulta.codigoconvenio
+
+3) Nome dos pacientes, dos convênios e a data da consulta 
+SELECT paciente.nome as "PACIENTE", convenio.nome as "CONVENIO", consulta.datahora as "HORA"
+FROM paciente
+INNER JOIN consulta ON paciente.codigoconvenio = consulta.codigoconvenio AND paciente.numeropaciente = consulta.numeropaciente
+INNER JOIN convenio ON paciente.codigoconvenio = convenio.codigoconvenio AND convenio.codigoconvenio = consulta.codigoconvenio
+
+4) Nome  dos  pacientes,  dos  convênios,  dos  médicos  e  a  data  da consulta
+SELECT paciente.nome AS "PACIENTE", medico.nome AS "MEDICO", convenio.nome AS "CONVENIO", consulta.datahora AS "HORA"
+FROM paciente
+INNER JOIN consulta ON paciente.codigoconvenio = consulta.codigoconvenio AND paciente.numeropaciente = consulta.numeropaciente
+INNER JOIN medico ON medico.CRM = consulta.CRM
+INNER JOIN convenio ON paciente.codigoconvenio = convenio.codigoconvenio;
+
+5) Nome dos médicos e dos pacientes por ele consultados
+SELECT medico.nome as "MEDICO", paciente.nome as "PACIENTE"
+FROM medico
+LEFT JOIN consulta ON medico.CRM = consulta.CRM
+LEFT JOIN paciente ON paciente.codigoconvenio = consulta.codigoconvenio AND paciente.numeropaciente = consulta.numeropaciente
+ORDER BY medico.nome
+
+6) Nome dos médicos que ainda não realizaram consultas
+SELECT medico.nome as "MEDICO"
+FROM medico
+LEFT JOIN consulta ON medico.CRM = consulta.CRM
+WHERE consulta.CRM IS NULL
+
+7) Nome dos médicos e dos pacientes por ele consultados 
+SELECT medico.nome AS "MEDICO", paciente.nome AS "PACIENTE"
+FROM paciente
+RIGHT JOIN consulta ON paciente.codigoconvenio = consulta.codigoconvenio AND paciente.numeropaciente = consulta.numeropaciente
+RIGHT JOIN medico ON consulta.CRM = medico.CRM;
+
+8) Nome dos médicos que ainda não realizaram consultas
+SELECT medico.nome as "MEDICO"
+FROM medico
+RIGHT JOIN consulta ON consulta.CRM = medico.CRM
+
+9)
+
+10)
+
+
+11) Liste os nomes dos pacientes e os médicos em ordem alfabética
+SELECT paciente.nome as "PACIENTE"
+FROM paciente
+UNION
+SELECT medico.nome as "MEDICO"
+FROM medico
+ORDER BY nome ASC;

@@ -1,0 +1,39 @@
+INICIO DO CURSO DE CS50
+Felipe Robinson
+
+O curso de CS50 é um curso extremamente renonamdo de harvard onde a sigla significa Computation Science.
+Os alunos aprender inicialmente sobre fundamentos da computação, internet e:
+- Computação;
+- internet;
+- Web Design;
+- Banco de Dados;
+- Sistemas Eletrônicos;
+- Desenvolvimento de Software;
+
+O curso é difícil, porém é plenamente possível de ser feito. O curso é desenvolvido David J. Malan, e 
+possui uma didádica única, com a licensa do CS50. As aulas são identicas.
+
+Vamos desenvolver: 
+    - Pensamento algorítmico;
+    - Pontos de vista lógicos;
+    - Desenvolvimento acompanhado.
+
+CC50 é o curso de Harvard, no Brasil!
+
+=========================================================================================================
+
+A Fundação Estudar!
+A Fundação Estudar é uma organização sem fins lucrativos que acredita que o Brasil será um país melhor 
+se tivermos mais jovens determinados a seguir uma trajetória de impacto. Por isso, disseminamos uma 
+cultura de excelência e alavancamos os estudos e a carreira de universitários e recém formados.
+
+A Fundação Estudar tem alguns projetos:
+- Líderes Estudar: programa que seleciona jovens brasileiros com alto potencial e fornece bolsas de 
+estudo para que cursem as melhores universidades do mundo, além de estimular o desenvolvimento pessoal 
+e profissional para que gerem grandes transformações no país.
+- Estudar Fora: iniciativa da Fundação Estudar que ajuda jovens brasileiros a alcançarem o sonho de 
+estudar fora por meio de conteúdo digital e um preparatório especializado.
+- Estudar Na Prática: iniciativa que apoia o desenvolvimento pessoal e profissional de jovens, 
+conectando-os ao mercado por meio de cursos, conferências e conteúdo digital gratuito.
+
+acesse www.estudar.org.br.

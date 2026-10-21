@@ -1,0 +1,10 @@
+table {
+  background-color: rgb(176, 224, 230);
+  border: 0px;  
+  padding: 4px;
+  border-spacing: 0px;
+}
+#res {
+  display: inline-block; 
+  text-align: right;
+}
