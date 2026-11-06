@@ -1,0 +1,12 @@
+Leia o desenho da esquerda para a direita. Cada seta é um nível de indireção, 
+e cada `*` na declaração `int **p` corresponde a uma seta.
+
+- `p` é o ponteiro de fora. Ele não guarda números, guarda o endereço do vetor 
+roxo. O primeiro `calloc(5, sizeof(int *))` cria esse vetor.
+- `p[i]` são os ponteiros de dentro. Cada um guarda o endereço de uma linha. 
+O `calloc(3, sizeof(int))` dentro do `for` cria essas linhas, uma por volta.
+- `p[i][j]` é onde finalmente fica o valor inteiro. Ele começa em 0 por causa 
+do `calloc`.
+
+O caminho em amarelo mostra o acesso a um elemento: para chegar no 7, o programa 
+segue duas setas. Por isso precisa de dois `*`, ou de dois `[ ]`.
