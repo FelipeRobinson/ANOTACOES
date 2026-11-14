@@ -46,10 +46,19 @@ SELECT medico.nome as "MEDICO"
 FROM medico
 RIGHT JOIN consulta ON consulta.CRM = medico.CRM
 
-9)
+9) Nome dos médicos que ainda não atenderam pacientes
+SELECT medico.nome as 'Médico' 
+FROM consulta 
+RIGHT JOIN medico on consulta.CRM = medico.CRM 
+WHERE consulta.CRM IS null
+ORDER by medico.nome;
 
-10)
-
+10) Nome dos pacientes que ainda não tiveram atendimento
+SELECT paciente.nome as 'paciente que ainda não teve consulta' 
+FROM consulta 
+RIGHT JOIN paciente ON consulta.codigoconvenio = paciente.codigoconvenio AND consulta.numeropaciente = paciente.numeropaciente 
+WHERE consulta.numeropaciente IS null and consulta.codigoconvenio is null 
+ORDER by paciente.nome; 
 
 11) Liste os nomes dos pacientes e os médicos em ordem alfabética
 SELECT paciente.nome as "PACIENTE"
@@ -58,3 +67,41 @@ UNION
 SELECT medico.nome as "MEDICO"
 FROM medico
 ORDER BY nome ASC;
+
+12) (IN) Liste os pacientes que foram atendidos pelo convênio 1 e 2
+SELECT paciente.nome, paciente.codigoconvenio
+FROM paciente
+WHERE paciente.codigoconvenio IN (1, 2);
+
+13) (BETWEEN) Liste os pacientes que foram atendidos pelo convênio 1 e 2
+SELECT paciente.nome, paciente.codigoconvenio
+FROM paciente
+WHERE paciente.codigoconvenio BETWEEN '1' AND '5';
+
+14) (LIKE {PATROON}) Nome pacientes que contém o nome “Maria”  
+SELECT pacientes.nome
+FROM paciente
+WHERE nome LIKE "%Maria"
+
+15) (ORDER BY) Trazer o nome dos médicos em ordem decrescente
+SELECT medico.nome
+FROM medico
+ORDER BY medico.nome DESC;
+
+16) (GROUP BY) Trazer o nome dos médicos e o total de consultas que ele realizou
+SELECT medico.nome, count(consulta.crm)
+FROM medico
+INNER JOIN consulta ON medico.CRM = consulta.CRM
+GROUP BY consulta.CRM
+
+17) (HAVING) Trazer o nome dos médicos que realizaram mais de uma consulta
+SELECT medico.nome
+FROM medico
+GROUP BY 
+HAVING 
+
+18)(HAVING) Trazer o nome dos médicos que mais realizaram consulta
+SELECT medico.nome
+FROM medico
+GROUP BY 
+HAVING 
